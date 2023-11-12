@@ -19,7 +19,7 @@ header
     justify-content: space-between;
     align-items: center;
     z-index: 99;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     box-shadow: 0 0 30px rgba(0,0,0, .5);
     
 }
@@ -106,16 +106,50 @@ body
     background: transparent;
     border: 2px solid rgba(255,255,255, .5);
     border-radius: 20px;
-    backdrop-filter: blur(70px);
+    backdrop-filter: blur(50px);
     box-shadow: 0 0 30px rgba(0,0,0, .5);
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s ease,height .2s ease;
 }
 
-.lgforma .forma_input{
-   
+.lgforma.active-kycja
+{
+    transform: scale(1);
+}
+
+.lgforma.active
+{
+    height: 520px;
+}
+
+.lgforma .formbox
+{
+   transition: transform .18s ease;
+   transform: translateX(0);
+}
+
+.lgforma.active .formbox
+{
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.lgforma .register_forma
+{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+
+.lgforma.active .register_forma
+{
+    transition: transform .18s ease;
+    transform: translateX(0);
 }
 
 .lgforma .hekenX
@@ -141,9 +175,11 @@ body
     padding: 40px;
 }
 
+
+
 .formbox h2
 {
-    width: 2em;
+    width: 13em;
     text-align: center;
 }
 
@@ -168,10 +204,6 @@ body
     transition: .5s;
 }
 
-.forma_input:hover{
-     
-    
-}
 .kujtom.a:hover{
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px black;
@@ -193,12 +225,13 @@ body
     font-size: 1em;
     color: darkslategray;
     font-weight: 600;
-    padding: 0 35px 0 5px;
+    padding: 20 35px 0 5px;
 }
 
 .forma_input .ikona
 {
     position: absolute;
+    top: 20px;
     right: 8px;
     font-size: 1.2em;
     color: darkslategray;
@@ -216,7 +249,7 @@ body
     justify-content: space-between;
 }
 
-.kujtom label input
+.kujtom label 
 {
     accent-color: #162938;
 }
@@ -256,6 +289,7 @@ body
 {
     text-decoration: none;
     font-weight: 600;
+    color: #fff;
 }
 .regjistrohu p a:hover
 {
