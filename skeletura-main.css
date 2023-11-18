@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.crimson{
+    font-family: "Agbalumo";
+    color: white;
+}
+
+.navigation2 a{
+    color: white;
+    position: relative;
+    margin-left: 50px;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.navigation2.diamanti{
+    margin-right: 100px;
+   
+    }
+
+header{
+
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background-color: #002244;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(/img/cs2.png)no-repeat;
+    backdrop-filter: blur(20px);
+    background-size: cover;
+}
