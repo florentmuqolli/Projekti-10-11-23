@@ -3,48 +3,47 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
+}
+
+body
+{
+    background-color: #252b31;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #141a1c;
 }
 
 .crimson{
-    font-family: "Agbalumo";
-    color: white;
-}
-
-.navigation2 a{
-    color: white;
-    position: relative;
-    margin-left: 50px;
-    font-weight: 500;
-    text-decoration: none;
-    font-size: 1.1em;
-}
-.navigation2.diamanti{
-    margin-right: 100px;
-   
-    }
-
-header{
-    
-    position: fixed; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 99;
-    background-color: #002244;
-}
-
-body{
+    margin-block: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background-color: #1a6985;
+}
+
+.maki
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.maki a
+{
+    margin-right: 10px;
+}
+
+main
+{
+    background-color: #252b31;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 
@@ -52,12 +51,10 @@ body{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
 }
 .img{
-    background-color: #0b2d39;
+    background-color: #141a1c;
     height: 300px;
-    
     margin-top: 100px;
     margin-right: 100px;
 }
