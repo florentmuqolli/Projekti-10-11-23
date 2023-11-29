@@ -12,7 +12,6 @@ body
 
 header{
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     background-color: #141a1c;
 }
@@ -29,12 +28,15 @@ header{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    font-size: larger;
+    text-decoration: none;
 }
 
 .maki a
 {
     margin-right: 10px;
     text-decoration: none;
+    margin: 20px;
 }
 
 main
@@ -50,12 +52,35 @@ main
 
 .kithat{
     display: flex;
-    justify-content: center;
+    justify-content: center;    
+    align-items: center;
     flex-wrap: wrap;
 }
 .img{
     background-color: #141a1c;
     height: 300px;
-    margin-top: 100px;
-    margin-right: 100px;
+    margin: 30px 50px 0 50px;
+
+    
+}
+.detajet{ 
+  
+    height: 30px;
+    width: auto;
+    border-radius: 7px;
+    border: none;
+    font-size: medium;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 50% 0 40%;
+    background-color: #141a1c;
+    color: darkred;
+    cursor: pointer;
+}
+
+.skins>p{
+    display: flex;
+    justify-content: center;
 }
