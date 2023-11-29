@@ -37,7 +37,11 @@ header{
     margin-right: 10px;
     text-decoration: none;
     margin: 20px;
+    color: darkred;
 }
+
+.maki a:hover
+{}
 
 main
 {
@@ -83,4 +87,20 @@ main
 .skins>p{
     display: flex;
     justify-content: center;
+}
+
+.footeri
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    background-color: #141a1c;
+}
+
+.footeri a
+{
+    text-decoration: none;
+    margin-block: 25px;
+    display: flex;
+    flex-wrap: wrap;
 }
