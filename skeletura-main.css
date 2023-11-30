@@ -3,36 +3,68 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+::selection
+{
+    background: #f00;
+    color: #f9f9f9;
+}
+
+html
+{
+    font-size: 62%;
+    overflow-x: hidden;
 }
 
 body
 {
     background-color: #252b31;
 }
-
 header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
     display: flex;
     justify-content: space-around;
-    background-color: #141a1c;
-}
-
-.crimson{
-    margin-block: 10px;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    z-index: 1000;
+    background: #141a1c;
 }
 
-.maki
+header .crimson{
+    position: relative;
+    width: 4rem;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+header .maki a
 {
-    display: flex;
-    justify-content: flex-start;
+    display: inline-block;
+    font-size: 1.7rem;
+    margin-left: 3rem;
+    color: #f9f9f9;
+    font-weight: 500;
+    /*justify-content: flex-start;
     align-items: center;
     font-size: larger;
-    text-decoration: none;
+    text-decoration: none;*/
 }
 
-.maki a
+header .maki a:hover
+{
+    color: #f00;
+}
+
+/*.maki a
 {
     margin-right: 10px;
     text-decoration: none;
@@ -103,4 +135,4 @@ main
     margin-block: 25px;
     display: flex;
     flex-wrap: wrap;
-}
+}*/
