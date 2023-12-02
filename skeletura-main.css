@@ -15,11 +15,7 @@
     color: #f9f9f9;
 }
 
-html
-{
-    font-size: 62%;
-    overflow-x: hidden;
-}
+
 
 body
 {
@@ -53,10 +49,6 @@ header .maki a
     margin-left: 3rem;
     color: #f9f9f9;
     font-weight: 500;
-    /*justify-content: flex-start;
-    align-items: center;
-    font-size: larger;
-    text-decoration: none;*/
 }
 
 header .maki a:hover
@@ -64,7 +56,7 @@ header .maki a:hover
     color: #f00;
 }
 
-.maki a
+/*.maki a
 {
     margin-right: 10px;
     text-decoration: none;
@@ -136,18 +128,34 @@ main
     display: flex;
     flex-wrap: wrap;
 }
+*/
 
-/*.skins{
+section
+{
+    background-color: #252b31;
     display: flex;
-    justify-content: space-around;
-
-    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
+.Thikat img
+{
+    width: 300px;
+}
+
+.Thikat
+{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/*
 .detajet{
     position: relative;
     display: inline-block;
     padding: .8rem 5rem;
     
-}
-*/
+}*/
