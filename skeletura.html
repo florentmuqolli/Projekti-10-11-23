@@ -3,19 +3,42 @@
         <title>Crimsons</title>
         <link rel="stylesheet" href="css/skeletura.css">
     </head>
-
-    <main>
-      
-    </main>
     <body>
+
         <header>
             <h2 class="crimson">Crimson</h2>
+            <button class="kycja">Login</button>
+        </header>
+
+        <form id="logini">
+        <span class="hekenX"><ion-icon name="close"></ion-icon></span>
+        <label class="emri">Email</label>
+        <span class="ikona"><ion-icon name="mail"></ion-icon></span>
+        <input type="text" id="email" class="inputi">
+        <div class="gabiminemail" id="emailgabim"></div>
+        <label class="emri">Password</label>
+        <span class="ikona"><ion-icon name="lock-closed"></ion-icon></span>
+        <input type="password" id="passi" class="inputi">
+        <div class="gabiminpass" id="passigabim"></div>
+        <div class="kujto">
+            <p><input type="checkbox"> <p>Remember me</p></p>
+            <a href="#" >Forgot Password?</a>
+        </div>
+        
+        <button type="button" class="loginbutoni" onclick="">Login</button>
+        <div class="regjistrohu">
+            <p>Don't have an account? <a href="#" class="register-link"> Register</a></p>
+        </div>
+        </form>
+    </body>
+    <!--<body>
+        <header>
+            
              <nav class="navigation">
                 <a href="skeletura-main.html">Home</a>
                 <a href="#">About Us</a>
                 <a href="#">Services</a>
                 <a href="#">Contact</a>
-                <button class="kycja">Login</button>
              </nav>
         </header>
         
@@ -79,7 +102,7 @@
                     </div>
                 </form> 
             </div>
-         </div>
+         </div>-->
 
          <script src="skeletura.js"></script>
          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

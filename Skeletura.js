@@ -1,4 +1,4 @@
-const lgforma = document.querySelector('.lgforma');
+/*const lgforma = document.querySelector('.lgforma');
 const loginlinki = document.querySelector('.login-link');
 const registerlinki = document.querySelector('.register-link');
 const Kycja = document.querySelector('.kycja');
@@ -22,4 +22,5 @@ Kycja.addEventListener('click', ()=>
 HekenX.addEventListener('click', ()=>
 {
     lgforma.classList.remove('active-kycja');
-});
+});*/
+
