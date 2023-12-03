@@ -29,11 +29,10 @@ header
     font-family: "Agbalumo";
     font-size: 2em;
     font-weight: 200;
-    color: #fff;
+    color: orangered;
     user-select: none;
-
 }
-
+/*
 .navigation a
 {
     position: relative;
@@ -63,13 +62,13 @@ header
     transform: scaleX(1);
     transform-origin: left;
 }
-
-.navigation .kycja /*================================================*/
+*/
+.kycja 
 {
     width: 130px;
     height: 50px;
     background: transparent;
-    border: 2px solid #fff;
+    border: 2px solid orangered;
     outline: none;
     border-radius: 6px;
     cursor: pointer;
@@ -80,10 +79,10 @@ header
     transition: .5s;
 }
 
-.navigation .kycja:hover
+.kycja:hover
 {
-    background: #fff;
-    color: darkslategray;
+    background: orangered;
+    color: darkslateblue;
 }
 
 
@@ -94,33 +93,34 @@ body
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(/img/cs1.jpg)no-repeat; 
+    background: url(/img/wp4198956-mgaming-wallpapers.jpg)no-repeat;
     background-size: cover;
 }
 
-.lgforma
+#logini
 {
     position: relative;
     width: 400px;
     height: 440px;
     background: transparent;
-    border: 2px solid rgba(255,255,255, .5);
     border-radius: 20px;
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(40px);
     box-shadow: 0 0 30px rgba(0,0,0, .5);
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     overflow: hidden;
-    transform: scale(0);
+    transform: scale(1);
     transition: transform .5s ease,height .2s ease;
 }
+
 
 .lgforma.active-kycja
 {
     transform: scale(1);
 }
-
+/*
 .lgforma.active
 {
     height: 520px;
@@ -151,15 +151,15 @@ body
     transition: transform .18s ease;
     transform: translateX(0);
 }
-
-.lgforma .hekenX
+*/
+#logini .hekenX
 {
     position: absolute;
     top: 0;
     right: 0;
     width: 45px;
     height: 45px;
-    background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    background: linear-gradient(to right, rgba(255,0,0,0), orangered);
     font-size: 2em;
     display: flex;
     justify-content: center;
@@ -168,7 +168,7 @@ body
     cursor: pointer;
     z-index: 1;
 }
-
+/*
 .lgforma .formbox
 {
     width: 100%;
@@ -190,20 +190,20 @@ body
     height: 50px;
     border-bottom: 2px solid darkslategray;
     margin: 30px 0;
-}
-.forma_input label
+}*/
+#logini label
 {
-    position: absolute;
-    top: 50%;
-    left: 5px;
+    position: relative;
+    top: 10;
+    right: 100;
     transform: translateY(-50);
     font-size: 1em;
-    color: darkslategray;
+    color: darkslateblue;
     font-weight: 500;
     pointer-events: none;
     transition: .5s;
 }
-
+/*
 .kujtom.a:hover{
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px black;
@@ -214,93 +214,123 @@ body
 .forma_input input:valid~label
 {
     top: -5px;
-}
-.forma_input input
+}*/
+#logini input
 {
-    width: 100%;
-    height: 100%;
+    width: 70%;
     background: transparent;
     border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0, .5);
     outline: none;
     font-size: 1em;
-    color: darkslategray;
-    font-weight: 600;
+    color: darkslateblue;
+    font-weight: 400;
     padding: 20 35px 0 5px;
 }
 
-.forma_input .ikona
+#logini .ikona
 {
-    position: absolute;
-    top: 20px;
-    right: 8px;
+    position: relative;
+    top: 28;
+    right: 160;
     font-size: 1.2em;
-    color: darkslategray;
+    color: darkslateblue;
     line-height: 57px;
 }
 
-.kujtom
+.kujto
 {
-    
+    position: relative;
     font-size: .9em;
-    color: white;
+    margin-inline: 200px;
+    width: 100%;
+    top: 15;
+    left: 0;
+    color: darkslateblue;
     font-weight: 500;
-    margin: -15px 0 15px;
+    accent-color: darkslateblue;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.kujtom label 
+.kujto p 
 {
     accent-color: #162938;
+    display: flex;
+    justify-content: center;
 }
 
-.kujtom a
+.kujto input
+{
+    font-size: .9rem;
+}
+
+.kujto a
 {
     color: white;
     text-decoration: none;
 }
 
-.kujtom a:hover
+.kujto a:hover
 {
     text-decoration: underline;
 }
 
-.Kycu
+.loginbutoni
 {
-    width: 100%;
-    height: 45px;
-    background: white; /*linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));*/
-    border: none;
+    width: 120px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid darkslateblue;
     outline: none;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 1em;
-    text-decoration: none;
-
+    font-size: 1.1em;
+    color: darkslateblue;
+    font-weight: 500;
+    transition: .5s;
+    position: relative;
+    top: 55;
 }
-.Kycu a
+
+.loginbutoni a
 {
     text-decoration: none;
+}
+
+.loginbutoni:hover
+{
+    background: darkslateblue;
+    color: yellow;
 }
 
 
 .regjistrohu
 {
+    position: relative;
     font-size: .9em;
     text-align: center;
     font-weight: 500;
-    margin: 25px 0 10px;
+    top: 85;
 }
+
+.regjistrohu p
+{
+    color: #fff;
+}
+
 .regjistrohu p a
 {
     text-decoration: none;
     font-weight: 600;
-    color: #fff;
+    color: darkslateblue;
 }
 .regjistrohu p a:hover
 {
     
-    text-decoration: underline;
+    text-decoration:underline;
 }
 
 /*.steamlg{
@@ -320,7 +350,7 @@ body
     margin-left: 40px;
     transition: .5s;
 }
-*/
+
 
 .btn{
     background: transparent;
@@ -374,4 +404,4 @@ body
     position: absolute;
     top: 50%;
     right: 0;
- }
+ }*/
