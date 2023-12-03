@@ -15,12 +15,6 @@
     color: #f9f9f9;
 }
 
-
-
-body
-{
-    background-color: #252b31;
-}
 header{
     position: fixed;
     top: 0;
@@ -31,15 +25,21 @@ header{
     justify-content: space-around;
     align-items: center;
     z-index: 1000;
-    background: #141a1c;
+    background: rgb(119, 12, 12);
+}
+
+
+
+body
+{
+    background-image: url(/img/download.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header .crimson{
     position: relative;
     width: 4rem;
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
 }
 
 header .maki a
@@ -55,64 +55,44 @@ header .maki a:hover
 {
     color: #f00;
 }
-
-/*.maki a
-{
-    margin-right: 10px;
-    text-decoration: none;
-    margin: 20px;
-    color: darkred;
-}
-
-.maki a:hover
-{}
-
-main
-{
-    background-color: #252b31;
+.Thikat .cmimet{
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+}
+.Thikat{
+    margin-top: 100px;
+    display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
 }
-
-
-.kithat{
+.foto{
+    margin-top: 150px;
+    background-image: url("img/3lPh9fnO.jpeg");
+    width: 100%;
+    height: 400px;
+    background-size: 100% 100%;
     display: flex;
-    justify-content: center;    
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: center;
+}
+.Kithat {
+    margin-top: 100px;
+}
+.skins{
+    display: flex;
+    width: 500px;
 }
 .img{
-    background-color: #141a1c;
+
+    display: flex;
+    border: #f9f9f9;
+    background-color: rgb(51, 39, 39);
     height: 300px;
-    margin: 30px 50px 0 50px;
-
-    
+    margin: 100px 50px 0 50px;
 }
-.detajet{ 
-  
-    height: 30px;
-    width: auto;
-    border-radius: 7px;
-    border: none;
-    font-size: medium;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 50% 0 40%;
-    background-color: #141a1c;
-    color: darkred;
-    cursor: pointer;
-}
-
-.skins>p{
-    display: flex;
-    justify-content: center;
-}
-/*
 .footeri
 {
     display: flex;
@@ -128,34 +108,3 @@ main
     display: flex;
     flex-wrap: wrap;
 }
-*/
-
-section
-{
-    background-color: #252b31;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.Thikat img
-{
-    width: 300px;
-}
-
-.Thikat
-{
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-/*
-.detajet{
-    position: relative;
-    display: inline-block;
-    padding: .8rem 5rem;
-    
-}*/
