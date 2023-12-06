@@ -32,37 +32,7 @@ header
     color: orangered;
     user-select: none;
 }
-/*
-.navigation a
-{
-    position: relative;
-    font-size: 1.1em;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 40px;
-}
-.navigation a::after
-{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 100%;
-    height: 3px;
-    background: #fff;
-    border-radius: 5px;
-    transform: scaleX(0);
-    transition: transform .5s;
-    transform-origin: right;
-}
 
-.navigation a:hover::after
-{
-    transform: scaleX(1);
-    transform-origin: left;
-}
-*/
 .kycja 
 {
     width: 130px;
@@ -75,7 +45,6 @@ header
     font-size: 1.1em;
     color: #fff;
     font-weight: 500;
-    margin-left: 40px;
     transition: .5s;
 }
 
@@ -95,9 +64,10 @@ body
     min-height: 100vh;
     background: url(/img/wp4198956-mgaming-wallpapers.jpg)no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
-#logini
+.boxi
 {
     position: relative;
     width: 400px;
@@ -109,50 +79,53 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    transition: transform .5s ease, height .2s ease;
     overflow: hidden;
-    transform: scale(1);
-    transition: transform .5s ease,height .2s ease;
+    transform: scale(0);
 }
 
-
-.lgforma.active-kycja
+.boxi.active-kycja
 {
     transform: scale(1);
 }
-/*
-.lgforma.active
+
+.boxi.active
 {
     height: 520px;
 }
 
-.lgforma .formbox
+.boxi .lgforma
 {
-   transition: transform .18s ease;
-   transform: translateX(0);
+    width: 100%;
+    padding: 40px;
 }
 
-.lgforma.active .formbox
+.boxi .lgforma.login
 {
-    transition: none;
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.boxi.active .lgforma.login
+{
+    transition: none; 
     transform: translateX(-400px);
 }
 
-.lgforma .register_forma
+.boxi .lgforma.register
 {
     position: absolute;
     transition: none;
     transform: translateX(400px);
 }
 
-
-.lgforma.active .register_forma
+.boxi.active .lgforma.register
 {
     transition: transform .18s ease;
     transform: translateX(0);
 }
-*/
-#logini .hekenX
+
+.boxi .hekenX
 {
     position: absolute;
     top: 0;
@@ -164,244 +137,133 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     border-bottom-left-radius: 20px;
     cursor: pointer;
     z-index: 1;
 }
-/*
-.lgforma .formbox
+
+.lgforma h2
 {
-    width: 100%;
-    padding: 40px;
-}
-
-
-
-.formbox h2
-{
-    width: 13em;
+    font-size: 2em;
     text-align: center;
 }
 
-.forma_input
+.inputi_forms
 {
     position: relative;
     width: 100%;
     height: 50px;
-    border-bottom: 2px solid darkslategray;
+    border-bottom: 2px solid darkslateblue;
     margin: 30px 0;
-}*/
-#logini label
+}
+
+ .inputi_forms label
 {
-    position: relative;
-    top: 10;
-    right: 100;
-    transform: translateY(-50);
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
     font-size: 1em;
     color: darkslateblue;
     font-weight: 500;
     pointer-events: none;
     transition: .5s;
 }
-/*
-.kujtom.a:hover{
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px black;
-    border-radius: 20px;
 
-}
-.forma_input input:focus~label,
-.forma_input input:valid~label
+/*.inputi_forms input:focus~label,
+.inputi_forms input:valid~label
 {
     top: -5px;
-}*/
-#logini input
+}
+*/
+.inputi_forms input
 {
-    width: 70%;
+    width: 100%;
+    height: 100%;
     background: transparent;
     border: none;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0, .5);
     outline: none;
     font-size: 1em;
     color: darkslateblue;
-    font-weight: 400;
+    font-weight: 600;
     padding: 20 35px 0 5px;
 }
 
-#logini .ikona
+.inputi_forms .ikona
 {
-    position: relative;
-    top: 28;
-    right: 160;
+    position: absolute;
+    right: 8px;
     font-size: 1.2em;
     color: darkslateblue;
     line-height: 57px;
+    top: 20px;
 }
 
-.kujto
+.remember_me
 {
-    position: relative;
     font-size: .9em;
-    margin-inline: 200px;
-    width: 100%;
-    top: 15;
-    left: 0;
-    color: darkslateblue;
+    margin: -15px 0 15px;
+    color: black;
     font-weight: 500;
-    accent-color: darkslateblue;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
 }
 
-.kujto p 
+.remember_me label
 {
-    accent-color: #162938;
-    display: flex;
-    justify-content: center;
+    user-select: none;
+}
+.remember_me label input
+{
+    accent-color: black;
+    margin-right: 3px;
 }
 
-.kujto input
+.remember_me a
 {
-    font-size: .9rem;
-}
-
-.kujto a
-{
-    color: white;
+    color: black;
     text-decoration: none;
+    user-select: none;
 }
 
-.kujto a:hover
+.remember_me a:hover
 {
     text-decoration: underline;
 }
 
 .loginbutoni
 {
-    width: 120px;
-    height: 40px;
-    background: transparent;
+    width: 100%;
+    height: 45px;
+    background: rgb(50, 41, 114);
     border: 2px solid darkslateblue;
     outline: none;
     border-radius: 6px;
     cursor: pointer;
     font-size: 1.1em;
-    color: darkslateblue;
+    color: yellow;
     font-weight: 500;
     transition: .5s;
-    position: relative;
-    top: 55;
 }
 
-.loginbutoni a
+.skiacc
 {
-    text-decoration: none;
-}
-
-.loginbutoni:hover
-{
-    background: darkslateblue;
-    color: yellow;
-}
-
-
-.regjistrohu
-{
-    position: relative;
     font-size: .9em;
     text-align: center;
     font-weight: 500;
-    top: 85;
+    color: black;
+    margin: 25px 0 10px;
 }
 
-.regjistrohu p
-{
-    color: #fff;
-}
 
-.regjistrohu p a
+.skiacc p a
 {
     text-decoration: none;
     font-weight: 600;
-    color: darkslateblue;
+    color: black;
 }
-.regjistrohu p a:hover
+.skiacc p a:hover
 {
-    
     text-decoration:underline;
 }
-
-/*.steamlg{
-    
-    text-align: center;
-    text-decoration: none;
-    width: 130px;
-    height: 50px;
-    background: transparent;
-    border: 2px solid #fff;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1.1em;
-    color: #fff;
-    font-weight: 500;
-    margin-left: 40px;
-    transition: .5s;
-}
-
-
-.btn{
-    background: transparent;
-    width: 100%;
-    height: 45px;
-    background: white;
-    border: none;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1em;
-    display: flex;
-    
-    
-}
-.btn p {
-    width: 200px;
-    margin: 15px 0 0 60px;
-    
-}
-.img-steam{
-    
-    margin-inline-end: 15px;
-    height: 30px;;
-    margin-top: 7px;
-    
-}
-.Or{
-    color: white;
-    position: relative;
-    max-width: 500px;
-    margin: 10px auto;
-    text-align: center;
-
- }
- .Or:before
-  {
-    content:" ";
-    height: 1px;
-    width: 130px;
-    background: red;
-    position: absolute;
-    top: 50%;
-    left: 0;
- }
- .Or::after{
-    content:" ";
-    height: 1px;
-    width: 130px;
-    background: red;
-    position: absolute;
-    top: 50%;
-    right: 0;
- }*/

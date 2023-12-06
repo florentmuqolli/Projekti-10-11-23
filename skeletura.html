@@ -9,102 +9,68 @@
             <h2 class="crimson">Crimson</h2>
             <button class="kycja">Login</button>
         </header>
-
-        <form id="logini">
+    <div class="boxi">
         <span class="hekenX"><ion-icon name="close"></ion-icon></span>
-        <label class="emri">Email</label>
-        <span class="ikona"><ion-icon name="mail"></ion-icon></span>
-        <input type="text" id="email" class="inputi">
-        <div class="gabiminemail" id="emailgabim"></div>
-        <label class="emri">Password</label>
-        <span class="ikona"><ion-icon name="lock-closed"></ion-icon></span>
-        <input type="password" id="passi" class="inputi">
-        <div class="gabiminpass" id="passigabim"></div>
-        <div class="kujto">
-            <p><input type="checkbox"> <p>Remember me</p></p>
-            <a href="#" >Forgot Password?</a>
+        <div class="lgforma login">
+            <h2>Login</h2>
+            <form id="logini">
+                <div class="inputi_forms">
+                    <span class="ikona"><ion-icon name="mail"></ion-icon></span>
+                    <input type="text" id="email" class="inputi">
+                    <label>Email</label>
+                    <div class="gabiminemail" id="emailgabim"></div>
+                </div>
+                <div class="inputi_forms">
+                    <span class="ikona"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" id="passi" class="inputi">
+                    <label>Password</label>
+                    <div class="gabiminpass" id="passigabim"></div>
+                </div>
+                <div class="remember_me">
+                    <label><input type="checkbox"> Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="button" class="loginbutoni" onclick="validateForm()">Login</button>
+                <div class="skiacc">
+                    <p>Don't have an account? <a href="#" class="reglinki">Register</a></p>
+                </div>
+            </form>
         </div>
-        
-        <button type="button" class="loginbutoni" onclick="">Login</button>
-        <div class="regjistrohu">
-            <p>Don't have an account? <a href="#" class="register-link"> Register</a></p>
-        </div>
-        </form>
-    </body>
-    <!--<body>
-        <header>
-            
-             <nav class="navigation">
-                <a href="skeletura-main.html">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Services</a>
-                <a href="#">Contact</a>
-             </nav>
-        </header>
-        
-        <div class="lgforma">
-            <span class="hekenX"><ion-icon name="close">
-            </ion-icon>
-            </span>
-            <div class="formbox">
-                <h2>Login</h2>
-                <form action="#">
-                    <div class="forma_input">
-                        <span class="ikona"><ion-icon name="mail"></ion-icon></span>
-                        <input type="email" required>
-                        <label>Email</label>
-                    </div>
-                    <div class="forma_input">
-                        <span class="ikona"><ion-icon name="lock-closed"></ion-icon></span>
-                        <input type="password" required>
-                        <label>Password</label>
-                    </div>
 
-                    <div class="kujtom">
-                        <label><input type="checkbox"> Remember me</label>
-                        <a href="#">Forgot Password?</a>
-                    </div>
-                    <button type="submit" class="Kycu"><a href="skeletura-main.html">Login</a></button>
-                    <p class="Or">Or</p>
+        <div class="lgforma register">
+            <h2>Register</h2>
+            <form id="logini">
+                <div class="inputi_forms">
+                    <span class="ikona"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" id="email" class="inputi">
+                    <label>Username</label>
+                    <div class="gabiminemail" id="emailgabim"></div>
+                </div>
+                <div class="inputi_forms">
+                    <span class="ikona"><ion-icon name="mail"></ion-icon></span>
+                    <input type="text" id="email" class="inputi">
+                    <label>Email</label>
+                    <div class="gabiminemail" id="emailgabim"></div>
+                </div>
+                <div class="inputi_forms">
+                    <span class="ikona"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" id="passi" class="inputi">
+                    <label>Password</label>
+                    <div class="gabiminpass" id="passigabim"></div>
+                </div>
+                <div class="remember_me">
+                    <label><input type="checkbox"> I agree to the terms & conditions</label>
                     
-                    <button type="submit" class="Kycu"><a href="https://steamcommunity.com/openid/loginform">Login with steam</a><img src="img/steam.png" alt="" class="img-steam"></button>
-                    <div class="regjistrohu">
-                        <p>Don't have an account? <a href="#" class="register-link"> Register</a></p>
-                    </div>
-                </form>
-            </div>
+                </div>
+                <button type="button" class="loginbutoni">Register</button>
+                <div class="skiacc">
+                    <p>Already have an account? <a href="#" class="loginlinki">Login</a></p>
+                </div>
+        </div>
+            </form>
+    </div>
 
-            <div class="register_forma">
-                <h2>Register</h2>
-                <form action="#">
-                    <div class="forma_input">
-                        <span class="ikona"><ion-icon name="person"></ion-icon></span>
-                        <input type="text" required>
-                        <label>Username</label>
-                    </div>
-                    <div class="forma_input">
-                        <span class="ikona"><ion-icon name="mail"></ion-icon></span>
-                        <input type="email" required>
-                        <label>Email</label>
-                    </div>
-                    <div class="forma_input">
-                        <span class="ikona"><ion-icon name="lock-closed"></ion-icon></span>
-                        <input type="password" required>
-                        <label>Password</label>
-                    </div>
-
-                    <div class="kujtom">
-                        <label><input type="checkbox"> I agree to the terms & conditions</label>
-                    </div>
-                    <button type="submit" class="Kycu">Register</button>
-                    <div class="regjistrohu">
-                        <p>Already have an account? <a href="#" class="login-link"> Login</a></p>
-                    </div>
-                </form> 
-            </div>
-         </div>-->
-
-         <script src="skeletura.js"></script>
+         <script src="Skeletura.js"></script>
          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>

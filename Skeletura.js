@@ -1,26 +1,52 @@
-/*const lgforma = document.querySelector('.lgforma');
-const loginlinki = document.querySelector('.login-link');
-const registerlinki = document.querySelector('.register-link');
-const Kycja = document.querySelector('.kycja');
+const boxi = document.querySelector('.boxi');
+const loginlinki = document.querySelector('.loginlinki');
+const registerlinki = document.querySelector('.reglinki');
+const logininheader = document.querySelector('.kycja');
 const HekenX = document.querySelector('.hekenX');
 
 registerlinki.addEventListener('click', ()=>
 {
-    lgforma.classList.add('active');
+    boxi.classList.add('active');
 });
 
 loginlinki.addEventListener('click', ()=>
 {
-    lgforma.classList.remove('active');
+    boxi.classList.remove('active');
 });
 
-Kycja.addEventListener('click', ()=>
+logininheader.addEventListener('click', ()=>
 {
-    lgforma.classList.add('active-kycja');
+    boxi.classList.add('active-kycja');
 });
 
 HekenX.addEventListener('click', ()=>
 {
-    lgforma.classList.remove('active-kycja');
-});*/
+    boxi.classList.remove('active-kycja');
+});
+
+
+let emailRegex= /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}$/;
+let passwordRegex= /^[a-zA-Z]\w{3,14}$/;
+
+function validateForm() {
+    let emailError=document.getElementById('emailgabim');
+    let emailInput = document.getElementById('email');
+    let passwordInput=document.getElementById('passi');
+    let passwordError = document.getElementById('passigabim');
+
+    emailError.innerText = '';
+    passwordError.innerText = '';
+
+    if(!emailRegex.test(emailInput.value)) {
+        emailError.innerText='Invalid email';
+        return;
+    }
+
+    if(!passwordRegex.test(passwordInput.value)) {
+        passwordError.innerText='Invalid password';
+        return;
+    }
+
+    alert('Succesfully');
+}
 
