@@ -161,7 +161,7 @@ body
  .inputi_forms label
 {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 5px;
     transform: translateY(-50%);
     font-size: 1em;
@@ -234,7 +234,7 @@ body
 
 .loginbutoni
 {
-    width: 100%;
+    width: 60%;
     height: 45px;
     background: rgb(50, 41, 114);
     border: 2px solid darkslateblue;
@@ -244,7 +244,14 @@ body
     font-size: 1.1em;
     color: yellow;
     font-weight: 500;
+    margin-left: 20%;
     transition: .5s;
+}
+
+.loginbutoni:hover
+{
+    background: transparent;
+    color: darkslateblue;
 }
 
 .skiacc
