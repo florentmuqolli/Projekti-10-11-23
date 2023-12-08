@@ -171,12 +171,6 @@ body
     transition: .5s;
 }
 
-/*.inputi_forms input:focus~label,
-.inputi_forms input:valid~label
-{
-    top: -5px;
-}
-*/
 .inputi_forms input
 {
     width: 100%;

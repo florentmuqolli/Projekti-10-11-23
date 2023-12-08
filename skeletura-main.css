@@ -20,6 +20,7 @@ header{
     z-index: 99;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 30px rgba(0,0,0, .5);
+    display: none;
 }
 
 header ul{
@@ -71,24 +72,6 @@ header ul li a{
     justify-content: center;
 }
 
-::selection
-{
-    background: #f00;
-    color: #f9f9f9;
-}
-/*header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 2rem 9%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 1000;
-    background: rgb(119, 12, 12);
-}
-*/
 body
 {
     background-image: url(/img/download.png);
@@ -102,11 +85,46 @@ body
     width: 6rem;
 }
 
-/*header .maki a:hover
+.boxii
 {
-    color: #f00;
+    position: absolute;
+    width: 700px;
+    height: 450px;
+    background: transparent;
+    border-radius: 23px;
+    backdrop-filter: blur(40px);
+    box-shadow: 0 0 30px rgba(0,0,0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
 }
-*/
+
+.boxii .hekenXX
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    font-size: 3em;
+    background: #48abe0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: -1;
+    border-top-right-radius: 20px;
+}
+
+.Kontakti h1
+{
+    position: absolute;
+    top: 0;
+    left: 7px;
+}
+
 .Thikat{
     margin-top: 0px;
     display: flex;
