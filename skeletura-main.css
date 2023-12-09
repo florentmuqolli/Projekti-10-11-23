@@ -99,7 +99,14 @@ body
     align-items: center;
     z-index: 1;
     margin:10% 20% 20% 32%;
-    font-size: x-large;
+    font-size: large;
+    transform: scale(0);
+    transition: transform .3s ease, height .2s ease;
+}
+
+.boxii.active-kontaktona
+{
+    transform: scale(1);
 }
 
 .boxii .hekenXX
