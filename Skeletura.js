@@ -39,6 +39,7 @@ function kyciratu() {
 
     if(!emailRegex.test(emailInput.value)) {
         emailError.innerText='Invalid email';
+        return;
     }
 
     if(!passwordRegex.test(passwordInput.value)) {
@@ -67,12 +68,12 @@ function registeratu() {
     if(!nameRegex.test(emriInput.value))
     {
         emriError.innerText='This username is not allowed';
-        
+        return;
     }
 
     if(!emailRegex.test(emailInput.value)) {
         emailError.innerText='Invalid email';
-        
+        return;
     }
 
     if(!passwordRegex.test(passwordInput.value)) {
