@@ -33,6 +33,7 @@ fieldset
 fieldset:hover
 {
     box-shadow: 0 0 10px 5px orangered;
+    cursor:zoom-in;
 }
 
 fieldset legend
@@ -49,6 +50,7 @@ fieldset select
    width: 13%;
    background-color: #48abe0;
    border-radius: 4px;
+   cursor: pointer;
 }
 .blerja
 {

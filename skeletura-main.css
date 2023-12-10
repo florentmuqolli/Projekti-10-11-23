@@ -265,6 +265,7 @@ body
     height: 40px;
     border-radius: 20px;
     color: red; 
+    cursor: pointer;
 }
 footer{
     background-image: url(/img/download.png);
