@@ -24,6 +24,22 @@ header
     
 }
 
+.texti{
+
+    color: orangered;
+    position: fixed;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin:10% 60% 0 6%;
+}
+.texti2{
+    color: orangered;
+    position: fixed;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin: 0 10% 0 70%;
+}
+
 .crimson
 {
     font-family: "Agbalumo";
