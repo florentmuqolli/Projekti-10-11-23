@@ -39,15 +39,17 @@ function kyciratu() {
 
     if(!emailRegex.test(emailInput.value)) {
         emailError.innerText='Invalid email';
-        return;
     }
 
     if(!passwordRegex.test(passwordInput.value)) {
         passwordError.innerText='Invalid password';
         return;
     }
-
-    alert('Logging you in :)');
+    else
+    {
+        alert('Logging you in :)');
+        window.location = "http://127.0.0.1:5500/skeletura-main.html#";
+    }
 }
 
 function registeratu() {
@@ -65,18 +67,22 @@ function registeratu() {
     if(!nameRegex.test(emriInput.value))
     {
         emriError.innerText='This username is not allowed';
+        
     }
 
     if(!emailRegex.test(emailInput.value)) {
         emailError.innerText='Invalid email';
-        return;
+        
     }
 
     if(!passwordRegex.test(passwordInput.value)) {
         passwordError.innerText='Invalid password';
         return;
     }
-
-    alert('Your data has been saved');
+    else
+    {
+        alert('Your data has been saved. Registering you :)');
+        window.location = "http://127.0.0.1:5500/skeletura-main.html#";
+    }
 }
 

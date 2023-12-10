@@ -16,8 +16,10 @@ body
 .headi
 {
     color: #48abe0;
-    padding: 30px 0 0 45%;    
+    display: flex;
+    justify-content: center;
     width: 100%;
+    margin-top: 3%;
 }
 fieldset
 {
@@ -28,11 +30,15 @@ fieldset
     margin-top: 3%;
     text-align: center;
 }
+fieldset:hover
+{
+    box-shadow: 0 0 10px 5px orangered;
+}
 
 fieldset legend
 {
     text-align: center;
-    color:orangered;
+    color:#48abe0;
     font-size: larger;
     font-weight: bolder;
 }
