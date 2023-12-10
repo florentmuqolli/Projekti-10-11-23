@@ -1,5 +1,210 @@
 *
 {
     margin: 0;
-    
+    padding: 0;
+}
+
+body
+{
+    background: url(/img/download.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+h1
+{
+    color: #48abe0;
+}
+fieldset
+{
+    width: 25%;
+    color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px #48abe0;
+    margin-top: 3%;
+    text-align: center;
+}
+
+fieldset legend
+{
+    text-align: center;
+    color:orangered;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+fieldset select
+{
+   margin-top: 5%;
+   width: 13%;
+   background-color: #48abe0;
+   border-radius: 4px;
+}
+.blerja
+{
+    width: 20%;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 3%;
+}
+.blerja:hover
+{
+    color: #48abe0;
+}
+
+.skeleton:hover
+{
+    background: url(/img/knife1.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    transition: .5s;
+}
+.Nomad:hover
+{
+    background: url(/img/knife2.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #48abe0;
+    color: transparent;
+    transition: .5s;
+}
+.Paracord:hover
+{
+    background: url(/img/knife3.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #48abe0;
+    color: transparent;
+    transition: .5s;
+}
+.Survival:hover
+{
+    background: url(/img/knife4.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #48abe0;
+    color: transparent;
+    transition: .5s;
+}
+.Classic:hover
+{
+    background: url(/img/knife5.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #48abe0;
+    color: transparent;
+    transition: .5s;
+}
+.Talon:hover
+{
+    background: url(/img/knife6.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #48abe0;
+    color: transparent;
+    transition: .5s;
+}
+.Stiletto:hover
+{
+    background: url(/img/knife7.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #48abe0;
+    color: transparent;
+    transition: .5s;
+}
+.Ursus:hover
+{
+    background: url(/img/knife8.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #48abe0;
+    color: transparent;
+    transition: .5s;
+}
+.Navaja:hover
+{
+    background: url(/img/knife9.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #48abe0;
+    color: transparent;
+    transition: .5s;
+}
+.Bowie:hover
+{
+    background: url(/img/knife10.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #48abe0;
+    color: transparent;
+    transition: .5s;
+}
+.Shadow:hover
+{
+    background: url(/img/knife11.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #48abe0;
+    color: transparent;
+    transition: .5s;
+}
+.Falchion:hover
+{
+    background: url(/img/knife12.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #48abe0;
+    color: transparent;
+    transition: .5s;
+}
+.Butterfly:hover
+{
+    background: url(/img/knife13.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #48abe0;
+    color: transparent;
+    transition: .5s;
+}
+.Huntsman:hover
+{
+    background: url(/img/knife14.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #48abe0;
+    color: transparent;
+    transition: .5s;
+}
+.Deagle:hover
+{
+    background: url(/img/deagle.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #48abe0;
+    color: transparent;
+    transition: .5s;
+}
+.Revolver:hover
+{
+    background: url(/img/sherif.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #48abe0;
+    color: transparent;
+    transition: .5s;
+}
+.Scar-20:hover
+{
+    background: url(/img/autosniper.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #48abe0;
+    color: transparent;
+    transition: .5s;
 }
