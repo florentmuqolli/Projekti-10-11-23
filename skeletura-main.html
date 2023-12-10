@@ -5,20 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crimsons</title>
     <link rel="stylesheet" href="skeletura-main.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <header> 
+    <nav class="ubt">
     <img class="crimson" src="img/600px-Crimson2_logo.png" width="10%" alt="logojoja">
         <ul>
-            <span class="diamanti"><ion-icon name="home-outline"></ion-icon></span>
-            <li><a href="#"> Home</a></li>
-            <span class="diamanti"><ion-icon name="star-outline"></ion-icon></span> 
-            <li><a href="footeri" class="tefooteri">About Us</a></li>
-            <span class="diamanti"><ion-icon name="call-outline"></ion-icon></span>
-            <li><a href="#" class="kontaktona"> Contact</a></li>
-            <span class="diamanti"><ion-icon name="person-circle-outline"></ion-icon></span>
-            <li><a href="#"> Profile</a></li>
-        </ul>
-    
+            <li><span class="diamanti"><ion-icon name="home-outline"></ion-icon></span><a href="#"> Home</a></li>
+            <li><span class="diamanti"><ion-icon name="star-outline"></ion-icon></span> <a href="footeri" class="tefooteri">About Us</a></li> 
+            <li><span class="diamanti"><ion-icon name="call-outline"></ion-icon></span><a href="#" class="kontaktona"> Contact</a></li> 
+            <li><span class="diamanti"><ion-icon name="person-circle-outline"></ion-icon></span><a href="#"> Profile</a></li>
+        </nav>
 </header>
 
 <section class="banner"></section>
@@ -36,11 +33,16 @@
                     </p>
                 </div>
                 <div class="mnyrat">
-                    <span class="ikona"><ion-icon name="mail"></ion-icon></span>
-                    <a href="mailto:crimsons@email-us.com" target="_blank">
-                    <b style="color: black;">Email: </b>crimsons@email-us.com</a>
-                    <span class="ikona"><ion-icon name="call"></ion-icon></span>
-                    <a href="tel:+383-44-444-444"><b style="color: black;">Phone: </b>+383-44-444-444</a>
+                    <div class="emaili">
+                        <span class="ikona"><ion-icon name="mail"></ion-icon></span>
+                        <a href="mailto:crimsons@email-us.com" target="_blank">
+                        <b style="color: black;">Email: </b>crimsons@email-us.com</a>
+                    </div>
+                    <div class="teli">
+                        <span class="ikona"><ion-icon name="call"></ion-icon></span>
+                        <a href="tel:+383-44-444-444"><b style="color: black;">Phone: </b>+383-44-444-444</a>
+                    </div>
+                    
                 </div>
                 
         </div>
@@ -195,7 +197,7 @@
         </div>
         <div class="skins">
             <div class="rubrika">
-            <img src="img/sherif.png" alt="" class="img">
+            <p class="h2"><img src="img/sherif.png" alt="" class="img">R8 Revolver</p>
             <div class="cmimet">
                 <a href="#" class="details">Details</a>
                 <input type="submit" value="600$" class="vlera">
@@ -204,7 +206,7 @@
         </div>
         <div class="skins">
             <div class="rubrika">
-                <img src="img/autosniper.png" alt="" class="img">
+                <p class="h2"><img src="img/autosniper.png" alt="" class="img">SCAR-20</p>
             <div class="cmimet">
                 <a href="#" class="details">Details</a>
                 <input type="submit" value="600$" class="vlera">
@@ -220,13 +222,31 @@
    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 <footer>
-        <div class="footeri">
-            <a href="">CRIMSONS - CS2 CASE OPENING SITE</a>
-            <a href="">VISIT OUR SECOND(BACKUP) SITE</a>
-            <a href="">ABOUT US</a>
-            <a href="">+383 00 11 22</a>
-            <a href="">+383 00 55 44</a>
+    <div class="footeri">
+        <h2>About Crimsons</h2>
+        <h2>Our Links</h2>
+        <div class="fotot">
+            <a href=""><img src="img/facebook.png" alt=""></a>
+            <a href=""><img src="img/twitter.png" alt=""></a>
+            <a href=""><img src="img/instagram.png" alt=""></a>
+            <a href=""><img src="img/pinterest.png" alt=""></a>
         </div>
+    </div>
+    <div class="footermain">
+        <div class="footerleft">
+            <p>Thank you for choosing Crimsons as your preferred CS:2 case opening destination. Dive into the thrilling world of Counter-Strike: 2, with our curated collection of cases, featuring an exciting array of skins and rare items. Experience the rush of anticipation as you unlock virtual treasures, and remember, at Crimsons, every case is an opportunity for something extraordinary. Game on, and may your openings be filled with the rarest finds!</p>
+        </div>
+        <div class="footercenter">
+            <p>Advertise</p>
+            <p>Support</p>
+            <p>Our Company</p>
+            <p>Contact</p>
+        </div>
+        <div class="footerright">
+            <p>Terms of use</p>
+            <p>Privacy Policy</p>
+        </div>
+    </div>
 </footer>-
 
 </html>
