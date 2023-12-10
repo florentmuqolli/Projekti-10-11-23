@@ -216,3 +216,128 @@ fieldset select
     color: transparent;
     transition: .5s;
 }
+footer{
+    background-image: url(/img/download.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 10px 5px cyan;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: darkgray;
+    font-size: 15px;
+    margin: 40px 0 0 0;
+    width: 100%;
+    padding-bottom: 30px;
+}
+.footeri{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 70%;
+    color: orangered;
+    font-size: larger;
+    font-weight: bold;
+}
+.fotot{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    margin-top: 30px;
+    
+}
+.fotot .img1{
+    width: 32px;
+    height: 32px;
+}
+.fotot .img2{
+    width: 32px;
+    height: 32px;
+}
+.fotot .img3{
+    width: 32px;
+    height: 32px;
+}
+.fotot .img1:hover{
+    cursor: pointer;
+}
+.fotot .img2:hover{
+    cursor: pointer;
+}
+.fotot .img3:hover{
+    cursor: pointer;
+}
+
+.footeri a
+{
+    text-decoration: none;
+    margin-block: 50px;
+    font-size: large;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+.footermain{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+.footerleft{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: center;
+    font-size: 15px;
+}
+.footerright{
+    margin-left: 20px;
+    margin: 15px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    align-items: flex-start;
+}
+.footerright .p5:hover{
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+.footerright .p6:hover{
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+.footercenter{
+    align-items: flex-start;
+    margin-left: -14%;
+    margin-top: 15px;
+}
+p{
+    margin-top: 20px;
+}
+.footercenter .p1:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footercenter .p2:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footercenter .p3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footercenter .p4:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.fotofooter{
+    display: flex;
+    justify-content: space-evenly;
+}
+.fundi{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
