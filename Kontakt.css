@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
-
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +6,7 @@
     outline: none;
     border: none;
 }
+
 header .ubt{
     position: fixed;
     top: 0;
@@ -20,7 +19,9 @@ header .ubt{
     z-index: 99;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 30px rgba(0,0,0, .5);
+    display: none;
 }
+
 span{
     font-size: x-large;
 }
@@ -58,36 +59,6 @@ header .ubt ul li:hover{
     height: 40px;   
 }
 
-.top{
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    margin: 200px 10% 0 10%;
-    justify-content: center;
-    background: url(/img/download.png);
-    background-position: center;
-    border-radius: 30px;
-    color: white;
-    padding: 50px;
-    padding-left: 50px;
-    box-shadow: 0 0 10px 5px #48abe0;
-    text-align: center;
-}
-.cr{
-    flex-wrap: wrap;
-    flex-grow: inherit;
-    margin: 7% 20% 0 20%; 
-    box-shadow: 0 0 10px 5px #48abe0;
-    border-radius: 30px;
-    padding: 25px;
-    display: flex;
-    font-size: xx-large;
-    font-weight: bolder;
-    color: #141a1c;
-    align-items: center;
-    justify-content: center;
-}
-
 body
 {
     background-image: url(/img/download.png);
@@ -96,87 +67,7 @@ body
     background-position: center;
 }
 
-.crimson{
-    position: relative;
-    width: 6rem;
-}
-
-.Thikat{
-    margin-top: 0px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.rubrika{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 400px;
-    margin: 0px 0 53px;
-}
-.Kithat {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.skins{
-    position: relative;
-    margin-top: 20px;
-    display: flex;
-    width: 500px;
-}
-.Thikat .img{
-    display: flex;
-    border: #f9f9f9;
-    width: 400px;
-    margin: 30px 50px 0 50px;
-    box-shadow: 0 0 10px 5px #48abe0;
-    border-radius: 30px;
-}
-.h2{
-    text-align: center;
-    position: relative;
-    font-size: x-large;
-    font-weight: bold;
-}
-.cmimet{
-    cursor: pointer;
-    margin-left: 35px;
-    top: -5%;
-    width: 415px;
-    position: relative;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    color: lightgray;
-}
-.cmimet .vlera{
-    width: 110px;
-    background-image: url(/img/download.png);    
-    margin: 0px 0 0 15%;
-    font-size: medium;
-    font-weight: bold;
-    box-shadow: 0 0 10px 5px #48abe0;
-    height: 40px;
-    border-radius: 20px;
-    color: red; 
-}
-.cmimet .details{
-    width: 100px;
-    font-size: large;
-    font-weight: bold;
-    background-image: url(/img/download.png);
-    box-shadow: 0 0 10px 5px #48abe0;    
-    margin: 0px 0 0 15%;
-    height: 40px;
-    border-radius: 20px;
-    color: red; 
-    cursor: pointer;
-}
-footer{
+/*footer{
     background-image: url(/img/download.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -189,6 +80,7 @@ footer{
     font-size: 15px;
     margin: 100px 0 0 0;
     padding-bottom: 30px;
+    display: none;
 }
 .footeri{
     display: flex;
@@ -299,4 +191,4 @@ p{
     display: flex;
     justify-content: space-between;
     width: 70%;
-}
+}*/
