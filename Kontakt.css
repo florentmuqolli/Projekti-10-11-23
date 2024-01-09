@@ -7,7 +7,7 @@
     border: none;
 }
 
-header .ubt{
+/*header .ubt{
     position: fixed;
     top: 0;
     left: 0;
@@ -57,7 +57,7 @@ header .ubt ul li:hover{
     background-color: transparent;
     color: white;
     height: 40px;   
-}
+}*/
 
 body
 {
@@ -67,7 +67,7 @@ body
     background-position: center;
 }
 
-/*footer{
+footer{
     background-image: url(/img/download.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -79,8 +79,7 @@ body
     color: darkgray;
     font-size: 15px;
     margin: 100px 0 0 0;
-    padding-bottom: 30px;
-    display: none;
+    padding-bottom: 10px;
 }
 .footeri{
     display: flex;
@@ -191,4 +190,4 @@ p{
     display: flex;
     justify-content: space-between;
     width: 70%;
-}*/
+}
