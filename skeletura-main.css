@@ -8,7 +8,122 @@
     outline: none;
     border: none;
 }
-header .ubt{
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+header::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, .1);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0, .5);
+    z-index: -1;
+}
+.crimson
+{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #f9f9f9;
+}
+
+#check
+{
+    display: none;
+}
+
+.ubt a
+{
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #f9f9f9;
+    margin-left: 2.5rem;
+}
+
+.ikonat
+{
+    position: absolute;
+    right: 5%;
+    font-size: 2.8rem;
+    color: #f9f9f9;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 992px)
+{
+    .header
+    {
+        padding: 1.3rem 5%;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .ikonat
+    {
+        display: inline-flex;
+    }
+
+    #check:checked~.ikonat #menu
+    {
+        display: none;
+    }
+
+    #check:checked~.ikonat #close
+    {
+        display: block;
+    }
+
+    .ikonat #close
+    {
+        display: none;
+    }
+
+
+    .ubt
+    {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: rgb(0, 0, 0, .1);
+        backdrop-filter: blur(40px);
+        box-shadow: 0 .5rem 1rem  rgba(0, 0, 0, .1);
+        overflow: hidden;
+        transition: .3s ease;
+    }
+
+    #check:checked~.ubt
+    {
+        height: 12.7rem;
+    }
+
+    .ubt a
+    {
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+}
+/*header .ubt{
     position: fixed;
     top: 0;
     left: 0;
@@ -56,7 +171,7 @@ header .ubt ul li:hover{
     background-color: transparent;
     color: white;
     height: 40px;   
-}
+}*/
 
 .top{
     display: flex;
@@ -90,6 +205,7 @@ header .ubt ul li:hover{
 
 body
 {
+    min-height: 100vh;
     background-image: url(/img/download.png);
     background-repeat: no-repeat;
     background-size: cover;
