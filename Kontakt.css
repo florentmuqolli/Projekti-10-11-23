@@ -6,58 +6,105 @@
     outline: none;
     border: none;
 }
-
-/*header .ubt{
+header
+{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 1.3rem 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 99;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 30px rgba(0,0,0, .5);
-    display: none;
+    z-index: 100;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
 
-span{
-    font-size: x-large;
+.crimson
+{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #f9f9f9;
 }
-header .ubt ul{
-    position: relative;
+
+.ubt a
+{
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #f9f9f9;
+    margin-left: 2.5rem;
+}
+
+header .ubt{
     display: flex;
+    justify-content: space-between;
+}
+
+.conus{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 200px 25% 0 25%;
     justify-content: center;
-    align-items: center;
-    width: 35%;
+    background: url(/img/download.png);
+    background-position: center;
+    border-radius: 30px;
+    color: white;
+    padding: 50px;
+    padding-left: 50px;
+    box-shadow: 0 0 10px 5px #48abe0;
+    text-align: left;
 }
-header .ubt ul li{
-    position: relative;
-    list-style: none;
-    margin-left: 50px;
-    display: flex;
-    width: 100%;
+.conus .aaa{
+    font-weight: bolder;
     font-size: large;
-    color: white;
+    margin-right: 35%;
 }
-header .ubt ul li a{
-    font-size: larger;
-    position: relative;
-    text-decoration: none;
-    color: #fff;
-    width: 100px;
-    margin-left: 5px;
-    letter-spacing: 2px;
-    font-weight: 500px;
-    transition: 0.6s;
+
+.conus .formulari{
+    flex-direction: column;
+    padding-top: 20px;
+    margin-right: 30px;
 }
-header .ubt ul li:hover{
-    width: 100%;
-    background-color: transparent;
-    color: white;
-    height: 40px;   
-}*/
+.conus .formulari1{
+    margin-top: 10px;
+    
+}
+.conus .formulari2{
+    height: 30px;
+}
+.conus .submiti{
+    height: 30px;
+    width: 70px;
+    border-radius: 30px;
+    color: black;
+    font-weight: bold;
+    background-color: orangered;
+}
+.conus .submiti:hover{
+    cursor: pointer;
+}
+.conus .Komenti{
+    height: 200px;
+    width: 300px;
+}
+
+.conus .Koment{
+    width: 400px;
+    height: 300px;
+    margin: 10px 0 0 0;
+}
 
 body
 {
@@ -66,6 +113,7 @@ body
     background-size: cover;
     background-position: center;
 }
+
 
 footer{
     background-image: url(/img/download.png);
