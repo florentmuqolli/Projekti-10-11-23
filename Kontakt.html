@@ -6,15 +6,30 @@
     <title>Crimsons</title>
     <link rel="stylesheet" href="Kontakt.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <header> 
     <a href="#" class="crimson"> Crimson's</a>
-        <nav class="ubt">
-            <a href="#"> Home</a>
-            <a href="#">About Us</a>
-            <a href="#" class="kontaktona" onclick="con()"> Contact</a>
-            <a href="#"> Profile</a>
-        </nav>
+
+    <input type="checkbox" id="check">
+    <label for="check" class="ikonat">
+        <i class='bx bx-menu' id="menu"></i>
+        <i class='bx bx-x' id="close"></i>
+    </label>
+    <!--<img class="crimson" src="img/600px-Crimson2_logo.png" width="10%" alt="logojoja">-->
+    <nav class="ubt">
+        <a href="skeletura-main.html"> Home</a>
+        <a href="#">About Us</a>
+        <a href="#" class="kontaktona" onclick="con()"> Contact</a>
+        <a href="#"> Profile</a>
+        <!--<ul>
+            <li><span><ion-icon name="home-outline"></ion-icon></span><a href="#"> Home</a></li>
+            <li><span><ion-icon name="information-circle-outline"></ion-icon></span> <a href="#footeri">About Us</a></li> 
+            <li><span><ion-icon name="call-outline"></ion-icon></span><a href="#" class="kontaktona" onclick="con()"> Contact</a></li> 
+            <li><span><ion-icon name="person-circle-outline"></ion-icon></span><a href="#"> Profile</a></li>
+        </ul>-->
+    </nav>
 </header>
 
 <body>
@@ -43,36 +58,51 @@
 
     </div>
 
+    <footer>
+        <div class="d1">
+            <div class="titull">
+                <div class="lista">
+                    <h4>Crimson's</h4>
+                    <ul>
+                        <li><a href="">Terms of Service</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Crimson's blog</a></li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <h4>Need Help?</h4>
+                    <ul>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Crimson's Support</a></li>
+                        <li><a href="">Contact Form</a></li>
+                    </ul>
+                </div>
+                <div class="listap">
+                    <h4>Payment Methods</h4>
+                    <div class="ulp">
+                        <a href=""><i class='bx bxl-visa'></i></a>
+                        <a href=""><i class='bx bxl-mastercard' ></i></a>
+                        <a href=""><i class='bx bxl-bitcoin' ></i></a>
+                        <a href=""><i class='bx bxl-paypal' ></i></a>
+                    </div>
+                </div>
+                <div class="lista">
+                    <h4>Follow us</h4>
+                    <div class="rrjetet">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</footer>
+
 
 <script src="Kontakt.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
-<footer>
-    <div id="footeri" class="footeri">
-        <h2>About Crimsons</h2>
-        <h2>Our Links</h2>
-        <div class="fotot">
-            <ion-icon name="logo-facebook" class="img1"></ion-icon>
-            <ion-icon name="logo-twitter" class="img2"></ion-icon>
-            <ion-icon name="logo-instagram" class="img3"></ion-icon>
-        </div>
-    </div>
-    <div class="footermain">
-        <div class="footerleft">
-            <p>Thank you for choosing Crimsons as your preferred CS:2 case opening destination. Dive into the thrilling world of Counter-Strike: 2, with our curated collection of cases, featuring an exciting array of skins and rare items. Experience the rush of anticipation as you unlock virtual treasures, and remember, at Crimsons, every case is an opportunity for something extraordinary. Game on, and may your openings be filled with the rarest finds!</p>
-        </div>
-        <div class="footercenter">
-            <p class="p1">Advertise</p>
-            <p class="p2">Support</p>
-            <p class="p3">Our Company</p>
-            <p class="p4">Contact</p>
-        </div>
-        <div class="footerright">
-            <p class="p5">Terms of use</p>
-            <p class="p6">Privacy Policy</p>
-        </div>
-    </div>
-</footer>
 
 </html>
