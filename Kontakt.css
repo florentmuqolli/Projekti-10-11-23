@@ -275,10 +275,14 @@ ul
     display: block;
     color: #bbbbbb;
 }
-
+.lista ul li a:hover
+{
+    color: #48abe0;
+    font-size: 18px;
+}
 .listap .ulp a
 {
-    font-size: 25px;
+    font-size: 30px;
     text-transform: capitalize;
     color: #ffffff;
     font-weight: 300;
@@ -286,7 +290,10 @@ ul
     margin-right: 3%;
     color: #bbbbbb;
 }
-
+.listap .ulp a:hover
+{
+    color: #48abe0;
+}
 .lista .rrjetet a
 {
     display: inline-block;
