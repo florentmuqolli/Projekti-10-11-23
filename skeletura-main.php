@@ -20,9 +20,9 @@
     </label>
     <nav class="ubt">
         <a href="#">Home</a>
-        <a href="Aboutusi.html" >About Us</a>
-        <a href="Kontakt.html" class="kontaktona"> Contact</a>
-        <a href="Faq.html"> FAQ</a>
+        <a href="Aboutusi.php" >About Us</a>
+        <a href="Kontakt.php" class="kontaktona"> Contact</a>
+        <a href="Faq.php"> FAQ</a>
     </nav>
 </header>
 
@@ -237,8 +237,8 @@
                     <h4>Need Help?</h4>
                     <ul>
                         <li><a href="">FAQ</a></li>
-                        <li><a href="Kontakt.html" onclick="con()">Crimson's Support</a></li>
-                        <li><a href="Kontakt.html" onclick="con()">Contact Form</a></li>
+                        <li><a href="Kontakt.php" onclick="con()">Crimson's Support</a></li>
+                        <li><a href="Kontakt.php" onclick="con()">Contact Form</a></li>
                     </ul>
                 </div>
                 <div class="listap">

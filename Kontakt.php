@@ -19,10 +19,10 @@
     </label>
     <!--<img class="crimson" src="img/600px-Crimson2_logo.png" width="10%" alt="logojoja">-->
     <nav class="ubt">
-        <a href="skeletura-main.html"> Home</a>
-        <a href="Aboutusi.html">About Us</a>
-        <a href="Kontakt.html" class="kontaktona"> Contact</a>
-        <a href="Faq.html"> FAQ</a>
+        <a href="skeletura-main.php"> Home</a>
+        <a href="Aboutusi.php">About Us</a>
+        <a href="Kontakt.php" class="kontaktona"> Contact</a>
+        <a href="Faq.php"> FAQ</a>
         <!--<ul>
             <li><span><ion-icon name="home-outline"></ion-icon></span><a href="#"> Home</a></li>
             <li><span><ion-icon name="information-circle-outline"></ion-icon></span> <a href="#footeri">About Us</a></li> 

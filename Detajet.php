@@ -16,18 +16,12 @@
         <i class='bx bx-menu' id="menu"></i>
         <i class='bx bx-x' id="close"></i>
     </label>
-    <!--<img class="crimson" src="img/600px-Crimson2_logo.png" width="10%" alt="logojoja">-->
+    
     <nav class="ubt">
-        <a href="skeletura-main.html" > Home</a>
-        <a href="Aboutusi.html"> About Us</a>
-        <a href="Kontakt.html" class="kontaktona"> Contact</a>
-        <a href="Faq.html"> FAQ</a>
-        <!--<ul>
-            <li><span><ion-icon name="home-outline"></ion-icon></span><a href="#"> Home</a></li>
-            <li><span><ion-icon name="information-circle-outline"></ion-icon></span> <a href="#footeri">About Us</a></li> 
-            <li><span><ion-icon name="call-outline"></ion-icon></span><a href="#" class="kontaktona" onclick="con()"> Contact</a></li> 
-            <li><span><ion-icon name="person-circle-outline"></ion-icon></span><a href="#"> Profile</a></li>
-        </ul>-->
+        <a href="skeletura-main.php" > Home</a>
+        <a href="Aboutusi.php"> About Us</a>
+        <a href="Kontakt.php" class="kontaktona"> Contact</a>
+        <a href="Faq.php"> FAQ</a>
     </nav>
 </header>
 <body>
@@ -311,8 +305,8 @@
                     <h4>Need Help?</h4>
                     <ul>
                         <li><a href="">FAQ</a></li>
-                        <li><a href="Kontakt.html">Crimson's Support</a></li>
-                        <li><a href="Kontakt.html">Contact Form</a></li>
+                        <li><a href="Kontakt.php">Crimson's Support</a></li>
+                        <li><a href="Kontakt.php">Contact Form</a></li>
                     </ul>
                 </div>
                 <div class="listap">

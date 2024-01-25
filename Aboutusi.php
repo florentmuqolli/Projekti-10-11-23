@@ -19,10 +19,10 @@
         <i class='bx bx-x' id="close"></i>
     </label>
     <nav class="ubt">
-        <a href="skeletura-main.html" onclick="hom()">Home</a>
+        <a href="skeletura-main.php" onclick="hom()">Home</a>
         <a href="#">About Us</a>
-        <a href="Kontakt.html" class="kontaktona" onclick="con()"> Contact</a>
-        <a href="Faq.html"> FAQ</a>
+        <a href="Kontakt.php" class="kontaktona" onclick="con()"> Contact</a>
+        <a href="Faq.php"> FAQ</a>
     </nav>
 </header>
 <body>
@@ -66,8 +66,8 @@
                     <h4>Need Help?</h4>
                     <ul>
                         <li><a href="">FAQ</a></li>
-                        <li><a href="Kontakt.html" >Crimson's Support</a></li>
-                        <li><a href="Kontakt.html" >Contact Form</a></li>
+                        <li><a href="Kontakt.php" >Crimson's Support</a></li>
+                        <li><a href="Kontakt.php" >Contact Form</a></li>
                     </ul>
                 </div>
                 <div class="listap">
