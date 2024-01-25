@@ -1,7 +1,4 @@
-function con()
-{
-    window.location = "http://127.0.0.1:5500/Kontakt.html";
-}
+
 
 const initSlider = () => {
     const imageList = document.querySelector(".slider-wrapper .image-list");
