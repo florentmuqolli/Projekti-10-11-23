@@ -1,10 +1,9 @@
 <html>
     <head>
         <title>Crimsons</title>
-        <link rel="stylesheet" href="skeletura.css">
+        <link rel="stylesheet" href="">
     </head>
     <body>
-
         <header>
             <h2 class="crimson">Crimson</h2>
             <button class="kycja">Login</button>
