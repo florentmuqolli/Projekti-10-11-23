@@ -1,7 +1,7 @@
 <html>
     <head>
-        <title>Crimsons</title>
-        <link rel="stylesheet" href="">
+        <title>Crimson's</title>
+        <link rel="stylesheet" href="css\skeletura.css">
     </head>
     <body>
         <header>
@@ -81,7 +81,7 @@
             </form>
     </div>
 
-         <script src="Skeletura.js"></script>
+         <script src="js\Skeletura.js"></script>
          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>

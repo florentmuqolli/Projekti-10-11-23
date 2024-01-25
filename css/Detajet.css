@@ -125,7 +125,7 @@ header::before
 
 body
 {
-    background: url(img/download.png)no-repeat;
+    background: url("img/download.png")no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -142,7 +142,7 @@ body
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    
+    background: #48abe0;
 }
 fieldset
 {
