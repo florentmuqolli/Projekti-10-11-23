@@ -49,7 +49,7 @@ function kyciratu() {
     else
     {
         alert('Logging you in :)');
-        window.location = "http://127.0.0.1:5500/skeletura-main.php";
+        window.location = "http://localhost:8008/Projekti-10-11-23/skeletura-main.php";
     }
 }
 
@@ -83,7 +83,7 @@ function registeratu() {
     else
     {
         alert('Your data has been saved. Registering you :)');
-        window.location = "http://127.0.0.1:5500/skeletura-main.html#";
+        window.location = "http://localhost:8008/Projekti-10-11-23/skeletura-main.php";
     }
 }
 

@@ -123,7 +123,7 @@ body
 {
     background: #48abe0;
     margin-top: 5%;
-    background-image: url(img/giphy.gif);
+    background-image: url('img/giphy.gif');
 }
 .heading
 {
