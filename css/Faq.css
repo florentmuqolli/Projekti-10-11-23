@@ -9,7 +9,8 @@ body{
     justify-content: center;
     align-items: center;
     min-width: 100vh;
-    background: url(/img/download.png);
+    background: linear-gradient(135deg, rgb(128, 34, 53), #48abe0);
+    
     background-repeat: no-repeat;
     background-size: cover;
 }

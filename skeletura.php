@@ -1,3 +1,26 @@
+
+<?php
+require 'config.php';
+if(isset($_POST["submit"])){
+    $username = $_POST["emri"];
+    $email = $_POST["emailr"];
+    $password = $_POST["passir"];
+    $duplicate = mysqli_query($conn, "SELECT * FROM tb_user WHERE username = '$username' OR email = '$email'");
+    if(mysqli_num_rows($duplicate) > 0){
+        echo
+        "<script> alert('Username or Email has already been taken')</script>";
+    }
+    else{
+        $query = "INSERT INTO tb_user VALUES('','$username','$email','$password')";
+        mysqli_query($conn, $query);
+        echo
+        "<script> alert('You've been successfully registered'); </script>";
+    }
+}
+
+?>
+
+
 <html>
     <head>
         <title>Crimson's</title>
@@ -53,19 +76,19 @@
             <form id="logini">
                 <div class="inputi_forms">
                     <span class="ikona"><ion-icon name="person"></ion-icon></span>
-                    <input type="text" id="emri" class="inputi">
+                    <input type="text" id="emri" class="inputi" name="username">
                     <label>Username</label>
                     <div class="gabiminemer" id="emrigabim"></div>
                 </div>
                 <div class="inputi_forms">
                     <span class="ikona"><ion-icon name="mail"></ion-icon></span>
-                    <input type="text" id="emailr" class="inputi">
+                    <input type="text" id="emailr" class="inputi" name="email">
                     <label>Email</label>
                     <div class="gabiminemail" id="emailgabimr"></div>
                 </div>
                 <div class="inputi_forms">
                     <span class="ikona"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" id="passir" class="inputi">
+                    <input type="password" id="passir" class="inputi" name="password">
                     <label>Password</label>
                     <div class="gabiminpass" id="passigabimr"></div>
                 </div>
@@ -73,7 +96,7 @@
                     <label><input type="checkbox"> I agree to the terms & conditions</label>
                     
                 </div>
-                <button type="button" class="loginbutoni" onclick="registeratu()">Register</button>
+                <button type="button" class="loginbutoni" onclick="registeratu()" name="submit">Register</button>
                 <div class="skiacc">
                     <p>Already have an account? <a href="#" class="loginlinki">Login</a></p>
                 </div>

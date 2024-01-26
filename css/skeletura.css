@@ -24,18 +24,20 @@ header
 }
 
 .textet{
-
-    color: orangered;
     position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
 }
+.texti{
+    color: #5787B3;
+}
 
 .texti2
 {
    margin-left: 50%;
+   color: #78344C;
 }
 
 .crimson
@@ -43,7 +45,7 @@ header
     font-family: "Agbalumo";
     font-size: 2em;
     font-weight: 200;
-    color: orangered;
+    color: #5787B3;
     user-select: none;
 }
 
@@ -75,7 +77,7 @@ body
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(/img/bekgrondi.jpg);
+    background: linear-gradient(135deg, rgb(128, 34, 53), #48abe0);
     background-size: cover;
     background-position: center;
 }
@@ -178,7 +180,7 @@ body
     left: 5px;
     transform: translateY(-50%);
     font-size: 1em;
-    color: darkslateblue;
+    color: black;
     font-weight: 500;
     pointer-events: none;
     transition: .5s;
