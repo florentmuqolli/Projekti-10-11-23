@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (isset($_SESSION["user"])) {
+   header("Location: skeletura-main.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,6 +76,7 @@
                 <input type="submit" value="Register" class="btn btn-primary" name="submit">
             </div>
         </form>
+        <div><p>Already Registered <a href="login.php">Login Here</a></p></div>
     </div>
 </body>
 </html>

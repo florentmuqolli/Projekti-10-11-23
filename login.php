@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (isset($_SESSION["user"])) {
+   header("Location: skeletura-main.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +23,7 @@
             $result = mysqli_query($conn, $sql);
             $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
             if ($user) {
-                if (password_verify($password, $user["password"])) {
+                if ($password == $user["password"]) {
                     session_start();
                     $_SESSION["user"] = "yes";
                     header("Location: skeletura-main.php");
@@ -41,6 +47,7 @@
                 <input type="submit" value="Login" class="btn btn-primary" name="login">
             </div>
         </form>
+        <div><p>Not registered yet? <a href="register.php">Register Here</a></p></div>
     </div>
 </body>
 </html>

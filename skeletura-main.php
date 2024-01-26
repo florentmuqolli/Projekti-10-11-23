@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (!isset($_SESSION["user"])) {
+   header("Location: login.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,6 +29,7 @@
         <a href="Aboutusi.php" >About Us</a>
         <a href="Kontakt.php" class="kontaktona"> Contact</a>
         <a href="Faq.php"> FAQ</a>
+        <a href="logout.php">Logout</a>
     </nav>
 </header>
 
@@ -268,30 +275,4 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
-<!--<footer>
-    <div id="footeri" class="footeri">
-        <h2>About Crimsons</h2>
-        <h2>Our Links</h2>
-        <div class="fotot">
-            <ion-icon name="logo-facebook" class="img1"></ion-icon>
-            <ion-icon name="logo-twitter" class="img2"></ion-icon>
-            <ion-icon name="logo-instagram" class="img3"></ion-icon>
-        </div>
-    </div>
-    <div class="footermain">
-        <div class="footerleft">
-            <p>Thank you for choosing Crimsons as your preferred CS:2 case opening destination. Dive into the thrilling world of Counter-Strike: 2, with our curated collection of cases, featuring an exciting array of skins and rare items. Experience the rush of anticipation as you unlock virtual treasures, and remember, at Crimsons, every case is an opportunity for something extraordinary. Game on, and may your openings be filled with the rarest finds!</p>
-        </div>
-        <div class="footercenter">
-            <p class="p1">Advertise</p>
-            <p class="p2">Support</p>
-            <p class="p3">Our Company</p>
-            <p class="p4">Contact</p>
-        </div>
-        <div class="footerright">
-            <p class="p5">Terms of use</p>
-            <p class="p6">Privacy Policy</p>
-        </div>
-    </div>
-</footer>-->
 </html>
