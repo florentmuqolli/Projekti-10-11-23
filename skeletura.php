@@ -1,26 +1,3 @@
-
-<?php
-require 'config.php';
-if(isset($_POST["submit"])){
-    $username = $_POST["emri"];
-    $email = $_POST["emailr"];
-    $password = $_POST["passir"];
-    $duplicate = mysqli_query($conn, "SELECT * FROM tb_user WHERE username = '$username' OR email = '$email'");
-    if(mysqli_num_rows($duplicate) > 0){
-        echo
-        "<script> alert('Username or Email has already been taken')</script>";
-    }
-    else{
-        $query = "INSERT INTO tb_user VALUES('','$username','$email','$password')";
-        mysqli_query($conn, $query);
-        echo
-        "<script> alert('You've been successfully registered'); </script>";
-    }
-}
-
-?>
-
-
 <html>
     <head>
         <title>Crimson's</title>
@@ -47,16 +24,16 @@ if(isset($_POST["submit"])){
         <span class="hekenX"><ion-icon name="close"></ion-icon></span>
         <div class="lgforma login">
             <h2>Login</h2>
-            <form id="logini">
+            <form id="logini" action="skeletura.php" method="post">
                 <div class="inputi_forms">
                     <span class="ikona"><ion-icon name="mail"></ion-icon></span>
-                    <input type="text" id="email" class="inputi">
+                    <input type="text" id="email" class="inputi" name="email">
                     <label>Email</label>
                     <div class="gabiminemail" id="emailgabim"></div>
                 </div>
                 <div class="inputi_forms">
                     <span class="ikona"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" id="passi" class="inputi">
+                    <input type="password" id="passi" class="inputi" name="password">
                     <label>Password</label>
                     <div class="gabiminpass" id="passigabim"></div>
                 </div>
@@ -73,7 +50,10 @@ if(isset($_POST["submit"])){
 
         <div class="lgforma register">
             <h2>Register</h2>
-            <form id="logini">
+            <?php
+            print_r($_POST);
+            ?>
+            <form id="logini" action="skeletura.php" method="post">
                 <div class="inputi_forms">
                     <span class="ikona"><ion-icon name="person"></ion-icon></span>
                     <input type="text" id="emri" class="inputi" name="username">
