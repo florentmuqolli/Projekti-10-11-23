@@ -1,0 +1,95 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #1a1c29;
+    padding: 30px 0;
+    text-align: center;
+}
+header a{
+    text-decoration: none;
+    color: #fff;
+}
+.post-list {
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.col {
+    flex: 1;
+    padding: 10px;
+    margin-right: 50px; 
+}
+
+.col-5 {
+    margin-right: 0; 
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.post p
+{
+    margin-block: 10px;
+}
+
+.footer {
+    background-color: #1a1c29;
+    padding: 30px 0;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        flex: auto;
+        padding: 10px;
+        margin-right: 0; 
+        margin-bottom: 10px; 
+    }
+
+    .col:last-child {
+        margin-bottom: 0; 
+    }
+}

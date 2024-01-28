@@ -10,7 +10,7 @@ if (isset($_SESSION["user"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="css\lgreg.css">
+    <link rel="stylesheet" href="lgreg.css">
 </head>
 <body>
     <div class="container">

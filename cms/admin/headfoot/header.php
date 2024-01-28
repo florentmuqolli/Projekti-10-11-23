@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (!isset($_SESSION["user"])) {
+   header("Location: loginperadmin.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +19,9 @@
         <div class="menues">
             <div class="menu">
                 <a href="create.php" class="dbrda2"><strong>Add New Post</strong></a>
+            </div>
+            <div class="menu">
+                <a href="login.php" class="logout"><strong>Log out</strong></a>
             </div>
         </div>
         </div>

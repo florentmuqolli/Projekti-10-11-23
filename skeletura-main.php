@@ -10,7 +10,7 @@ if (!isset($_SESSION["user"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crimson's</title>
-    <link rel="stylesheet" href="css\skeletura-main.css">
+    <link rel="stylesheet" href="skeletura-main.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -34,7 +34,7 @@ if (!isset($_SESSION["user"])) {
 </header>
 
 <body>
-   
+    
 <div class="Kithat">
     <div class="top">
         <h1>CS-GO Crimson is now CS2 Crimson <br>Check out all the best deals on skins right now</h1>
