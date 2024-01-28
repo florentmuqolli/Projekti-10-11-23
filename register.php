@@ -52,7 +52,8 @@ if (isset($_SESSION["user"])) {
                 if ($prepareStmt) {
                     mysqli_stmt_bind_param($stmt,"sss",$fullName, $email, $password);
                     mysqli_stmt_execute($stmt);
-                    echo "<div class='success-message'>Your login was successful!</div>";
+                    echo "<div class='success-message'>Your register was successful!</div>";
+                    header("Location: skeletura-main.php");
                 }else{
                     die("Something went wrong");
                 }
@@ -76,7 +77,7 @@ if (isset($_SESSION["user"])) {
                 <input type="submit" value="Register" class="btn btn-primary" name="submit">
             </div>
         </form>
-        <div><p>Already Registered <a href="login.php">Login Here</a></p></div>
+        <div class="not"><p>Already Registered <a href="login.php">Login Here</a></p></div>
     </div>
 </body>
 </html>

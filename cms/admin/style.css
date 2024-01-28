@@ -83,13 +83,12 @@ body, html {
     border: none;
     border-bottom: 1px solid #ddd;
     text-align: left;
+    width: 22%;
 }
 
 .table th {
     background-color: transparent;
 }
-
-
 
 .btn-info {
     background-color: #007bff;
@@ -125,6 +124,17 @@ body, html {
     opacity: 0.8;
 }
 
+.success-message {
+    color: #28a745;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 4%;
+    right: 41%;
+}
+
 .post{
     flex: 1;
     padding: 20px;
@@ -137,6 +147,7 @@ body, html {
     text-decoration: none;
     padding: 5px 10px;
     display: inline-block;
+    margin-bottom: 20%;
 }
 .logout {
     padding: 10px 20px;
@@ -147,5 +158,7 @@ body, html {
     cursor: pointer;
     transition: background-color 0.3s ease;
     text-decoration: none;
+    margin-block: 15px;
 }
+
 

@@ -53,6 +53,8 @@ body {
 
 .error-message {
     color: #dc3545;
+    background-color: #e29b94;
+    border-color: #e29b94;
     font-size: 14px;
     margin-top: 5px;
 }

@@ -7,6 +7,8 @@ if (isset($_POST["create"])) {
     $date = mysqli_real_escape_string($conn, $_POST["date"]);
     $sqlInsert = "INSERT INTO posts(date,title, summary, content) VALUES ('$date', '$title', '$summary','$content' )";
     if(mysqli_query($conn, $sqlInsert)){
+        session_start();
+        $_SESSION["create"] = "Post added successfully";
         header("Location:admintools.php");
     }else{
         die("Data is not inserted!");
@@ -24,6 +26,8 @@ if (isset($_POST["update"])) {
     $id = mysqli_real_escape_string($conn, $_POST["id"]);
     $sqlUpdate = "UPDATE posts SET title = '$title', summary = '$summary', content = '$content', date = '$date' WHERE id = $id";
     if(mysqli_query($conn, $sqlUpdate)){
+        session_start();
+        $_SESSION["update"] = "Post udpated successfully";
         header("Location:admintools.php");
     }else{
         die("Data is not updated!");

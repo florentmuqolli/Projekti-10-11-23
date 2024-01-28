@@ -3,6 +3,42 @@ include("headfoot/header.php");
 ?>
 
 <div class="posts-view">
+<?php
+        if (isset($_SESSION["create"])) {
+        ?>
+        <div class="success-message">
+            <?php 
+            echo $_SESSION["create"];
+            ?>
+        </div>
+        <?php
+        unset($_SESSION["create"]);
+        }
+        ?>
+         <?php
+        if (isset($_SESSION["update"])) {
+        ?>
+        <div class="success-message">
+            <?php 
+            echo $_SESSION["update"];
+            ?>
+        </div>
+        <?php
+        unset($_SESSION["update"]);
+        }
+        ?>
+        <?php
+        if (isset($_SESSION["delete"])) {
+        ?>
+        <div class="success-message">
+            <?php 
+            echo $_SESSION["delete"];
+            ?>
+        </div>
+        <?php
+        unset($_SESSION["delete"]);
+        }
+  ?>
     <table class="table table-bordered">
         <thead>
             <tr>

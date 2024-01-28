@@ -21,7 +21,10 @@ if (!isset($_SESSION["user"])) {
                 <a href="create.php" class="dbrda2"><strong>Add New Post</strong></a>
             </div>
             <div class="menu">
-                <a href="login.php" class="logout"><strong>Log out</strong></a>
+                <a href="../Faq.php" class="dbrda2"><strong>View on the Website</strong></a>
+            </div>
+            <div class="menu">
+                <a href="logout.php" class="logout"><strong>Log out</strong></a>
             </div>
         </div>
         </div>
