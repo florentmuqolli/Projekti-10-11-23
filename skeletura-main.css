@@ -131,7 +131,6 @@ header::before
     position: relative;
     margin: 200px 10% 0 10%;
     justify-content: center;
-    background: url(/img/download.png);
     background-position: center;
     border-radius: 30px;
     color: white;
@@ -157,12 +156,9 @@ header::before
 
 body
 {
-    min-height: 100vh;
-    background-image: url(img/download.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    
+    font-family: Arial, sans-serif;
+    background-color:rgb(141, 58, 77);
+    color: #333;
 }
 
 .crimson{
@@ -182,10 +178,10 @@ body
     top: 50%;
     height: 50px;
     width: 50px;
-    color: rgb(141, 58, 77);
+    color: #48abe0;
     border: none;
     outline: none;
-    background: #48abe0;
+    background: rgb(141, 58, 77);
     font-size: 2.2rem;
     cursor: pointer;
     border-radius: 50%;
@@ -199,8 +195,8 @@ body
 }
 .slide-button:hover
 {
-    background: rgb(141, 58, 77);
-    color: #48abe0;
+    background: #48abe0;
+    color: rgb(141, 58, 77);
     width: 55px;
     height: 55px;
     transition: .5s ease;
@@ -279,37 +275,32 @@ body
     height: 50px;
     display: flex;
     justify-content: space-between;
-    color: lightgray;
 }
 .cmimet .vlera{
-    width: 110px;
-    background-image: url(/img/download.png);    
+    width: 110px;    
     margin: 0px 0 0 15%;
     font-size: medium;
     font-weight: bold;
-    box-shadow: 0 0 10px 5px #48abe0;
+    background-color: transparent;
     height: 40px;
     border-radius: 20px;
-    color: red; 
+    color: #333; 
 }
 .cmimet .details{
     width: 100px;
     font-size: large;
     font-weight: bold;
-    background-image: url(/img/download.png);
-    box-shadow: 0 0 10px 5px #48abe0;    
+    background-color: transparent; 
     margin: 0px 0 0 15%;
     height: 40px;
     border-radius: 20px;
-    color: red; 
+    color: #333; 
     cursor: pointer;
 }
 
 footer
 {
-    background-color: #773350;
-    background-repeat: no-repeat;
-    background-size: cover;
+    box-shadow: 0 0 30px rgba(0,0,0, .5);
     padding: 50px 0;
 }
 

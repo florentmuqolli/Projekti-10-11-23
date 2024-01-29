@@ -1,11 +1,11 @@
 <?php
-if (isset($_POST['login'])) {
+if (isset($_POST['loginperadmin'])) {
    $username = $_POST['username'];
    $password = $_POST['password'];
    if ($username == "admin" && $password == "crimsons") {
     session_start();
-    $_SESSION["user"] = "admin";
-    header("Location:admintools.php");
+    $_SESSION["user2"] = "admin";
+    header("Location: admintools.php");
    }
 }
 ?>
@@ -28,7 +28,7 @@ if (isset($_POST['login'])) {
                     <input class="form-ctrl" type="password" name="password" id="" placeholder="Password">
                 </div>
                 <div class="form-field mb-4">
-                    <input class="btn btn-primary" type="submit" value="Login" name="login">
+                    <input class="btn btn-primary" type="submit" value="Login" name="loginperadmin">
                 </div>
             </form>
         </div>

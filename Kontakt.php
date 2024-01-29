@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (!isset($_SESSION["user"])) {
+   header("Location: login.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,18 +23,12 @@
         <i class='bx bx-menu' id="menu"></i>
         <i class='bx bx-x' id="close"></i>
     </label>
-    <!--<img class="crimson" src="img/600px-Crimson2_logo.png" width="10%" alt="logojoja">-->
     <nav class="ubt">
         <a href="skeletura-main.php"> Home</a>
         <a href="Aboutusi.php">About Us</a>
         <a href="Kontakt.php" class="kontaktona"> Contact</a>
-        <a href="Faq.php"> FAQ</a>
-        <!--<ul>
-            <li><span><ion-icon name="home-outline"></ion-icon></span><a href="#"> Home</a></li>
-            <li><span><ion-icon name="information-circle-outline"></ion-icon></span> <a href="#footeri">About Us</a></li> 
-            <li><span><ion-icon name="call-outline"></ion-icon></span><a href="#" class="kontaktona" onclick="con()"> Contact</a></li> 
-            <li><span><ion-icon name="person-circle-outline"></ion-icon></span><a href="#"> Profile</a></li>
-        </ul>-->
+        <a href="cms\Faq.php"> FAQ</a>
+        <a href="logout.php">Logout</a>
     </nav>
 </header>
 
@@ -39,23 +39,26 @@
             No problem. You are right here. <br> <br>
             
             <p class="aaa">Have you already made a request and received a processing number?</p> <br>
-            First, please check your email inbox. We sent you an email regarding your request. You can recognize this by the # or ASP- (e.g. #123456 / ASP-123456) in the subject of our email. If you have any further questions, please reply to this email so that we can respond to your request more quickly. A new request via the contact form may delay the processing of your request.
+            <p>First, please check your email inbox. We sent you an email regarding your request. You can recognize this by the # or ASP- (e.g. #123456 / ASP-123456) in the subject of our email. If you have any further questions, please reply to this email so that we can respond to your request more quickly. A new request via the contact form may delay the processing of your request.</p>
             
             <p class="aaa" style="margin-right: 50%;">Here is how you contact us via email or phone number.</p> <br>
             <p>We have provided two ways to frequently answer your questions here. Contact us via email  :<a href="#" style="color: red; font-size: large; padding: 0 5px 0 5px;">crimsons@gmail.com</a> or via phone number <a href="#" style="color: red;">049-553-279</a></P>
             
-
+            
         <div class="formulari">
+            <div class="elem1">
             <div class="formulari1"> <p>First name</p><input type="text" placeholder=" First name" class="formulari2"></div>
             <div class="formulari1"><p>Last name</p><input type="text" placeholder=" Last name" class="formulari2"></div>
             <div class="formulari1"><p>Costumer Number</p><input type="text" placeholder=" Costumer number" class="formulari2"></div>
             <div class="formulari1"><p>Order Number</p><input type="text" placeholder=" Order number" class="formulari2"></div>
             <div class="formulari1"><p>Email</p><input type="email" placeholder=" Email" class="formulari2"></div>
             <div class="formulari1"><p>Phone Number</p><input type="text" placeholder=" Phone number" class="formulari2"></div>
+            </div>
+            <div c;ass="elem2">
+            <div class="Koment"><p style="margin-bottom: -10px; margin-top: 30px;">Comment</p><textarea cols="80" rows="10" class="Koment" type="text" name="textbox" placeholder="Add your comment here before you submit your request"></textarea></div>
+            </div>
             <div class="formulari1"><input type="submit" class="submiti" onclick="submiti()"></div>
         </div>
-        <div class="Koment"><p style="margin-bottom: -10px; margin-top: 30px;">Comment</p><textarea cols="80" rows="10" class="Koment" type="text" name="textbox" placeholder="Add your comment here before you submit your request"></textarea></div>
-
     </div>
 
     <footer>
@@ -72,7 +75,7 @@
                 <div class="lista">
                     <h4>Need Help?</h4>
                     <ul>
-                        <li><a href="">FAQ</a></li>
+                        <li><a href="cms\Faq.php">FAQ</a></li>
                         <li><a href="">Crimson's Support</a></li>
                         <li><a href="">Contact Form</a></li>
                     </ul>

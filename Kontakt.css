@@ -18,18 +18,6 @@ header
     align-items: center;
     z-index: 100;
 }
-header
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1.3rem 10%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-}
 
 header::before
 {
@@ -48,7 +36,7 @@ header::before
 {
     font-size: 2rem;
     font-weight: 700;
-    color: #f9f9f9;
+    color: #333;
 }
 
 #check
@@ -60,7 +48,7 @@ header::before
 {
     font-size: 1.15rem;
     font-weight: 500;
-    color: #f9f9f9;
+    color: #333;
     margin-left: 2.5rem;
 }
 
@@ -69,7 +57,7 @@ header::before
     position: absolute;
     right: 5%;
     font-size: 2.8rem;
-    color: #f9f9f9;
+    color: #333;
     cursor: pointer;
     display: none;
 }
@@ -133,78 +121,100 @@ header::before
     }
 }
 
-.conus{
+body {
+    font-family: Arial, sans-serif;
+    background-color:#48abe0;
+    color: #333;
+}
+
+.conus {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0,0,0, .5);
+    margin-top: 7%;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.aaa {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+
+.elem1 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.formulari1 {
+    flex: 0 0 48%; 
+    text-align: center; 
+}
+
+.formulari1 p {
+    margin-bottom: 5px;
+}
+
+.formulari2 {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.Koment textarea {
+    width: 100%;
+    padding: 10px;
+    padding-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.Koment p {
     position: relative;
-    margin: 200px 25% 3% 25%;
-    justify-content: center;
-    background: url(img/download.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-radius: 30px;
-    color: white;
-    padding: 50px;
-    padding-left: 50px;
-    box-shadow: 0 0 10px 5px #48abe0;
-    text-align: left;
-}
-.conus .aaa{
-    font-weight: bolder;
-    font-size: large;
-    margin-right: 35%;
+    top: -20px; 
 }
 
-.conus .formulari{
-    flex-direction: column;
-    padding-top: 20px;
-    margin-right: 30px;
-}
-.conus .formulari1{
-    margin-top: 10px;
-    
-}
-.conus .formulari2{
-    height: 30px;
-}
-.conus .submiti{
-    height: 30px;
-    width: 70px;
-    border-radius: 30px;
-    color: black;
-    font-weight: bold;
-    background-color: orangered;
-}
-.conus .submiti:hover{
+.submiti {
+    background: rgb(255, 69, 0); 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
     cursor: pointer;
-}
-.conus .Komenti{
-    height: 200px;
-    width: 300px;
+    display: inline-block; 
 }
 
-.conus .Koment{
-    width: 400px;
-    height: 300px;
-    margin: 10px 0 0 0;
-}
-
-body
+@media(max-width: 888px)
 {
-    background-image: url(img/download.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    .conus p {
+        display: none;
+    }
 }
-
 
 footer
 {
-    background-image: url(img/download.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 50px 0;
+    box-shadow: 0 0 30px rgba(0,0,0, .5);
 }
 
 .d1
@@ -241,7 +251,7 @@ ul
     font-size: 22px;
     text-transform: capitalize;
     margin-bottom: 35px;
-    color:#f9f9f9;
+    color: #333;
     font-weight: 500;
     position: relative;
 }
@@ -251,7 +261,7 @@ ul
     font-size: 22px;
     text-transform: capitalize;
     margin-bottom: 35px;
-    color:#f9f9f9;
+    color: #333;
     font-weight: 500;
     position: relative;
 }
@@ -270,36 +280,34 @@ ul
 {
     font-size: 16px;
     text-transform: capitalize;
-    color: #ffffff;
+    color: #333;
     font-weight: 300;
     display: block;
-    color: #bbbbbb;
 }
 .lista ul li a:hover
 {
-    color: #48abe0;
+    color: rgb(141, 58, 77);
     font-size: 18px;
 }
 .listap .ulp a
 {
     font-size: 30px;
     text-transform: capitalize;
-    color: #ffffff;
+    color: #333;
     font-weight: 300;
     display: inline-flex;
     margin-right: 3%;
-    color: #bbbbbb;
 }
 .listap .ulp a:hover
 {
-    color: #48abe0;
+    color: rgb(141, 58, 77);
 }
 .lista .rrjetet a
 {
     display: inline-block;
     height: 40px;
     width: 40px;
-    background-color: rgba(255,255,255,0.2);
+    background-color: #333;
     margin:0 10px 10px 0;
     text-align: center;
     line-height: 40px;

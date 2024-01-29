@@ -3,21 +3,171 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
 }
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+header::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, .1);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0, .5);
+    z-index: -1;
+}
+.crimson
+{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #f9f9f9;
+}
+
+#check
+{
+    display: none;
+}
+
+.ubt a
+{
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #f9f9f9;
+    margin-left: 2.5rem;
+}
+
+.ikonat
+{
+    position: absolute;
+    right: 5%;
+    font-size: 2.8rem;
+    color: #f9f9f9;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 992px)
+{
+    header
+    {
+        padding: 1.3rem 5%;
+    }
+    .event_banner_csgo_left {
+        display: none;
+    }
+    .home-logo {
+        display: none;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .ikonat
+    {
+        display: inline-flex;
+    }
+
+    #check:checked~.ikonat #menu
+    {
+        display: none;
+    }
+
+    #check:checked~.ikonat #close
+    {
+        display: block;
+    }
+
+    .ikonat #close
+    {
+        display: none;
+    }
+
+
+    .ubt
+    {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: rgb(0, 0, 0, .1);
+        backdrop-filter: blur(40px);
+        box-shadow: 0 .5rem 1rem  rgba(0, 0, 0, .1);
+        overflow: hidden;
+        transition: .3s ease;
+    }
+
+    #check:checked~.ubt
+    {
+        height: 12.7rem;
+    }
+
+    .ubt a
+    {
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-image: url(img/event-banner-bg.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
+.event_banner_csgo_left {
+    position: absolute;
+    left: 0;
+    top: 26.2%;
+    width: 450px;
+    height: 468px;
+}
+.home-logo {
+    position: absolute;
+    top: 26.2%;
+    right: 22%;
+    z-index: -1;
+}
+.event_banner_csgo_right {
+    position: absolute;
+    right: 0;
+    top: 26.2%;
+    width: 450px;
+    height: 468px;
+}
 .container {
-    width: 300px;
-    margin: 100px auto;
-    background-color: #fff;
+    width: 350px;
+    height: auto;
+    margin: 200px auto;
+    background-color: transparent;
+    backdrop-filter: blur(40px);
     padding: 25px ;
     border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px rgba(0,0,0, .5);
 }
 
 .form-group {
@@ -28,7 +178,10 @@ body {
 .form-ctrl {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    box-shadow: 0 0 30px rgba(0,0,0, .5);
+    background: transparent;
+    backdrop-filter: blur(70px);
+    color: #fff;
     border-radius: 5px;
     outline: none;
 }
@@ -51,12 +204,24 @@ body {
     background-color: #0056b3;
 }
 
+.reghere {
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.reghere a {
+    color: #fff;
+}
+
 .error-message {
     color: #dc3545;
     background-color: #e29b94;
     border-color: #e29b94;
     font-size: 14px;
     margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    text-align: center;
 }
 
 .success-message {
@@ -66,4 +231,149 @@ body {
     padding: 10px;
     border-radius: 5px;
     margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    text-align: center;
+}
+
+footer
+{
+    box-shadow: 0 0 30px rgba(0,0,0, .10);
+    padding: 50px 0;
+    background: rgb(0, 0, 0, .1);
+    backdrop-filter: blur(20px);
+}
+
+.d1
+{
+    max-width: 1170px;
+    margin: auto;
+}
+
+ul
+{
+    list-style: none;
+}
+
+.titull
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lista
+{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.listap
+{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.lista h4
+{
+    font-size: 22px;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    color:#f9f9f9;
+    font-weight: 500;
+    position: relative;
+}
+
+.listap h4
+{
+    font-size: 22px;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    color:#f9f9f9;
+    font-weight: 500;
+    position: relative;
+}
+
+.lista ul li
+{
+    margin-bottom: 10px;
+}
+
+.listap .ulp
+{
+    margin-bottom: 10px;
+}
+
+.lista ul li a
+{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-weight: 300;
+    display: block;
+    color: #bbbbbb;
+}
+.lista ul li a:hover
+{
+    color: rgb(141, 58, 77);
+    font-size: 18px;
+    
+}
+
+.listap .ulp a
+{
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-weight: 300;
+    display: inline-flex;
+    margin-right: 3%;
+    color: #bbbbbb;
+}
+.listap .ulp a:hover
+{
+    color: rgb(141, 58, 77);
+}
+.lista .rrjetet a
+{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+}
+
+.lista .rrjetet a:hover
+{
+    color: #141a1c;
+    background-color: #ffffff;
+}
+
+@media(max-width: 768px)
+{
+    .lista
+    {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .listap
+    {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px)
+{
+    .lista
+    {
+        width: 100%;
+    }
+    .listap
+    {
+        width: 100%;
+    }
 }

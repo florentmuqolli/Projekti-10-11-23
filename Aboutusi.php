@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (!isset($_SESSION["user"])) {
+   header("Location: login.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +28,8 @@
         <a href="skeletura-main.php" onclick="hom()">Home</a>
         <a href="#">About Us</a>
         <a href="Kontakt.php" class="kontaktona" onclick="con()"> Contact</a>
-        <a href="Faq.php"> FAQ</a>
+        <a href="cms\Faq.php"> FAQ</a>
+        <a href="logout.php">Logout</a>
     </nav>
 </header>
 <body>
@@ -65,7 +72,7 @@
                 <div class="lista">
                     <h4>Need Help?</h4>
                     <ul>
-                        <li><a href="">FAQ</a></li>
+                        <li><a href="cms\Faq.php">FAQ</a></li>
                         <li><a href="Kontakt.php" >Crimson's Support</a></li>
                         <li><a href="Kontakt.php" >Contact Form</a></li>
                     </ul>
