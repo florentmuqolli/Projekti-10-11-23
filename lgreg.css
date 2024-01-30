@@ -70,9 +70,6 @@ header::before
     {
         padding: 1.3rem 5%;
     }
-    .event_banner_csgo_left {
-        display: none;
-    }
     .home-logo {
         display: none;
     }
@@ -126,6 +123,10 @@ header::before
         font-size: 1.1rem;
         margin: 1.5rem 0;
         text-align: center;
+    }
+
+    .event_banner_csgo_left {
+        display: none;
     }
 }
 

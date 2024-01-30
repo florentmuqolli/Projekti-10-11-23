@@ -186,7 +186,7 @@ body
     cursor: pointer;
     border-radius: 50%;
     transform: translateY(-50%);
-    z-index: 999;
+    z-index: 1;
     transition: .5s ease;
 }
 
@@ -237,7 +237,17 @@ body
     width: 100%;
     height: 400px;
     margin: 0px 0 53px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    cursor: pointer;
 }
+
+.rubrika a {
+    text-decoration: none;
+    color: #333;
+}
+
 .Kithat {
     margin-top: 50px;
     display: flex;
@@ -254,48 +264,10 @@ body
 }
 .Thikat .img{
     display: flex;
-    border: #f9f9f9;
     width: 400px;
     margin: 30px 50px 0 50px;
     box-shadow: 0 0 10px 5px #48abe0;
     border-radius: 30px;
-}
-.h2{
-    text-align: center;
-    position: relative;
-    font-size: x-large;
-    font-weight: bold;
-}
-.cmimet{
-    cursor: pointer;
-    margin-left: 35px;
-    top: -5%;
-    width: 415px;
-    position: relative;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-}
-.cmimet .vlera{
-    width: 110px;    
-    margin: 0px 0 0 15%;
-    font-size: medium;
-    font-weight: bold;
-    background-color: transparent;
-    height: 40px;
-    border-radius: 20px;
-    color: #333; 
-}
-.cmimet .details{
-    width: 100px;
-    font-size: large;
-    font-weight: bold;
-    background-color: transparent; 
-    margin: 0px 0 0 15%;
-    height: 40px;
-    border-radius: 20px;
-    color: #333; 
-    cursor: pointer;
 }
 
 footer

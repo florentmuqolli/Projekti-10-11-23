@@ -10,7 +10,7 @@ if (!isset($_SESSION["user"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crimson's</title>
-    <link rel="stylesheet" href="skeletura-main.css">
+    <link rel="stylesheet" href="Skeletura-main.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -71,158 +71,89 @@ if (!isset($_SESSION["user"])) {
     <div class="Thikat">
         <div class="skins">
             <div class="rubrika"> 
-            <p class="h2"><img src="img/knife1.png" alt="" class="img">Skeleton Knife</p>
-            <div class="cmimet">
-                <a href="Detajet.php"><input type="submit" value="Details" class="details"></a>
-                <input type="submit" value="Buy now: 600$" class="vlera">
-            </div>
+            <a href="Detajet.php"><img src="img/knife1.png" alt="" class="img">Skeleton Knife</a>
             </div>
         </div>
 
 
         <div class="skins">
             <div class="rubrika"> 
-            <p class="h2"><img src="img/knife2.png" alt="" class="img">Nomad Knife</p>
-            <div class="cmimet">
-                <a href="Detajet.php"><input type="submit" value="Details" class="details"></a>
-                <input type="submit" value="Buy now: 600$" class="vlera">
-            </div>
+            <a href="Detajet.php"><img src="img/knife2.png" alt="" class="img">Nomad Knife</a>
             </div>
         </div>
         <div class="skins">
             <div class="rubrika">
-            <p class="h2"><img src="img/knife3.png" alt="" class="img">Paracord Knife</p>
-            <div class="cmimet">
-                <a href="Detajet.php"><input type="submit" value="Details" class="details"></a>
-                <input type="submit" value="Buy now: 600$" class="vlera">
-            </div>
+            <a href="Detajet.php"><img src="img/knife3.png" alt="" class="img">Paracord Knife</a>
             </div>
         </div>
         <div class="skins">
             <div class="rubrika">
-            <p class="h2"><img src="img/knife4.png" alt="" class="img">Survival Knife</p>
-            <div class="cmimet">
-                <a href="Detajet.php"><input type="submit" value="Details" class="details"></a>
-                <input type="submit" value="Buy now: 600$" class="vlera">
-            </div>
+            <a href="Detajet.php"><img src="img/knife4.png" alt="" class="img">Survival Knife</a>
             </div>
         </div>
         <div class="skins">
             <div class="rubrika">
-            <p class="h2"><img src="img/knife5.png" alt="" class="img">Classic Knife</p>
-            <div class="cmimet">
-                <a href="Detajet.php"><input type="submit" value="Details" class="details"></a>
-                <input type="submit" value="Buy now: 600$" class="vlera">
-            </div>
+            <a href="Detajet.php"><img src="img/knife5.png" alt="" class="img">Classic Knife</a>
             </div>
         </div>
         <div class="skins">
             <div class="rubrika">
-            <p class="h2"><img src="img/knife6.png" alt="" class="img">Talon Knife</p>
-            <div class="cmimet">
-                <a href="Detajet.php"><input type="submit" value="Details" class="details"></a>
-                <input type="submit" value="Buy now: 600$" class="vlera">
-            </div>
+            <a href="Detajet.php"><img src="img/knife6.png" alt="" class="img">Talon Knife</a>
             </div>
         </div>
         <div class="skins">
             <div class="rubrika">
-            <p class="h2"><img src="img/knife7.png" alt="" class="img">Stiletto Knife</p>
-            <div class="cmimet">
-                <a href="Detajet.php"><input type="submit" value="Details" class="details"></a>
-                <input type="submit" value="Buy now: 600$" class="vlera">
-            </div>
+            <a href="Detajet.php"><img src="img/knife7.png" alt="" class="img">Stiletto Knife</a>
             </div>
         </div>
         <div class="skins">
             <div class="rubrika">
-            <p class="h2"><img src="img/knife8.png" alt="" class="img">Ursus Knife</p>
-            <div class="cmimet">
-                <a href="Detajet.php"><input type="submit" value="Details" class="details"></a>
-                <input type="submit" value="Buy now: 600$" class="vlera">
-            </div>
+            <a href="Detajet.php"><img src="img/knife8.png" alt="" class="img">Ursus Knife</a>
             </div>
         </div>
         <div class="skins">
             <div class="rubrika">
-            <p class="h2"><img src="img/knife9.png" alt="" class="img">Navaja Knife</p>
-            <div class="cmimet">
-                <a href="Detajet.php"><input type="submit" value="Details" class="details"></a>
-                <input type="submit" value="Buy now: 600$" class="vlera">
-            </div>
+            <a href="Detajet.php"><img src="img/knife9.png" alt="" class="img">Navaja Knife</a>
             </div>
         </div>
         <div class="skins">
             <div class="rubrika">
-            <p class="h2"><img src="img/knife10.png" alt="" class="img">Bowie Knife</p>
-            <div class="cmimet">
-                <a href="Detajet.php"><input type="submit" value="Details" class="details"></a>
-                <input type="submit" value="Buy now: 600$" class="vlera">
-            </div>
+            <a href="Detajet.php"><img src="img/knife10.png" alt="" class="img">Bowie Knife</a>
             </div>
         </div>
         <div class="skins">
             <div class="rubrika">
-            <p class="h2"><img src="img/knife11.png" alt="" class="img">Shadow Daggers</p>
-
-            <div class="cmimet">
-                <a href="Detajet.php"><input type="submit" value="Details" class="details"></a>
-                <input type="submit" value="Buy now: 600$" class="vlera">
-            </div>
+            <a href="Detajet.php"><img src="img/knife11.png" alt="" class="img">Shadow Daggers</a>
             </div>
         </div>
         <div class="skins">
             <div class="rubrika">
-            <p class="h2"><img src="img/knife12.png" alt="" class="img">Falchion Knife</p>
-            <div class="cmimet">
-                <a href="Detajet.php"><input type="submit" value="Details" class="details"></a>
-                <input type="submit" value="Buy now: 600$" class="vlera">
-            </div>
+            <a href="Detajet.php"><img src="img/knife12.png" alt="" class="img">Falchion Knife</a>
             </div>
         </div>
         <div class="skins">
             <div class="rubrika">
-            <p class="h2"><img src="img/knife13.png" alt="" class="img">Butterfly Knife</p>
-            <div class="cmimet">
-                <a href="Detajet.php"><input type="submit" value="Details" class="details"></a>
-                <input type="submit" value="Buy now: 600$" class="vlera">
-            </div>
+            <a href="Detajet.php"><img src="img/knife13.png" alt="" class="img">Butterfly Knife</a>
             </div>
         </div>
         <div class="skins">
             <div class="rubrika">
-            <p class="h2"><img src="img/knife14.png" alt="" class="img">Huntsman Knife</p>
-            <div class="cmimet">
-                <a href="Detajet.php"><input type="submit" value="Details" class="details"></a>
-                <input type="submit" value="Buy now: 600$" class="vlera">
-            </div>
+            <a href="Detajet.php"><img src="img/knife14.png" alt="" class="img">Huntsman Knife</a>
             </div>
         </div>
         <div class="skins">
             <div class="rubrika">
-            <p class="h2"><img src="img/deagle.png" alt="" class="img"> DEAGLE</p>
-            <div class="cmimet">
-                <a href="Detajet.php"><input type="submit" value="Details" class="details"></a>
-                <input type="submit" value="Buy now: 600$" class="vlera">
-            </div>
+            <a href="Detajet.php"><img src="img/deagle.png" alt="" class="img">DEAGLE</a>
             </div>
         </div>
         <div class="skins">
             <div class="rubrika">
-            <p class="h2"><img src="img/sherif.png" alt="" class="img">R8 Revolver</p>
-            <div class="cmimet">
-                <a href="Detajet.php"><input type="submit" value="Details" class="details"></a>
-                <input type="submit" value="Buy now: 600$" class="vlera">
-            </div>
+            <a href="Detajet.php"><img src="img/sherif.png" alt="" class="img">R8 Revolver</a>
             </div>
         </div>
         <div class="skins">
             <div class="rubrika">
-                <p class="h2"><img src="img/autosniper.png" alt="" class="img">SCAR-20</p>
-            <div class="cmimet">
-                <a href="Detajet.php"><input type="submit" value="Details" class="details"></a>
-                <input type="submit" value="Buy now: 600$" class="vlera">
-            </div>
+                <a href="Detajet.php"><img src="img/autosniper.png" alt="" class="img">SCAR-20</a>
             </div>
         </div>
     </div>
