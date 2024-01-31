@@ -1,6 +1,38 @@
 <?php
-include("headfoot/header.php");
+session_start();
+if (!isset($_SESSION["user2"])) {
+   header("Location: ../loginperadmin.php");
+}
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <div class="sidebar">
+        <h1 class="dbrd"><a href="admintools.php" class="dbrda">Dashboard</a></h1>
+        <div class="menues">
+            <div class="menu">
+                <a href="create.php" class="dbrda2"><strong>Add New Post</strong></a>
+            </div>
+            
+            <div class="menu">
+                <a href="Faq.php" class="dbrda2"><strong>View FAQ's website</strong></a>
+            </div>
+            <div class="menu">
+                <a href="../Details/detcrud.php" class="dbrda2"><strong>Details CRUD</strong></a>
+            </div>
+            <div class="menu">
+                <a href="../logout.php" class="logout"><strong>Log out</strong></a>
+            </div>
+            
+        </div>
+    </div>
 
 <div class="posts-view">
 <?php
@@ -42,23 +74,23 @@ include("headfoot/header.php");
     <table class="table table-bordered">
         <thead>
             <tr>
-            <th>Publication Date</th>
+            <th class="date">Publication Date</th>
             <th>Title</th>
-            <th>Article</th>
+            <th class="article">Article</th>
             <th>Action</th>
             </tr>
         </thead>
         <tbody>
             <?php
-            include("../connect.php");
+            include("../../connect.php");
             $sqlSelect = "SELECT * FROM posts";
             $result = mysqli_query($conn,$sqlSelect);
             while ($data = mysqli_fetch_array($result)) {
             ?>
             <tr>
-            <td><?php echo $data["date"]?></td>
+            <td class="date"><?php echo $data["date"]?></td>
             <td><?php echo $data["title"]?></td>
-            <td><?php echo $data["summary"]?></td>
+            <td class="article"><?php echo $data["summary"]?></td>
             <td>
                 <a class="btn btn-info" href="view.php?id=<?php echo $data["id"]?>">View</a>
                 <a class="btn btn-warning" href="edit.php?id=<?php echo $data["id"]?>">Edit</a>
@@ -71,7 +103,6 @@ include("headfoot/header.php");
         </tbody>
     </table>
 </div>
-
-<?php
-include("headfoot/footer.php");
-?>
+</div>
+</body>
+</html>

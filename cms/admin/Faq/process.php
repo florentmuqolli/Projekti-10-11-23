@@ -1,6 +1,6 @@
 <?php
 if (isset($_POST["create"])) {
-    include("../connect.php");
+    include("../../connect.php");
     $title = mysqli_real_escape_string($conn, $_POST["title"]);
     $summary = mysqli_real_escape_string($conn, $_POST["summary"]);
     $content = mysqli_real_escape_string($conn, $_POST["content"]);
@@ -18,7 +18,7 @@ if (isset($_POST["create"])) {
 
 <?php
 if (isset($_POST["update"])) {
-    include("../connect.php");
+    include("../../connect.php");
     $title = mysqli_real_escape_string($conn, $_POST["title"]);
     $summary = mysqli_real_escape_string($conn, $_POST["summary"]);
     $content = mysqli_real_escape_string($conn, $_POST["content"]);

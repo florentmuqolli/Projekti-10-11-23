@@ -10,7 +10,7 @@ if (!isset($_SESSION["user"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crimson's</title>
-    <link rel="stylesheet" href="Skeletura-main.css">
+    <link rel="stylesheet" href="skeletura-main.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -35,8 +35,7 @@ if (!isset($_SESSION["user"])) {
 
 <body>
     
-<div class="Kithat">
-    <div class="top">
+<div class="top">
         <h1>CS-GO Crimson is now CS2 Crimson <br>Check out all the best deals on skins right now</h1>
     </div>
 
@@ -64,11 +63,56 @@ if (!isset($_SESSION["user"])) {
         
     </div>
     <h1 class="cr">CRIMSON WEB SKINS</h1>
-    <div class="img-main"> 
-        
-    </div>
 
-    <div class="Thikat">
+<footer>
+        <div class="d1">
+            <div class="titull">
+                <div class="lista">
+                    <h4>Crimson's</h4>
+                    <ul>
+                        <li><a href="">Terms of Service</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Crimson's blog</a></li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <h4>Need Help?</h4>
+                    <ul>
+                        <li><a href="cms\Faq.php">FAQ</a></li>
+                        <li><a href="Kontakt.php" onclick="con()">Crimson's Support</a></li>
+                        <li><a href="Kontakt.php" onclick="con()">Contact Form</a></li>
+                    </ul>
+                </div>
+                <div class="listap">
+                    <h4>Payment Methods</h4>
+                    <div class="ulp">
+                        <a href=""><i class='bx bxl-visa'></i></a>
+                        <a href=""><i class='bx bxl-mastercard' ></i></a>
+                        <a href=""><i class='bx bxl-bitcoin' ></i></a>
+                        <a href=""><i class='bx bxl-paypal' ></i></a>
+                    </div>
+                </div>
+                <div class="lista">
+                    <h4>Follow us</h4>
+                    <div class="rrjetet">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</footer>
+
+
+<script src="js\skeletura-main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
+<!--<div class="Thikat">
         <div class="skins">
             <div class="rubrika"> 
             <a href="Detajet.php"><img src="img/knife1.png" alt="" class="img">Skeleton Knife</a>
@@ -156,54 +200,4 @@ if (!isset($_SESSION["user"])) {
                 <a href="Detajet.php"><img src="img/autosniper.png" alt="" class="img">SCAR-20</a>
             </div>
         </div>
-    </div>
-</div>
-
-
-<footer>
-        <div class="d1">
-            <div class="titull">
-                <div class="lista">
-                    <h4>Crimson's</h4>
-                    <ul>
-                        <li><a href="">Terms of Service</a></li>
-                        <li><a href="">Privacy Policy</a></li>
-                        <li><a href="">Crimson's blog</a></li>
-                    </ul>
-                </div>
-                <div class="lista">
-                    <h4>Need Help?</h4>
-                    <ul>
-                        <li><a href="cms\Faq.php">FAQ</a></li>
-                        <li><a href="Kontakt.php" onclick="con()">Crimson's Support</a></li>
-                        <li><a href="Kontakt.php" onclick="con()">Contact Form</a></li>
-                    </ul>
-                </div>
-                <div class="listap">
-                    <h4>Payment Methods</h4>
-                    <div class="ulp">
-                        <a href=""><i class='bx bxl-visa'></i></a>
-                        <a href=""><i class='bx bxl-mastercard' ></i></a>
-                        <a href=""><i class='bx bxl-bitcoin' ></i></a>
-                        <a href=""><i class='bx bxl-paypal' ></i></a>
-                    </div>
-                </div>
-                <div class="lista">
-                    <h4>Follow us</h4>
-                    <div class="rrjetet">
-                        <a href=""><i class="fab fa-facebook-f"></i></a>
-                        <a href=""><i class="fab fa-twitter"></i></a>
-                        <a href=""><i class="fab fa-instagram"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-</footer>
-
-
-<script src="js\skeletura-main.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
-</html>
+    </div>-->

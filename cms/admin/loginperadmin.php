@@ -5,7 +5,7 @@ if (isset($_POST['loginperadmin'])) {
    if ($username == "admin" && $password == "crimsons") {
     session_start();
     $_SESSION["user2"] = "admin";
-    header("Location: admintools.php");
+    header("Location: Faq/admintools.php");
    }
 }
 ?>

@@ -15,7 +15,7 @@
             <?php
                 $id = $_GET['id'];
                 if ($id) {
-                    include("connect.php");
+                    include("../../connect.php");
                     $sqlSelect = "SELECT * FROM posts WHERE id = $id";
                     $result = mysqli_query($conn,$sqlSelect);
                     while ($data = mysqli_fetch_array($result)) {
@@ -34,7 +34,7 @@
          </div>
     </div>
     <div class="footer">
-        <a href="admin/admintools.php">Admin Panel</a>
+        <a href="admintools.php">Admin Panel</a>
     </div>
 </body>
 </html>
