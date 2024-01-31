@@ -19,7 +19,7 @@ include("headfoot/header.php");
                 while ($data = mysqli_fetch_array($result)) {
                 ?>
                 <div class="form-field">
-                    <input type="text" class="form-ctrl" name="title" id="" placeholder="Enter title:" value="<?php echo $data['title'];?>">
+                    <input type="text" class="form-ctrl" name="title" placeholder="Enter title:" value="<?php echo $data['title'];?>">
                 </div>
                 <div class="form-field">
                     <textarea name="summary" class="form-ctrl" id="" cols="30" rows="10" placeholder="Enter summary:"><?php echo $data['summary'];?></textarea>

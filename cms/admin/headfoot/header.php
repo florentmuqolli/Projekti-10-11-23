@@ -20,11 +20,25 @@ if (!isset($_SESSION["user2"])) {
             <div class="menu">
                 <a href="create.php" class="dbrda2"><strong>Add New Post</strong></a>
             </div>
+            
             <div class="menu">
-                <a href="../Faq.php" class="dbrda2"><strong>View on the Website</strong></a>
+                <a href="../Faq.php" class="dbrda2"><strong>View FAQ's website</strong></a>
+            </div>
+            <div class="menu">
+                <a href="admintools.php" class="dbrda2"><strong>FAQ's CRUD</strong></a>
+            </div>
+            <div class="menu">
+                <a href="prodcreate.php" class="dbrda2"><strong>Add New Product</strong></a>
+            </div>
+            <div class="menu">
+                <a href="prodcrud.php" class="dbrda2"><strong>Product's CRUD</strong></a>
+            </div>
+            <div class="menu">
+                <a href="../../skeletura-main.php" class="dbrda2"><strong>Check products stock</strong></a>
             </div>
             <div class="menu">
                 <a href="logout.php" class="logout"><strong>Log out</strong></a>
             </div>
+            
         </div>
         </div>

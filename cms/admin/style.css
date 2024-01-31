@@ -78,6 +78,11 @@ body, html {
     border-collapse: collapse;
 }
 
+.tables .tables-bordered {
+    width: 100%;
+    border-collapse: collapse;
+}
+
 .table th, .table td {
     padding: 8px;
     border: none;
@@ -85,8 +90,19 @@ body, html {
     text-align: left;
     width: 22%;
 }
+.tables th, .tables td {
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    width: 15%;
+}
+
 
 .table th {
+    background-color: transparent;
+}
+.tablep th {
     background-color: transparent;
 }
 
