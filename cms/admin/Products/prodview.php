@@ -15,20 +15,20 @@ if (!isset($_SESSION["user2"])) {
 <body>
     <div class="dashboard">
         <div class="sidebar">
-        <h1 class="dbrd"><a href="detcrud.php" class="dbrda">Dashboard</a></h1>
+        <h1 class="dbrd"><a href="prodcrud.php" class="dbrda">Dashboard</a></h1>
         <div class="menues">
             <div class="menu">
                 <a href="../Faq/admintools.php" class="dbrda2"><strong>FAQ's CRUD</strong></a>
             </div>
             <div class="menu">
-                <a href="detcreate.php" class="dbrda2"><strong>Add New Details</strong></a>
+                <a href="../Details/detcrud.php" class="dbrda2"><strong>Details's CRUD</strong></a>
             </div>
             <div class="menu">
-                <a href="../../../Detajet.php" class="dbrda2"><strong>Check Details</strong></a>
+                <a href="prodcreate.php" class="dbrda2"><strong>Add New Product</strong></a>
             </div>
             <div class="menu">
-                    <a href="../Products/prodcrud.php" class="dbrda2"><strong>Product's CRUD</strong></a>
-                </div>
+                <a href="../../../skeletura-main.php" class="dbrda2"><strong>Check Products</strong></a>
+            </div>
             <div class="menu">
                 <a href="../logout.php" class="logout"><strong>Log out</strong></a>
             </div>
@@ -41,14 +41,12 @@ if (!isset($_SESSION["user2"])) {
     $id = $_GET["id"];
     if ($id) {
         include("../../connect.php");
-        $sqlSelectPost = "SELECT * FROM details WHERE id = $id";
+        $sqlSelectPost = "SELECT * FROM products WHERE id = $id";
         $result = mysqli_query($conn, $sqlSelectPost);
         while ($data = mysqli_fetch_array($result)) {
             ?>
             <h1><?php echo $data['name'];?></h1>
             <p><?php echo $data['image'];?></p>
-            <p><?php echo $data['description'];?></p>
-            <p><?php echo $data['price'];?></p>
             <?php
         }
     }else {

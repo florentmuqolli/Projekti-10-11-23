@@ -15,19 +15,19 @@ if (!isset($_SESSION["user2"])) {
 <body>
     <div class="dashboard">
         <div class="sidebar">
-        <h1 class="dbrd"><a href="detcrud.php" class="dbrda">Dashboard</a></h1>
+        <h1 class="dbrd"><a href="prodcrud.php" class="dbrda">Dashboard</a></h1>
         <div class="menues">
             <div class="menu">
                 <a href="../Faq/admintools.php" class="dbrda2"><strong>FAQ's CRUD</strong></a>
             </div>
             <div class="menu">
-                <a href="../Details/detcreate.php" class="dbrda2"><strong>Add New Details</strong></a>
+                <a href="../Details/detcrud.php" class="dbrda2"><strong>Details's CRUD</strong></a>
             </div>
             <div class="menu">
-                    <a href="../Products/prodcrud.php" class="dbrda2"><strong>Product's CRUD</strong></a>
-                </div>
+                <a href="../Details/prodcreate.php" class="dbrda2"><strong>Add Product</strong></a>
+            </div>
             <div class="menu">
-                <a href="../../../Detajet.php" class="dbrda2"><strong>Check Details</strong></a>
+                <a href="../../../skeletura-main.php" class="dbrda2"><strong>Check Products</strong></a>
             </div>
             <div class="menu">
                 <a href="../logout.php" class="logout"><strong>Log out</strong></a>
@@ -36,7 +36,7 @@ if (!isset($_SESSION["user2"])) {
         </div>
         </div>
         <div class="create-form">
-            <form action="detprocess.php" method="post">
+            <form action="prodprocess.php" method="post">
 
                 <?php
 
@@ -44,7 +44,7 @@ if (!isset($_SESSION["user2"])) {
                 if (isset($_GET["id"])) {
                     $id = $_GET["id"];
                     include("../../connect.php");
-                    $sqlEdit = "SELECT * FROM details WHERE id = $id";
+                    $sqlEdit = "SELECT * FROM products WHERE id = $id";
                     $result = mysqli_query($conn,$sqlEdit);
                 }else {
                     echo "Post not found";
@@ -56,12 +56,6 @@ if (!isset($_SESSION["user2"])) {
                 </div>
                 <div class="form-field">
                     <input type="file" class="form-ctrl" name="image" <?php echo $data['image'];?> accept=".jpg, .jpeg, .png" placeholder="Product's image:">
-                </div>
-                <div class="form-field">
-                    <textarea name="description" class="form-ctrl" id="" cols="30" rows="10" placeholder="Product's Description:"><?php echo $data['description'];?></textarea>
-                </div>
-                <div class="form-field">
-                    <input type="text" class="form-ctrl" name="price" placeholder="Price:" <?php echo $data['price'];?>>
                 </div>
                 <input type="hidden" name="id" value="<?php echo $id;?>">
                 <div class="form-field">

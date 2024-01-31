@@ -28,7 +28,7 @@ if (!isset($_SESSION["user"])) {
         <a href="#">Home</a>
         <a href="Aboutusi.php" >About Us</a>
         <a href="Kontakt.php" class="kontaktona"> Contact</a>
-        <a href="cms\Faq.php"> FAQ</a>
+        <a href="cms\admin\Faq\Faq.php"> FAQ</a>
         <a href="logout.php">Logout</a>
     </nav>
 </header>
@@ -78,7 +78,7 @@ if (!isset($_SESSION["user"])) {
                 <div class="lista">
                     <h4>Need Help?</h4>
                     <ul>
-                        <li><a href="cms\Faq.php">FAQ</a></li>
+                        <li><a href="cms\admin\Faq\Faq.php">FAQ</a></li>
                         <li><a href="Kontakt.php" onclick="con()">Crimson's Support</a></li>
                         <li><a href="Kontakt.php" onclick="con()">Contact Form</a></li>
                     </ul>

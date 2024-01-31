@@ -15,19 +15,19 @@ if (!isset($_SESSION["user2"])) {
 <body>
     <div class="dashboard">
         <div class="sidebar">
-            <h1 class="dbrd"><a href="detcrud.php" class="dbrda">Dashboard</a></h1>
+            <h1 class="dbrd"><a href="prodcrud.php" class="dbrda">Dashboard</a></h1>
             <div class="menues">
                 <div class="menu">
                     <a href="../Faq/admintools.php" class="dbrda2"><strong>FAQ's CRUD</strong></a>
                 </div>
                 <div class="menu">
-                    <a href="../Products/prodcrud.php" class="dbrda2"><strong>Product's CRUD</strong></a>
+                    <a href="../Details/detcrud.php" class="dbrda2"><strong>Details's CRUD</strong></a>
                 </div>
                 <div class="menu">
-                    <a href="../Details/detcreate.php" class="dbrda2"><strong>Add New Details</strong></a>
+                    <a href="prodcreate.php" class="dbrda2"><strong>Add New Products</strong></a>
                 </div>
                 <div class="menu">
-                    <a href="../../../Detajet.php" class="dbrda2"><strong>Check Details</strong></a>
+                    <a href="../../../skeletura-main.php" class="dbrda2"><strong>Check Products</strong></a>
                 </div>
                 <div class="menu">
                     <a href="../logout.php" class="logout"><strong>Log out</strong></a>
@@ -79,15 +79,13 @@ if (!isset($_SESSION["user2"])) {
             <th>#</th>
             <th class="name">Name</th>
             <th class="image">Image</th>
-            <th class="desc">Description</th>
-            <th class="price">Price</th>  
             <th>Action</th>  
         </tr>
     </thead>
     <tbody>
         <?php
         include("../../connect.php");
-        $sql = "SELECT * FROM details";
+        $sql = "SELECT * FROM products";
         $result = mysqli_query($conn, $sql);
         while ($data = mysqli_fetch_array($result)) {
             ?>
@@ -95,12 +93,10 @@ if (!isset($_SESSION["user2"])) {
                 <td><?php echo $data["id"]; ?></td>
                 <td class="name"><?php echo $data["name"]; ?></td>
                 <td class="image"><?php echo $data["image"]; ?></td>
-                <td class="desc"><?php echo $data["description"]; ?></td>
-                <td class="price"><?php echo $data["price"]; ?></td>
                 <td>
-                    <a class="btn btn-info" href="detview.php?id=<?php echo $data["id"]?>">View</a>
-                    <a class="btn btn-warning" href="detedit.php?id=<?php echo $data["id"]?>">Edit</a>
-                    <a class="btn btn-danger" href="detdelete.php?id=<?php echo $data["id"]?>">Delete</a>
+                    <a class="btn btn-info" href="prodview.php?id=<?php echo $data["id"]?>">View</a>
+                    <a class="btn btn-warning" href="prodedit.php?id=<?php echo $data["id"]?>">Edit</a>
+                    <a class="btn btn-danger" href="proddelete.php?id=<?php echo $data["id"]?>">Delete</a>
                 </td>
             </tr>
             <?php

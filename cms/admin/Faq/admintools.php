@@ -20,7 +20,9 @@ if (!isset($_SESSION["user2"])) {
             <div class="menu">
                 <a href="create.php" class="dbrda2"><strong>Add New Post</strong></a>
             </div>
-            
+            <div class="menu">
+                    <a href="../Products/prodcrud.php" class="dbrda2"><strong>Product's CRUD</strong></a>
+                </div>
             <div class="menu">
                 <a href="Faq.php" class="dbrda2"><strong>View FAQ's website</strong></a>
             </div>

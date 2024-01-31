@@ -24,6 +24,9 @@ if (!isset($_SESSION["user2"])) {
                 <a href="../Details/detcrud.php" class="dbrda2"><strong>Details CRUD</strong></a>
             </div>
             <div class="menu">
+                    <a href="../Products/prodcrud.php" class="dbrda2"><strong>Product's CRUD</strong></a>
+                </div>
+            <div class="menu">
                 <a href="../logout.php" class="logout"><strong>Log out</strong></a>
             </div>
             
