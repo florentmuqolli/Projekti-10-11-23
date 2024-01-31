@@ -1,6 +1,6 @@
 <?php
 include("../connect.php");
-if(isset($_POST["createp"])){
+if(isset($_POST["create"])){
     $name = mysqli_real_escape_string($conn, $_POST["name"]);
     $image = mysqli_real_escape_string($conn, $_POST["image"]);
     $description = mysqli_real_escape_string($conn, $_POST["description"]);
@@ -8,16 +8,16 @@ if(isset($_POST["createp"])){
     $sql = "INSERT INTO products (name, image, description, price) VALUES ('$name','$image','$description','price')";
     $result = mysqli_query($conn, $sql);
     if($result){
-        session_start();
-        $_SESSION["createp"] = "Product added successfully";
         header("Location: prodcrud.php");
+        session_start();
+        $_SESSION["create"] = "Product added successfully";
     }
     else{
         die("Something went wrong!");
     }
 }
 
-if(isset($_POST["editp"])){
+if(isset($_POST["update"])){
     $name = mysqli_real_escape_string($conn, $_POST["name"]);
     $image = mysqli_real_escape_string($conn, $_POST["image"]);
     $description = mysqli_real_escape_string($conn, $_POST["description"]);
@@ -26,9 +26,9 @@ if(isset($_POST["editp"])){
     $sql = "UPDATE products SET name = '$name', image = '$image', description = '$description', price = '$price' WHERE id = $id";
     $result = mysqli_query($conn, $sql);
     if($result){
-        session_start();
-        $_SESSION["updatep"] = "Product updated successfully";
         header("Location: prodcrud.php");
+        session_start();
+        $_SESSION["update"] = "Product updated successfully";
     }
     else{
         die("Something went wrong!");

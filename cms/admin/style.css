@@ -78,6 +78,11 @@ body, html {
     border-collapse: collapse;
 }
 
+.tables{
+    width: 100%;
+    border-collapse: collapse;
+}
+
 .tables .tables-bordered {
     width: 100%;
     border-collapse: collapse;
@@ -95,7 +100,7 @@ body, html {
     border: none;
     border-bottom: 1px solid #ddd;
     text-align: left;
-    width: 15%;
+    width: 1%;
 }
 
 

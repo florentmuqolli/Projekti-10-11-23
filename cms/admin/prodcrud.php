@@ -4,7 +4,7 @@ include("headfoot/header.php");
 
 <div class="posts-view">
 <?php
-        if (isset($_SESSION["createp"])) {
+        if (isset($_SESSION["create"])) {
         ?>
         <div class="success-message">
             <?php 
@@ -12,7 +12,7 @@ include("headfoot/header.php");
             ?>
         </div>
         <?php
-        unset($_SESSION["createp"]);
+        unset($_SESSION["create"]);
         }
         ?>
          <?php

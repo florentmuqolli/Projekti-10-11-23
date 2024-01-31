@@ -16,7 +16,7 @@ include("headfoot/header.php");
                     <input type="text" class="form-ctrl" name="price" placeholder="Price:">
                 </div>
                 <div class="form-field">
-                    <input type="submit" class="btn btn-primary" value="Add Product" name="createp">
+                    <input type="submit" class="btn btn-primary" value="Add Product" name="create">
                 </div>
             </form>
         </div>

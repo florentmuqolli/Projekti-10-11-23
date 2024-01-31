@@ -31,7 +31,7 @@ include("headfoot/header.php");
                 </div>
                 <input type="hidden" name="id" value="<?php echo $id;?>">
                 <div class="form-field">
-                    <input type="submit" class="btn btn-primary" value="Update" name="updatep">
+                    <input type="submit" class="btn btn-primary" value="Update" name="update">
                 </div>
                 <?php
                 }
