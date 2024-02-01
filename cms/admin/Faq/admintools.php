@@ -30,6 +30,9 @@ if (!isset($_SESSION["user2"])) {
                     <a href="../Abt/abtcrud.php" class="dbrda2"><strong>About's CRUD</strong></a>
             </div>
             <div class="menu">
+                    <a href="../Contactus/concrud.php" class="dbrda2"><strong>Conctact us's CRUD</strong></a>
+            </div>
+            <div class="menu">
                 <a href="create.php" class="dbrda2"><strong>Add New Post</strong></a>
             </div>
             <div class="menu">

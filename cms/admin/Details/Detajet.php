@@ -26,7 +26,7 @@ if (!isset($_SESSION["user"])) {
     <nav class="ubt">
         <a href="../Products\skeletura-main.php" > Home</a>
         <a href="../Abt\Aboutusi.php"> About Us</a>
-        <a href="Kontakt.php" class="kontaktona"> Contact</a>
+        <a href="../Contactus/Kontakt.php" class="kontaktona"> Contact</a>
         <a href="../Faq\Faq.php"> FAQ</a>
         <a href="../userlogout.php">Logout</a>
     </nav>
@@ -312,7 +312,7 @@ if (!isset($_SESSION["user"])) {
                     <h4>Need Help?</h4>
                     <ul>
                         <li><a href="../Faq\Faq.php">FAQ</a></li>
-                        <li><a href="Kontakt.php">Crimson's Support</a></li>
+                        <li><a href="../Contactus/Kontakt.php">Crimson's Support</a></li>
                         <li><a href="Kontakt.php">Contact Form</a></li>
                     </ul>
                 </div>

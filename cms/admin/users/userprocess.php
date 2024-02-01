@@ -1,11 +1,14 @@
 <?php
 include("../../connect.php");
 if(isset($_POST["create"])){
-    $fullnName = mysqli_real_escape_string($conn, $_POST["full_name"]);
+    $fullName = mysqli_real_escape_string($conn, $_POST["full_name"]);
     $email = mysqli_real_escape_string($conn, $_POST["email"]);
     $password = mysqli_real_escape_string($conn, $_POST["password"]);
     $sql = "INSERT INTO users (full_name, email, password) VALUES ('$fullName','$email', '$password')";
     $result = mysqli_query($conn, $sql);
+        if(strlen($password) < 7){
+            die("Password must be at least 8 characters!");
+        }
     if($result){
         header("Location: usercrud.php");
         session_start();

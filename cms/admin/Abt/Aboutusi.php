@@ -27,7 +27,7 @@ if (!isset($_SESSION["user"])) {
     <nav class="ubt">
         <a href="../Products\skeletura-main.php" onclick="hom()">Home</a>
         <a href="#">About Us</a>
-        <a href="Kontakt.php" class="kontaktona" onclick="con()"> Contact</a>
+        <a href="../Contactus/Kontakt.php" class="kontaktona" onclick="con()"> Contact</a>
         <a href="../Faq\Faq.php"> FAQ</a>
         <a href="../userlogout.php">Logout</a>
     </nav>
