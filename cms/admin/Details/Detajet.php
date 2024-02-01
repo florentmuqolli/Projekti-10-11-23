@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION["user"])) {
-   header("Location: login.php");
+   header("Location: ../userlogin.php");
 }
 ?>
 <!DOCTYPE html>
@@ -24,11 +24,11 @@ if (!isset($_SESSION["user"])) {
     </label>
     
     <nav class="ubt">
-        <a href="skeletura-main.php" > Home</a>
-        <a href="Aboutusi.php"> About Us</a>
+        <a href="../Products\skeletura-main.php" > Home</a>
+        <a href="../Abt\Aboutusi.php"> About Us</a>
         <a href="Kontakt.php" class="kontaktona"> Contact</a>
-        <a href="cms\admin\Faq\Faq.php"> FAQ</a>
-        <a href="logout.php">Logout</a>
+        <a href="../Faq\Faq.php"> FAQ</a>
+        <a href="../userlogout.php">Logout</a>
     </nav>
 </header>
 <body>
@@ -311,7 +311,7 @@ if (!isset($_SESSION["user"])) {
                 <div class="lista">
                     <h4>Need Help?</h4>
                     <ul>
-                        <li><a href="cms\admin\Faq\Faq.php">FAQ</a></li>
+                        <li><a href="../Faq\Faq.php">FAQ</a></li>
                         <li><a href="Kontakt.php">Crimson's Support</a></li>
                         <li><a href="Kontakt.php">Contact Form</a></li>
                     </ul>
@@ -339,7 +339,7 @@ if (!isset($_SESSION["user"])) {
 </footer>
 
 
-    <script src="js\Detajet.js"></script>
+    <script src="Detajet.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

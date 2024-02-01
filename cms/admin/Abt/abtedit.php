@@ -15,26 +15,20 @@ if (!isset($_SESSION["user2"])) {
 <body>
     <div class="dashboard">
         <div class="sidebar">
-        <h1 class="dbrd"><a href="prodcrud.php" class="dbrda">Dashboard</a></h1>
+        <h1 class="dbrd"><a href="abtcrud.php" class="dbrda">Dashboard</a></h1>
         <div class="menues">
             <div class="menu">
-                <a href="../Faq/admintools.php" class="dbrda2"><strong>FAQ's CRUD</strong></a>
-            </div>
-            <div class="menu">
-                <a href="../Details/detcrud.php" class="dbrda2"><strong>Details's CRUD</strong></a>
-            </div>
-            <div class="menu">
+                 <a href="../Faq/admintools.php" class="dbrda2"><strong>FAQ's CRUD</strong></a>
+                </div>
+                <div class="menu">
+                    <a href="../Details\detcrud.php" class="dbrda2"><strong>Details's CRUD</strong></a>
+                </div>
+                <div class="menu">
                     <a href="../users\usercrud.php" class="dbrda2"><strong>User's CRUD</strong></a>
-            </div>
-            <div class="menu">
-                    <a href="../Abt/abtcrud.php" class="dbrda2"><strong>About's CRUD</strong></a>
-            </div>
-            <div class="menu">
-                <a href="../Details/prodcreate.php" class="dbrda2"><strong>Add New Product</strong></a>
-            </div>
-            <div class="menu">
-                <a href="../skeletura-main.php" class="dbrda2"><strong>Check Products</strong></a>
-            </div>
+                </div>
+                <div class="menu">
+                    <a href="../Products\prodcrud.php" class="dbrda2"><strong>Products CRUD</strong></a>
+                </div>
             <div class="menu">
                 <a href="../adminlogout.php" class="logout"><strong>Log out</strong></a>
             </div>
@@ -42,15 +36,12 @@ if (!isset($_SESSION["user2"])) {
         </div>
         </div>
         <div class="create-form">
-            <form action="prodprocess.php" method="post">
-
+            <form action="abtprocess.php" method="post">
                 <?php
-
-                
                 if (isset($_GET["id"])) {
                     $id = $_GET["id"];
                     include("../../connect.php");
-                    $sqlEdit = "SELECT * FROM products WHERE id = $id";
+                    $sqlEdit = "SELECT * FROM aboutus WHERE id = $id";
                     $result = mysqli_query($conn,$sqlEdit);
                 }else {
                     echo "Post not found";
@@ -58,10 +49,13 @@ if (!isset($_SESSION["user2"])) {
                     while ($data = mysqli_fetch_array($result)) {
                 ?>
                 <div class="form-field">
-                    <input type="text" class="form-ctrl" name="name" value="<?php echo $data['name'];?>" placeholder="Product name:">
+                    <input type="text" class="form-ctrl" name="title" value="<?php echo $data['title'];?>" placeholder="New Title:">
                 </div>
                 <div class="form-field">
-                    <input type="file" class="form-ctrl" name="image" value="<?php echo $data['image'];?>" accept=".jpg, .jpeg, .png" placeholder="Product's image:">
+                    <textarea name="summary" class="form-ctrl" id="" cols="30" rows="10" placeholder="New Summary:"><?php echo $data['summary'];?></textarea>
+                </div>
+                <div class="form-field">
+                    <textarea name="content" class="form-ctrl" id="" cols="30" rows="10" placeholder="New Content:"><?php echo $data['content'];?></textarea>
                 </div>
                 <input type="hidden" name="id" value="<?php echo $id;?>">
                 <div class="form-field">

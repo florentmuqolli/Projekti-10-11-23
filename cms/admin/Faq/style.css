@@ -1,77 +1,3 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: Arial, sans-serif;
-}
-
-.dashboard {
-    display: flex;
-    height: 100%;
-}
-
-.sidebar {
-    width: 200px;
-    background-color: rgb(34, 37, 43);
-    padding: 20px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.dbrd {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(31, 45, 203);
-    border-radius: 5px;
-}
-
-.dbrda {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
-    display: inline-block;
-}
-
-.create-form {
-    flex: 1;
-    padding: 20px;
-    max-width: 600px;
-    margin: auto;
-}
-
-.form-field {
-    margin-bottom: 20px;
-}
-
-.form-ctrl {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.btn-primary {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-}
-
-
-.posts-view {
-    padding: 20px;
-    width: 100%; 
-    box-sizing: border-box; 
-    overflow-x: auto; 
-}
 
 body {
     margin: 0;
@@ -138,27 +64,37 @@ body {
 
 .table {
     width: 100%;
+    border-collapse: collapse;
 }
 
 .table th, .table td {
+    padding: 8px;
     border: none;
     border-bottom: 1px solid #ddd;
     text-align: left;
+    width: 10%;
     overflow: hidden;
 }
 
-@media screen and (max-width: 640px) {
-    .date, .article {
-        display: none;
+
+
+@media screen and (max-width: 602px) {
+    .dashboard {
+        display: inline;
+    }
+    .sidebar {
+        width: auto;
     }
 }
-
 @media screen and (max-width: 460px) {
     .dashboard {
         display: inline;
     }
     .sidebar {
         width: auto;
+    }
+    .name {
+        display: none;
     }
 }
 
@@ -200,93 +136,36 @@ body {
     right: 41%;
 }
 
-.posts-view table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.table th, .table td {
-    padding: 8px;
-    border: none;
-    border-bottom: 1px solid #ddd;
-    width: 22%;
-    text-align: left;
-    overflow: hidden;
-}
-
-.table th {
-    background-color: transparent;
-}
-
-.btn-info {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.btn-warning {
-    background-color: #ffc107;
-    color: #212529;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.btn-danger {
-    background-color: #dc3545;
-    color: #fff;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.btn-info:hover, .btn-warning:hover, .btn-danger:hover {
-    opacity: 0.8;
-}
-
-.success-message {
-    color: #28a745;
-    background-color: #d4edda;
-    border-color: #c3e6cb;
-    padding: 10px;
-    border-radius: 5px;
-    position: absolute;
-    top: 4%;
-    right: 41%;
-}
-
-.post{
+.create-form {
     flex: 1;
     padding: 20px;
     max-width: 600px;
     margin: auto;
 }
 
-.dbrda2 {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
-    display: inline-block;
-    margin-bottom: 20%;
+.form-field {
+    margin-bottom: 20px;
+    text-align: center;
 }
-.logout {
-    padding: 10px 20px;
+
+.form-ctrl {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-primary {
     background-color: #007bff;
     color: #fff;
     border: none;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
-    margin-block: 15px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
 }
 
 @media screen and (max-width: 900px) {
@@ -296,14 +175,8 @@ body {
     .sidebar {
         width: auto;
     }
-    .sidebar .dbrd {
+    .menu {
         text-align: center;
-    }
-    .sidebar .dbrda2 {
-        margin-left: 34%;
-    }
-    .logout {
-        margin-left: 34%;
     }
 }
 @media screen and (max-width: 670px) {
@@ -311,5 +184,3 @@ body {
         width: 70%;
     }
 }
-
-

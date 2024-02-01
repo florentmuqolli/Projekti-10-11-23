@@ -24,10 +24,16 @@ if (!isset($_SESSION["user2"])) {
                 <a href="../Details/detcrud.php" class="dbrda2"><strong>Details's CRUD</strong></a>
             </div>
             <div class="menu">
-                <a href="../../../skeletura-main.php" class="dbrda2"><strong>Check Products</strong></a>
+                    <a href="../users\usercrud.php" class="dbrda2"><strong>User's CRUD</strong></a>
             </div>
             <div class="menu">
-                <a href="../logout.php" class="logout"><strong>Log out</strong></a>
+                    <a href="../Abt/abtcrud.php" class="dbrda2"><strong>About's CRUD</strong></a>
+            </div>
+            <div class="menu">
+                <a href="skeletura-main.php" class="dbrda2"><strong>Check Products</strong></a>
+            </div>
+            <div class="menu">
+                <a href="../adminlogout.php" class="logout"><strong>Log out</strong></a>
             </div>
             
         </div>

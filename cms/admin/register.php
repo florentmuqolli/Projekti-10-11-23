@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_SESSION["user"])) {
-   header("Location: skeletura-main.php");
+   header("Location: Products/skeletura-main.php");
 }
 ?>
 <!DOCTYPE html>
@@ -10,7 +10,7 @@ if (isset($_SESSION["user"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="stylesheet" href="lgreg.css">
+    <link rel="stylesheet" href="Lgreg.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -23,16 +23,16 @@ if (isset($_SESSION["user"])) {
         <i class='bx bx-x' id="close"></i>
     </label>
     <nav class="ubt">
-        <a href="#">Home</a>
-        <a href="Aboutusi.php" >About Us</a>
+        <a href="Products/skeletura-main.php">Products</a>
+        <a href="Abt/Aboutusi.php" >About Us</a>
         <a href="Kontakt.php" class="kontaktona"> Contact</a>
-        <a href="cms\admin\Faq\Faq.php"> FAQ</a>
+        <a href="Faq\Faq.php"> FAQ</a>
     </nav>
 </header>
 <body>
-    <img src="img\event_banner_csgo_left.webp" alt="event_banner_csgo_left" class="event_banner_csgo_left">
-    <img src="img\home-logo.webp" alt="home-logo" class="home-logo">
-    <img src="img\event_banner_csgo_right.webp" alt="event_banner_csgo_right" class="event_banner_csgo_right">
+    <img src="../../img\event_banner_csgo_left.webp" alt="event_banner_csgo_left" class="event_banner_csgo_left">
+    <img src="../../img\home-logo.webp" alt="home-logo" class="home-logo">
+    <img src="../../img\event_banner_csgo_right.webp" alt="event_banner_csgo_right" class="event_banner_csgo_right">
 <div class="container">
     <?php
         if (isset($_POST["submit"])) {
@@ -53,7 +53,7 @@ if (isset($_SESSION["user"])) {
             if ($password!==$passwordConfirm) {
                 array_push($errors, "Passwords do not match!");
             }
-            require_once "database.php";
+            require_once "../connect.php";
             $sql = "SELECT * FROM users WHERE email = '$email'";
             $result = mysqli_query($conn, $sql);
             $rowCount = mysqli_num_rows($result);
@@ -73,7 +73,7 @@ if (isset($_SESSION["user"])) {
                     mysqli_stmt_bind_param($stmt,"sss",$fullName, $email, $password);
                     mysqli_stmt_execute($stmt);
                     echo "<div class='success-message'>You are registered successfully!</div>";
-                    header("Location: skeletura-main.php");
+                    header("Location: Products/skeletura-main.php");
                 }else{
                     die("Something went wrong");
                 }
@@ -97,7 +97,7 @@ if (isset($_SESSION["user"])) {
                 <input type="submit" value="Register" class="btn btn-primary" name="submit">
             </div>
         </form>
-        <div class="reghere"><p>Already Registered <a href="login.php">Login Here</a></p></div>
+        <div class="reghere"><p>Already Registered <a href="userlogin.php">Login Here</a></p></div>
     </div>
 
     <footer>
@@ -114,7 +114,7 @@ if (isset($_SESSION["user"])) {
                 <div class="lista">
                     <h4>Need Help?</h4>
                     <ul>
-                        <li><a href="cms\admin\Faq\Faq.php">FAQ</a></li>
+                        <li><a href="Faq\Faq.php">FAQ</a></li>
                         <li><a href="Kontakt.php" onclick="con()">Crimson's Support</a></li>
                         <li><a href="Kontakt.php" onclick="con()">Contact Form</a></li>
                     </ul>

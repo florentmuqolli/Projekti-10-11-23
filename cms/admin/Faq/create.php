@@ -10,7 +10,7 @@ if (!isset($_SESSION["user2"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administrator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
     <div class="dashboard">
@@ -18,16 +18,22 @@ if (!isset($_SESSION["user2"])) {
         <h1 class="dbrd"><a href="admintools.php" class="dbrda">Dashboard</a></h1>
         <div class="menues">
             <div class="menu">
-                <a href="Faq.php" class="dbrda2"><strong>View FAQ's website</strong></a>
-            </div>
-            <div class="menu">
                 <a href="../Details/detcrud.php" class="dbrda2"><strong>Details CRUD</strong></a>
             </div>
             <div class="menu">
-                    <a href="../Products/prodcrud.php" class="dbrda2"><strong>Product's CRUD</strong></a>
-                </div>
+                <a href="../Products/prodcrud.php" class="dbrda2"><strong>Product's CRUD</strong></a>
+            </div>
             <div class="menu">
-                <a href="../logout.php" class="logout"><strong>Log out</strong></a>
+                    <a href="../users\usercrud.php" class="dbrda2"><strong>User's CRUD</strong></a>
+            </div>
+            <div class="menu">
+                    <a href="../Abt/abtcrud.php" class="dbrda2"><strong>About's CRUD</strong></a>
+            </div>
+            <div class="menu">
+                <a href="Faq.php" class="dbrda2"><strong>View FAQ's website</strong></a>
+            </div>
+            <div class="menu">
+                <a href="../adminlogout.php" class="logout"><strong>Log out</strong></a>
             </div>
             
         </div>

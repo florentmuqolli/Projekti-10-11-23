@@ -10,30 +10,24 @@ if (!isset($_SESSION["user2"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administrator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="users.css">
 </head>
 <body>
     <div class="dashboard">
         <div class="sidebar">
-        <h1 class="dbrd"><a href="detcrud.php" class="dbrda">Dashboard</a></h1>
+        <h1 class="dbrd"><a href="usercrud.php" class="dbrda">Dashboard</a></h1>
         <div class="menues">
             <div class="menu">
-                <a href="../Faq/admintools.php" class="dbrda2"><strong>FAQ's CRUD</strong></a>
-            </div>
-            <div class="menu">
-                    <a href="../Products/prodcrud.php" class="dbrda2"><strong>Product's CRUD</strong></a>
+                 <a href="../Faq/admintools.php" class="dbrda2"><strong>FAQ's CRUD</strong></a>
                 </div>
                 <div class="menu">
-                    <a href="../users\usercrud.php" class="dbrda2"><strong>User's CRUD</strong></a>
+                    <a href="../Details\detcrud.php" class="dbrda2"><strong>Details's CRUD</strong></a>
                 </div>
                 <div class="menu">
-                    <a href="../Abt/abtcrud.php" class="dbrda2"><strong>About's CRUD</strong></a>
+                    <a href="../Products\prodcrud.php" class="dbrda2"><strong>Products CRUD</strong></a>
                 </div>
                 <div class="menu">
-                    <a href="../Details/detcreate.php" class="dbrda2"><strong>Add New Details</strong></a>
-                </div>
-                <div class="menu">
-                    <a href="../../../Detajet.php" class="dbrda2"><strong>Check Details</strong></a>
+                    <a href="../Abt\abtcrud.php" class="dbrda2"><strong>About's CRUD</strong></a>
                 </div>
             <div class="menu">
                 <a href="../adminlogout.php" class="logout"><strong>Log out</strong></a>
@@ -42,32 +36,26 @@ if (!isset($_SESSION["user2"])) {
         </div>
         </div>
         <div class="create-form">
-            <form action="detprocess.php" method="post">
-
+            <form action="userprocess.php" method="post">
                 <?php
-
-                
                 if (isset($_GET["id"])) {
                     $id = $_GET["id"];
                     include("../../connect.php");
-                    $sqlEdit = "SELECT * FROM details WHERE id = $id";
+                    $sqlEdit = "SELECT * FROM users WHERE id = $id";
                     $result = mysqli_query($conn,$sqlEdit);
                 }else {
-                    echo "Post not found";
+                    echo "User not found";
                 }
                     while ($data = mysqli_fetch_array($result)) {
                 ?>
                 <div class="form-field">
-                    <input type="text" class="form-ctrl" name="name" value="<?php echo $data['name'];?>" placeholder="Product name:">
+                    <input type="text" class="form-ctrl" name="full_name" value="<?php echo $data['full_name'];?>" placeholder="User's new full name:">
                 </div>
                 <div class="form-field">
-                    <input type="file" class="form-ctrl" name="image" <?php echo $data['image'];?> accept=".jpg, .jpeg, .png" placeholder="Product's image:">
+                    <input type="text" class="form-ctrl" name="email" value="<?php echo $data['email'];?>" placeholder="User's new email:">
                 </div>
                 <div class="form-field">
-                    <textarea name="description" class="form-ctrl" id="" cols="30" rows="10" placeholder="Product's Description:"><?php echo $data['description'];?></textarea>
-                </div>
-                <div class="form-field">
-                    <input type="text" class="form-ctrl" name="price" placeholder="Price:" <?php echo $data['price'];?>>
+                    <input type="text" class="form-ctrl" name="password" value="<?php echo $data['password'];?>" placeholder="User's new password:">
                 </div>
                 <input type="hidden" name="id" value="<?php echo $id;?>">
                 <div class="form-field">

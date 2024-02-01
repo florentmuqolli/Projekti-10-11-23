@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_SESSION["user"])) {
-   header("Location: skeletura-main.php");
+   header("Location: Products/skeletura-main.php");
 }
 ?>
 <!DOCTYPE html>
@@ -10,7 +10,7 @@ if (isset($_SESSION["user"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="lgreg.css">
+    <link rel="stylesheet" href="Lgreg.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -23,22 +23,22 @@ if (isset($_SESSION["user"])) {
         <i class='bx bx-x' id="close"></i>
     </label>
     <nav class="ubt">
-        <a href="#">Home</a>
-        <a href="Aboutusi.php" >About Us</a>
+        <a href="Products/">Products</a>
+        <a href="Abt/Aboutusi.php" >About Us</a>
         <a href="Kontakt.php" class="kontaktona"> Contact</a>
-        <a href="cms\admin\Faq\Faq.php"> FAQ</a>
+        <a href="Faq\Faq.php"> FAQ</a>
     </nav>
 </header>
 <body>
-    <img src="img\event_banner_csgo_left.webp" alt="event_banner_csgo_left" class="event_banner_csgo_left">
-    <img src="img\home-logo.webp" alt="home-logo" class="home-logo">
-    <img src="img\event_banner_csgo_right.webp" alt="event_banner_csgo_right" class="event_banner_csgo_right">
+    <img src="../../img\event_banner_csgo_left.webp" alt="event_banner_csgo_left" class="event_banner_csgo_left">
+    <img src="../../img\home-logo.webp" alt="home-logo" class="home-logo">
+    <img src="../../img\event_banner_csgo_right.webp" alt="event_banner_csgo_right" class="event_banner_csgo_right">
     <div class="container">
         <?php
         if (isset($_POST["login"])) {
            $email = $_POST["email"];
            $password = $_POST["password"];
-            require_once "database.php";
+            require_once "../connect.php";
             $sql = "SELECT * FROM users WHERE email = '$email'";
             $result = mysqli_query($conn, $sql);
             $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
@@ -46,7 +46,7 @@ if (isset($_SESSION["user"])) {
                 if ($password == $user["password"]) {
                     session_start();
                     $_SESSION["user"] = "yes";
-                    header("Location: skeletura-main.php");
+                    header("Location: Products/skeletura-main.php");
                     die();
                 }else{
                     echo "<div class='error-message'>Password is incorrect</div>";
@@ -56,7 +56,7 @@ if (isset($_SESSION["user"])) {
             }
         }
         ?>
-        <form action="login.php" method="post">
+        <form action="userlogin.php" method="post">
             <div class="form-group">
                 <input type="email" name="email" class="form-ctrl" placeholder="Email:">
             </div>
@@ -84,7 +84,7 @@ if (isset($_SESSION["user"])) {
                 <div class="lista">
                     <h4>Need Help?</h4>
                     <ul>
-                        <li><a href="cms\admin\Faq\Faq.php">FAQ</a></li>
+                        <li><a href="Faq\Faq.php">FAQ</a></li>
                         <li><a href="Kontakt.php" onclick="con()">Crimson's Support</a></li>
                         <li><a href="Kontakt.php" onclick="con()">Contact Form</a></li>
                     </ul>

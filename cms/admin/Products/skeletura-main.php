@@ -26,10 +26,10 @@ if (!isset($_SESSION["user"])) {
     </label>
     <nav class="ubt">
         <a href="#">Home</a>
-        <a href="Aboutusi.php" >About Us</a>
+        <a href="../Abt/Aboutusi.php" >About Us</a>
         <a href="Kontakt.php" class="kontaktona"> Contact</a>
-        <a href="cms\admin\Faq\Faq.php"> FAQ</a>
-        <a href="logout.php">Logout</a>
+        <a href="../Faq\Faq.php"> FAQ</a>
+        <a href="../userlogout.php">Logout</a>
     </nav>
 </header>
 
@@ -46,15 +46,15 @@ if (!isset($_SESSION["user"])) {
                 chevron_left
             </button>
             <div class="image-list">
-                <img src="img/maxresdefault (1).jpg" alt="img-1" class="image-item">
-                <img src="img/76u7xgcrkupa1.jpg" alt="img-2" class="image-item">
-                <img src="img/20190307120103_1.jpg" alt="img-3" class="image-item">
-                <img src="img/full-play-skins-kato-15-and-crimson-web-glove-knife-combo-v0-l5dx9350k26b1.png" alt="img-3" class="image-item">
-                <img src="img/maxresdefault-5-8-1024x576.jpg" alt="img-4" class="image-item">
-                <img src="img/Skeleton_Knife_Crimson_Web.webp" alt="img-5" class="image-item">
-                <img src="img/1-1.jpg" alt="img-6" class="image-item">
-                <img src="img/71042_TJQaKhfqCv_cs_go.jpg" alt="img-7" class="image-item">
-                <img src="img/20190307121906_1.jpg" alt="img-8" class="image-item">
+                <img src="../../../img/maxresdefault (1).jpg" alt="img-1" class="image-item">
+                <img src="../../../img/76u7xgcrkupa1.jpg" alt="img-2" class="image-item">
+                <img src="../../../img/20190307120103_1.jpg" alt="img-3" class="image-item">
+                <img src="../../../img/full-play-skins-kato-15-and-crimson-web-glove-knife-combo-v0-l5dx9350k26b1.png" alt="img-3" class="image-item">
+                <img src="../../../img/maxresdefault-5-8-1024x576.jpg" alt="img-4" class="image-item">
+                <img src="../../../img/Skeleton_Knife_Crimson_Web.webp" alt="img-5" class="image-item">
+                <img src="../../../img/1-1.jpg" alt="img-6" class="image-item">
+                <img src="../../../img/71042_TJQaKhfqCv_cs_go.jpg" alt="img-7" class="image-item">
+                <img src="../../../img/20190307121906_1.jpg" alt="img-8" class="image-item">
             </div>
             <button id="next-slide" class="slide-button material-symbols-outlined">
                 chevron_right
@@ -78,7 +78,7 @@ if (!isset($_SESSION["user"])) {
                 <div class="lista">
                     <h4>Need Help?</h4>
                     <ul>
-                        <li><a href="cms\admin\Faq\Faq.php">FAQ</a></li>
+                        <li><a href="../Faq\Faq.php">FAQ</a></li>
                         <li><a href="Kontakt.php" onclick="con()">Crimson's Support</a></li>
                         <li><a href="Kontakt.php" onclick="con()">Contact Form</a></li>
                     </ul>
@@ -106,7 +106,7 @@ if (!isset($_SESSION["user"])) {
 </footer>
 
 
-<script src="js\skeletura-main.js"></script>
+<script src="skeletura-main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

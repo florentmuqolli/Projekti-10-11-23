@@ -147,6 +147,7 @@ body {
 
 .form-field {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .form-ctrl {
@@ -176,14 +177,8 @@ body {
     .sidebar {
         width: auto;
     }
-    .sidebar .dbrd {
+    .menu {
         text-align: center;
-    }
-    .sidebar .dbrda2 {
-        margin-left: 34%;
-    }
-    .logout {
-        margin-left: 34%;
     }
 }
 @media screen and (max-width: 670px) {

@@ -21,16 +21,22 @@ if (!isset($_SESSION["user2"])) {
                 <a href="../Faq/admintools.php" class="dbrda2"><strong>FAQ's CRUD</strong></a>
             </div>
             <div class="menu">
+                    <a href="../users\usercrud.php" class="dbrda2"><strong>User's CRUD</strong></a>
+            </div>
+            <div class="menu">
+                    <a href="../Products/prodcrud.php" class="dbrda2"><strong>Product's CRUD</strong></a>
+            </div>
+            <div class="menu">
+                    <a href="../Abt/abtcrud.php" class="dbrda2"><strong>About's CRUD</strong></a>
+            </div>
+            <div class="menu">
                 <a href="detcreate.php" class="dbrda2"><strong>Add New Details</strong></a>
             </div>
             <div class="menu">
                 <a href="../../../Detajet.php" class="dbrda2"><strong>Check Details</strong></a>
             </div>
             <div class="menu">
-                    <a href="../Products/prodcrud.php" class="dbrda2"><strong>Product's CRUD</strong></a>
-                </div>
-            <div class="menu">
-                <a href="../logout.php" class="logout"><strong>Log out</strong></a>
+                <a href="../adminlogout.php" class="logout"><strong>Log out</strong></a>
             </div>
             
         </div>

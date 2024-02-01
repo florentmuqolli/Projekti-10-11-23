@@ -4,10 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    outline: none;
-    border: none;
 }
-
 header
 {
     position: fixed;
@@ -70,9 +67,6 @@ header::before
     {
         padding: 1.3rem 5%;
     }
-    .home-logo {
-        display: none;
-    }
 }
 
 @media (max-width: 768px)
@@ -96,7 +90,6 @@ header::before
     {
         display: none;
     }
-
 
     .ubt
     {
@@ -124,125 +117,164 @@ header::before
         margin: 1.5rem 0;
         text-align: center;
     }
-
-    .event_banner_csgo_left {
-        display: none;
-    }
+}
+body
+{
+    background: #48abe0;
+    margin-top: 5%;
+    background-image: url(../../../img/giphy.gif);
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-image: url(img/event-banner-bg.webp);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.heading
+{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
 }
 
-.event_banner_csgo_left {
+.heading h1
+{
+    font-size: 50px;
+    margin-bottom:25px;
+    position: relative;
+}
+.heading h1::after
+{
+    content: "";
     position: absolute;
-    left: 0;
-    top: 26.2%;
-    width: 450px;
-    height: 468px;
-}
-.home-logo {
-    position: absolute;
-    top: 26.2%;
-    right: 22%;
-    z-index: -1;
-}
-.event_banner_csgo_right {
-    position: absolute;
-    right: 0;
-    top: 26.2%;
-    width: 450px;
-    height: 468px;
-}
-.container {
-    width: 350px;
-    height: auto;
-    margin: 200px auto;
-    background-color: transparent;
-    backdrop-filter: blur(40px);
-    padding: 25px ;
-    border-radius: 8px;
-    box-shadow: 0 0 30px rgba(0,0,0, .5);
-}
-
-.form-group {
-    margin-bottom: 20px;
-    margin-right: 10px;
-}
-
-.form-ctrl {
     width: 100%;
-    padding: 10px;
-    box-shadow: 0 0 30px rgba(0,0,0, .5);
-    background: transparent;
-    backdrop-filter: blur(70px);
-    color: #fff;
-    border-radius: 5px;
-    outline: none;
+    height: 4px;
+    display: block;
+    background-color: rgb(141, 58, 77);
+    margin: 0 auto;
 }
-
-.form-btn {
-    text-align: center;
+.heading p
+{
+    font-size: 18px;
+    margin-bottom: 35px;
 }
-
-.btn {
+.permbajtja
+{
+    width: 90%;
+    margin: 0 auto;
     padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+}
+.about
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-img
+{
+    flex: 1;
+    margin-right: 40px;
+    margin-top: 15px;
+    display: none;
+}
+.about-img img
+{
+    max-width: 50%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+    display: none;
+}
+.about-img:hover img
+{
+    transform: scale(1.1);
+}
+.about-perm
+{
+    flex: 1;
+    width: 100%;
+}
+.about-perm h2
+{
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+.about-perm p
+{
+    font-size: 18px;
+    line-height: 1.5;
 }
 
-.btn:hover {
-    background-color: #0056b3;
+.content {
+    display: none;
+}
+.about-perm .read-more
+{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 19px;
+    background-color: rgb(141, 58, 77);
+    text-decoration: none;
+    color: seagreen;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+.about-perm .read-more:hover
+{
+    background-color: transparent;
+    color:rgb(141, 58, 77) ;
 }
 
-.reghere {
-    padding: 20px 20px;
-    text-align: center;
-}
-
-.reghere a {
-    color: #fff;
-}
-
-.error-message {
-    color: #dc3545;
-    background-color: #e29b94;
-    border-color: #e29b94;
-    font-size: 14px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-radius: 2px;
-    text-align: center;
-}
-
-.success-message {
-    color: #28a745;
-    background-color: #d4edda;
-    border-color: #c3e6cb;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    border-radius: 2px;
-    text-align: center;
+@media screen and (max-width: 768px)
+{
+    body
+    {
+        margin-top: 5%;
+    }
+    .heading
+    {
+        padding: 0px 20px;
+    }
+    .heading h1
+    {
+        font-size: 36px;
+    }
+    .heading p
+    {
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .permbajtja
+    {
+        padding: 0px;
+    }
+    .about
+    {
+        padding: 20px;
+        flex-direction: column;
+    }
+    .about-img
+    {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .about-perm p
+    {
+        padding: 0px;
+        font-size: 16px;
+    }
+    .about-perm .read-more
+    {
+        font-size: 16px;
+    }
 }
 
 footer
 {
-    box-shadow: 0 0 30px rgba(0,0,0, .10);
+    background: transparent;
     padding: 50px 0;
-    background: rgb(0, 0, 0, .1);
-    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0, .5);
 }
 
 .d1
@@ -279,7 +311,7 @@ ul
     font-size: 22px;
     text-transform: capitalize;
     margin-bottom: 35px;
-    color:#f9f9f9;
+    color:rgb(141, 58, 77);
     font-weight: 500;
     position: relative;
 }
@@ -289,7 +321,7 @@ ul
     font-size: 22px;
     text-transform: capitalize;
     margin-bottom: 35px;
-    color:#f9f9f9;
+    color:rgb(141, 58, 77);
     font-weight: 500;
     position: relative;
 }
@@ -308,16 +340,13 @@ ul
 {
     font-size: 16px;
     text-transform: capitalize;
-    color: #ffffff;
+    color: rgb(141, 58, 77);
     font-weight: 300;
     display: block;
-    color: #bbbbbb;
 }
 .lista ul li a:hover
 {
-    color: rgb(141, 58, 77);
     font-size: 18px;
-    
 }
 
 .listap .ulp a
