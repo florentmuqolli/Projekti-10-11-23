@@ -10,7 +10,7 @@ if (!isset($_SESSION["user"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crimson's</title>
-    <link rel="stylesheet" href="Skeletura-main.css">
+    <link rel="stylesheet" href="skeletura-main.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -68,8 +68,35 @@ if (!isset($_SESSION["user"])) {
         $result = mysqli_query($conn, "SELECT * FROM products");
         while ($row = mysqli_fetch_array($result)) {
     ?>
+    <style>
+        .Thikat .skins{
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+    <!--
+    <<div class="Thikat">
+        <div class="skins">
+            <div class="rubrika">
+                <img src="prodimg/knife1.png" alt="">
+            </div>
+            <div class="rubrika">
+                <img src="prodimg/knife2.png" alt="">
+            </div>
+            <div class="rubrika">
+                <img src="prodimg/knife3.png" alt="">
+            </div>
+        </div>
+    </div>
+    -->
         <div class="Thikat">
             <div class="skins">
+                <div class="rubrika">
+                    <a href="../Details/Detajet.php"><img src="prodimg/<?php echo $row['image']?>" alt="" class="img"><?php echo $row['name'];?></a>
+                </div>
+                <div class="rubrika">
+                    <a href="../Details/Detajet.php"><img src="prodimg/<?php echo $row['image']?>" alt="" class="img"><?php echo $row['name'];?></a>
+                </div>
                 <div class="rubrika">
                     <a href="../Details/Detajet.php"><img src="prodimg/<?php echo $row['image']?>" alt="" class="img"><?php echo $row['name'];?></a>
                 </div>
@@ -78,6 +105,7 @@ if (!isset($_SESSION["user"])) {
     <?php
         }
     ?>
+    
 <footer>
         <div class="d1">
             <div class="titull">

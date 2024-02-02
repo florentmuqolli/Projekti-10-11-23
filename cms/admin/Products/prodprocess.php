@@ -8,7 +8,7 @@ if (isset($_SESSION["user2"])) {
         $file_name = $_FILES['image']['name'];
         $tempname = $_FILES['image']['tmp_name'];
         $folder ='prodimg/'.$file_name;
-        $sql = "INSERT INTO products(author,name,image) VALUES ('$author','$name','$file_name')";
+        $sql = "INSERT INTO products (author,name,image) VALUES ('$author','$name','$file_name')";
         $result = mysqli_query($conn,$sql);
         if (move_uploaded_file($tempname, $folder)) {
             if($result){
