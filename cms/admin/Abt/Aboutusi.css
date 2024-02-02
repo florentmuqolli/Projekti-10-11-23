@@ -118,6 +118,7 @@ header::before
         text-align: center;
     }
 }
+
 body
 {
     background: #48abe0;
@@ -183,7 +184,6 @@ body
     height: auto;
     display: block;
     transition: 0.5s ease;
-    display: none;
 }
 .about-img:hover img
 {
@@ -192,7 +192,7 @@ body
 .about-perm
 {
     flex: 1;
-    width: 100%;
+    width: 50%;
 }
 .about-perm h2
 {

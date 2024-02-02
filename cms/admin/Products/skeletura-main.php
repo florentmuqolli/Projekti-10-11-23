@@ -10,7 +10,7 @@ if (!isset($_SESSION["user"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crimson's</title>
-    <link rel="stylesheet" href="skeletura-main.css">
+    <link rel="stylesheet" href="Skeletura-main.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -60,10 +60,24 @@ if (!isset($_SESSION["user"])) {
                 chevron_right
             </button>
         </div>
-        
     </div>
     <h1 class="cr">CRIMSON WEB SKINS</h1>
 
+    <?php
+        include("../../connect.php");
+        $result = mysqli_query($conn, "SELECT * FROM products");
+        while ($row = mysqli_fetch_array($result)) {
+    ?>
+        <div class="Thikat">
+            <div class="skins">
+                <div class="rubrika">
+                    <a href="../Details/Detajet.php"><img src="prodimg/<?php echo $row['image']?>" alt="" class="img"><?php echo $row['name'];?></a>
+                </div>
+            </div>
+        </div>
+    <?php
+        }
+    ?>
 <footer>
         <div class="d1">
             <div class="titull">

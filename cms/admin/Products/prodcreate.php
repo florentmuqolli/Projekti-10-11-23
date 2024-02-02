@@ -39,7 +39,7 @@ if (!isset($_SESSION["user2"])) {
         </div>
         </div>
         <div class="create-form">
-            <form action="prodprocess.php" method="post">
+            <form action="prodprocess.php" method="post" enctype="multipart/form-data">
                 <div class="form-field">
                     <input type="text" class="form-ctrl" name="name" placeholder="Product name:">
                 </div>

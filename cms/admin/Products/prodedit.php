@@ -42,11 +42,8 @@ if (!isset($_SESSION["user2"])) {
         </div>
         </div>
         <div class="create-form">
-            <form action="prodprocess.php" method="post">
-
+            <form action="prodprocess.php" method="post" enctype="multipart/form-data">
                 <?php
-
-                
                 if (isset($_GET["id"])) {
                     $id = $_GET["id"];
                     include("../../connect.php");
@@ -61,7 +58,7 @@ if (!isset($_SESSION["user2"])) {
                     <input type="text" class="form-ctrl" name="name" value="<?php echo $data['name'];?>" placeholder="Product name:">
                 </div>
                 <div class="form-field">
-                    <input type="file" class="form-ctrl" name="image" value="<?php echo $data['image'];?>" accept=".jpg, .jpeg, .png" placeholder="Product's image:">
+                    <input type="file" class="form-ctrl" name="image" value="<?php echo $data['image'];?>" placeholder="Product's image:">
                 </div>
                 <input type="hidden" name="id" value="<?php echo $id;?>">
                 <div class="form-field">
