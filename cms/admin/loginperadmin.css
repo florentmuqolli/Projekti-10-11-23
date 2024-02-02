@@ -1,0 +1,80 @@
+*
+{
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+@media (max-width: 992px)
+{
+    .home-logo {
+        display: none;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .event_banner_csgo_left {
+        display: none;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(../../img/lpaback.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.container {
+    width: 350px;
+    height: auto;
+    margin: 200px auto;
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+    padding: 25px ;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0,0,0, .5);
+}
+
+.login-form {
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.form-ctrl {
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 0 30px rgba(0,0,0, .5);
+    background: transparent;
+    backdrop-filter: blur(70px);
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+

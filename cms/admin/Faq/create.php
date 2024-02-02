@@ -35,8 +35,8 @@ if (!isset($_SESSION["user2"])) {
             <div class="menu">
                 <a href="../adminlogout.php" class="logout"><strong>Log out</strong></a>
             </div>
-            
         </div>
+
     </div>
         <div class="create-form">
             <form action="process.php" method="post">

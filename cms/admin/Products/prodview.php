@@ -44,19 +44,23 @@ if (!isset($_SESSION["user2"])) {
 
 <div class="post">
     <?php
-    $id = $_GET["id"];
-    if ($id) {
-        include("../../connect.php");
-        $sqlSelectPost = "SELECT * FROM products WHERE id = $id";
-        $result = mysqli_query($conn, $sqlSelectPost);
-        while ($data = mysqli_fetch_array($result)) {
-            ?>
-            <h1><?php echo $data['name'];?></h1>
-            <p><?php echo $data['image'];?></p>
-            <?php
+    if (isset($_SESSION["user2"])) {
+        $author = $_SESSION["user2"];
+        $id = $_GET["id"];
+        if ($id) {
+            include("../../connect.php");
+            $sqlSelectPost = "SELECT * FROM products WHERE id = $id";
+            $result = mysqli_query($conn, $sqlSelectPost);
+            while ($data = mysqli_fetch_array($result)) {
+                ?>
+                <h1><?php echo $data['name'];?></h1>
+                <p><?php echo $data['image'];?></p>
+                <h2>Author: <?php echo $data['author'];?></h2>
+                <?php
+            }
+        }else {
+            echo "Post not found";
         }
-    }else {
-        echo "Post not found";
     }
     ?>
 </div>

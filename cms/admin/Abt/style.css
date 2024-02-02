@@ -76,18 +76,18 @@ body {
     overflow: hidden;
 }
 
-.tables tr td:nth-child(3) {
+.tables tr td:nth-child(4) {
     max-width: 130px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.tables tr td:nth-child(4) {
-    max-width: 130px; /* Adjust the max-width according to your design */
-    white-space: nowrap; /* Prevent the text from wrapping */
-    overflow: hidden; /* Hide any overflow content */
-    text-overflow: ellipsis; /* Display ellipsis (...) for overflow text */
+.tables .content {
+    max-width: 130px; 
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
 }
 
 

@@ -36,6 +36,22 @@ if (!isset($_SESSION["user"])) {
         <h1>One More Step (:</h1>
     </div>
 
+    <?php
+        include("../../connect.php");
+        $result = mysqli_query($conn, "SELECT * FROM products");
+        while ($row = mysqli_fetch_array($result)) {
+    ?>
+        <div class="Thikat">
+            <div class="skins">
+                <div class="rubrika">
+                    <img src="prodimg/<?php echo $row['image']?>" alt="" class="img"><?php echo $row['name'];?>
+                </div>
+            </div>
+        </div>
+    <?php
+        }
+    ?>
+
     <footer>
         <div class="d1">
             <div class="titull">

@@ -44,8 +44,10 @@ if (!isset($_SESSION["user2"])) {
 
 <div class="post">
     <?php
-    $id = $_GET["id"];
-    if ($id) {
+    if (isset($_SESSION["user2"])) {
+        $author = $_SESSION["user2"];
+        $id = $_GET["id"];
+        if ($id) {
         include("../../connect.php");
         $sqlSelectPost = "SELECT * FROM details WHERE id = $id";
         $result = mysqli_query($conn, $sqlSelectPost);
@@ -55,10 +57,12 @@ if (!isset($_SESSION["user2"])) {
             <p><?php echo $data['image'];?></p>
             <p><?php echo $data['description'];?></p>
             <p><?php echo $data['price'];?></p>
+            <h2>Author: <?php echo $data['author'];?></h2>
             <?php
         }
     }else {
         echo "Post not found";
+    }
     }
     ?>
 </div>

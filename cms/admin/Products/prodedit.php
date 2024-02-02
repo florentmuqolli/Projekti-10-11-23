@@ -30,7 +30,7 @@ if (!isset($_SESSION["user2"])) {
                     <a href="../Abt/abtcrud.php" class="dbrda2"><strong>About's CRUD</strong></a>
             </div>
             <div class="menu">
-                <a href="../Details/prodcreate.php" class="dbrda2"><strong>Add New Product</strong></a>
+                <a href="prodcreate.php" class="dbrda2"><strong>Add New Product</strong></a>
             </div>
             <div class="menu">
                 <a href="../skeletura-main.php" class="dbrda2"><strong>Check Products</strong></a>

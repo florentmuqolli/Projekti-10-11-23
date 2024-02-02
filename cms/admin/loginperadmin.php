@@ -2,12 +2,17 @@
 if (isset($_POST['loginperadmin'])) {
    $username = $_POST['username'];
    $password = $_POST['password'];
-   if ($username == "admin" && $password == "crimsons") {
-    session_start();
-    $_SESSION["user2"] = "admin";
-    header("Location: Faq/admintools.php");
-   }
-}
+    if ($username == "florentbaba" && $password == "crimsons") {
+        session_start();
+        $_SESSION["user2"] = "florenti";
+        header("Location: Faq/admintools.php");
+       }
+       else if ($username == "erionbaba" && $password == "crimsons") {
+        session_start();
+        $_SESSION["user2"] = "erioni";
+        header("Location: Faq/admintools.php");
+       }
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +20,7 @@ if (isset($_POST['loginperadmin'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="loginstyle.css">
+    <link rel="stylesheet" href="loginperadmin.css">
 </head>
 <body>
     <div class="container">
@@ -24,10 +29,10 @@ if (isset($_POST['loginperadmin'])) {
                 <div class="form-field">
                     <input class="form-ctrl" type="text" name="username" id="" placeholder="Username">
                 </div>
-                <div class="form-field mb-4">
+                <div class="form-field">
                     <input class="form-ctrl" type="password" name="password" id="" placeholder="Password">
                 </div>
-                <div class="form-field mb-4">
+                <div class="form-btn">
                     <input class="btn btn-primary" type="submit" value="Login" name="loginperadmin">
                 </div>
             </form>
