@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION["user"])) {
-   header("Location: login.php");
+   header("Location: ../userlogin.php");
 }
 ?>
 <!DOCTYPE html>
@@ -24,11 +24,11 @@ if (!isset($_SESSION["user"])) {
         <i class='bx bx-x' id="close"></i>
     </label>
     <nav class="ubt">
-        <a href="skeletura-main.php"> Home</a>
-        <a href="Aboutusi.php">About Us</a>
+        <a href="../Products/skeletura-main.php"> Home</a>
+        <a href="../Abt/Aboutusi.php">About Us</a>
         <a href="Kontakt.php" class="kontaktona"> Contact</a>
-        <a href="cms\admin\Faq\Faq.php"> FAQ</a>
-        <a href="logout.php">Logout</a>
+        <a href="../Faq/Faq.php"> FAQ</a>
+        <a href="../userlogout.php">Logout</a>
     </nav>
 </header>
 
@@ -44,21 +44,44 @@ if (!isset($_SESSION["user"])) {
             <p class="aaa" style="margin-right: 50%;">Here is how you contact us via email or phone number.</p> <br>
             <p>We have provided two ways to frequently answer your questions here. Contact us via email  :<a href="#" style="color: red; font-size: large; padding: 0 5px 0 5px;">crimsons@gmail.com</a> or via phone number <a href="#" style="color: red;">049-553-279</a></P>
             
-            
-        <div class="formulari">
-            <div class="elem1">
-            <div class="formulari1"> <p>First name</p><input type="text" placeholder=" First name" class="formulari2"></div>
-            <div class="formulari1"><p>Last name</p><input type="text" placeholder=" Last name" class="formulari2"></div>
-            <div class="formulari1"><p>Costumer Number</p><input type="text" placeholder=" Costumer number" class="formulari2"></div>
-            <div class="formulari1"><p>Order Number</p><input type="text" placeholder=" Order number" class="formulari2"></div>
-            <div class="formulari1"><p>Email</p><input type="email" placeholder=" Email" class="formulari2"></div>
-            <div class="formulari1"><p>Phone Number</p><input type="text" placeholder=" Phone number" class="formulari2"></div>
+
+            <?php
+            if (isset($_POST["submit"])) {
+                $firstname = $_POST["firstname"];
+                $lastname = $_POST["lastname"];
+                $email = $_POST["email"];
+                $comment = $_POST["comment"];
+                require_once "../../connect.php";
+                $sql = "INSERT INTO contactus(firstname, lastname, email, comment) VALUES (?,?,?,?)";
+                $stmt = mysqli_stmt_init($conn);
+                $prepareStmt = mysqli_stmt_prepare($stmt,$sql);
+                if ($prepareStmt) {
+                    mysqli_stmt_bind_param($stmt,"ssss",$firstname, $lastname, $email, $comment);
+                    mysqli_stmt_execute($stmt);
+                header("Location: concrud.php");
+            }
+        }
+
+            ?>
+       
+            <div class="formulari">
+            <form action="Kontakt.php" method="post">
+                <div class="elem1">
+                <div class="formulari1"> <p>First name</p><input type="text" name="firstname" placeholder=" First name" class="formulari2"></div>
+                <div class="formulari1"><p>Last name</p><input type="text" name="lastname" placeholder=" Last name" class="formulari2"></div>
+                <div class="formulari1"><p>Costumer Number</p><input type="text" placeholder=" Costumer number" class="formulari2"></div>
+                <div class="formulari1"><p>Order Number</p><input type="text" placeholder=" Order number" class="formulari2"></div>
+                <div class="formulari1"><p>Email</p><input type="email" name="email" placeholder=" Email" class="formulari2"></div>
+                <div class="formulari1"><p>Phone Number</p><input type="text" placeholder=" Phone number" class="formulari2"></div>
+                </div>
+                <div c;ass="elem2">
+                <div class="Koment"><p style="margin-bottom: -10px; margin-top: 30px;">Comment</p><textarea cols="80" rows="10" class="Koment" type="text" name="comment" placeholder="Add your comment here before you submit your request"></textarea></div>
+                </div>
+                <div class="formulari1"><input type="submit" class="submiti" name="submit" onclick="submiti()"></div>
+                </form> 
             </div>
-            <div c;ass="elem2">
-            <div class="Koment"><p style="margin-bottom: -10px; margin-top: 30px;">Comment</p><textarea cols="80" rows="10" class="Koment" type="text" name="textbox" placeholder="Add your comment here before you submit your request"></textarea></div>
-            </div>
-            <div class="formulari1"><input type="submit" class="submiti" onclick="submiti()"></div>
-        </div>
+        
+       
     </div>
 
     <footer>
@@ -75,7 +98,7 @@ if (!isset($_SESSION["user"])) {
                 <div class="lista">
                     <h4>Need Help?</h4>
                     <ul>
-                        <li><a href="cms\admin\Faq\Faq.php">FAQ</a></li>
+                        <li><a href="../Faq\Faq.php">FAQ</a></li>
                         <li><a href="">Crimson's Support</a></li>
                         <li><a href="">Contact Form</a></li>
                     </ul>

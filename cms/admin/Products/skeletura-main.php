@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION["user"])) {
-   header("Location: login.php");
+   header("Location: ../userlogin.php");
 }
 ?>
 <!DOCTYPE html>
@@ -27,7 +27,7 @@ if (!isset($_SESSION["user"])) {
     <nav class="ubt">
         <a href="#">Home</a>
         <a href="../Abt/Aboutusi.php" >About Us</a>
-        <a href="Kontakt.php" class="kontaktona"> Contact</a>
+        <a href="../Contactus/Kontakt.php" class="kontaktona"> Contact</a>
         <a href="../Faq\Faq.php"> FAQ</a>
         <a href="../userlogout.php">Logout</a>
     </nav>
