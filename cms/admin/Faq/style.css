@@ -71,12 +71,18 @@ body {
     padding: 8px;
     border: none;
     border-bottom: 1px solid #ddd;
+    white-space: nowrap; 
     text-align: left;
     width: 10%;
     overflow: hidden;
 }
 
-
+tr td:nth-child(3) {
+    max-width: 150px; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
 
 @media screen and (max-width: 602px) {
     .dashboard {

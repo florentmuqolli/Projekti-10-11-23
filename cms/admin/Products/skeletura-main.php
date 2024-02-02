@@ -68,35 +68,8 @@ if (!isset($_SESSION["user"])) {
         $result = mysqli_query($conn, "SELECT * FROM products");
         while ($row = mysqli_fetch_array($result)) {
     ?>
-    <style>
-        .Thikat .skins{
-            display: flex;
-            flex-direction: row;
-        }
-    </style>
-    <!--
-    <<div class="Thikat">
-        <div class="skins">
-            <div class="rubrika">
-                <img src="prodimg/knife1.png" alt="">
-            </div>
-            <div class="rubrika">
-                <img src="prodimg/knife2.png" alt="">
-            </div>
-            <div class="rubrika">
-                <img src="prodimg/knife3.png" alt="">
-            </div>
-        </div>
-    </div>
-    -->
         <div class="Thikat">
             <div class="skins">
-                <div class="rubrika">
-                    <a href="../Details/Detajet.php"><img src="prodimg/<?php echo $row['image']?>" alt="" class="img"><?php echo $row['name'];?></a>
-                </div>
-                <div class="rubrika">
-                    <a href="../Details/Detajet.php"><img src="prodimg/<?php echo $row['image']?>" alt="" class="img"><?php echo $row['name'];?></a>
-                </div>
                 <div class="rubrika">
                     <a href="../Details/Detajet.php"><img src="prodimg/<?php echo $row['image']?>" alt="" class="img"><?php echo $row['name'];?></a>
                 </div>
