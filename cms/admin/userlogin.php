@@ -58,13 +58,15 @@ if (isset($_SESSION["user"])) {
         ?>
         <form action="userlogin.php" method="post">
             <div class="form-group">
-                <input type="email" name="email" class="form-ctrl" placeholder="Email:">
+                <input type="email" name="email" class="form-ctrl" id="email" placeholder="Email:">
+                <div id="emailgabim"></div>
             </div>
             <div class="form-group">
-                <input type="password" name="password" class="form-ctrl" placeholder="Password:">
+                <input type="password" name="password" class="form-ctrl" id="passi" placeholder="Password:">
+                <div id="passigabim"></div>
             </div>
             <div class="form-btn">
-                <input type="submit" value="Login" class="btn btn-primary" name="login">
+                <input type="submit" value="Login" class="btn btn-primary" name="login" onclick="kyciratu()">
             </div>
         </form>
         <div class="reghere"><p>Not registered yet? <a href="register.php">Register Here</a></p></div>
@@ -112,4 +114,5 @@ if (isset($_SESSION["user"])) {
 </footer>
 
 </body>
+<script src="userlgreg.js"></script>
 </html>

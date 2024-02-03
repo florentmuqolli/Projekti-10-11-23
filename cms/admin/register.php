@@ -85,16 +85,18 @@ if (isset($_SESSION["user"])) {
                 <input type="text" name="full_name" class="form-ctrl" placeholder="Full Name:">
             </div>
             <div class="form-group">
-                <input type="email" name="email" class="form-ctrl" placeholder="Email:">
+                <input type="email" name="email" class="form-ctrl" id="email" placeholder="Email:">
+                <div id="emailgabim"></div>
             </div>
             <div class="form-group">
-                <input type="password" name="password" class="form-ctrl" placeholder="Password:">
+                <input type="password" name="password" class="form-ctrl" id="passi" placeholder="Password:">
+                <div id="passigabim"></div>
             </div>
             <div class="form-group">
                 <input type="password" name="confirm_password" class="form-ctrl" placeholder="Confirm Password:">
             </div>
             <div class="form-btn">
-                <input type="submit" value="Register" class="btn btn-primary" name="submit">
+                <input type="submit" value="Register" class="btn btn-primary" name="submit" onclick="kyciratu()">
             </div>
         </form>
         <div class="reghere"><p>Already Registered <a href="userlogin.php">Login Here</a></p></div>
@@ -141,4 +143,5 @@ if (isset($_SESSION["user"])) {
         </div>
 </footer>
 </body>
+<script src="userlgregjs.js"></script>
 </html>

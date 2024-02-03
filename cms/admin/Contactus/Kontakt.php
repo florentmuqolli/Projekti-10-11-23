@@ -58,7 +58,6 @@ if (!isset($_SESSION["user"])) {
                 if ($prepareStmt) {
                     mysqli_stmt_bind_param($stmt,"ssss",$firstname, $lastname, $email, $comment);
                     mysqli_stmt_execute($stmt);
-                header("Location: concrud.php");
             }
         }
 
