@@ -115,8 +115,8 @@ if (isset($_SESSION["user"])) {
                     <h4>Need Help?</h4>
                     <ul>
                         <li><a href="Faq\Faq.php">FAQ</a></li>
-                        <li><a href="Kontakt.php" onclick="con()">Crimson's Support</a></li>
-                        <li><a href="Kontakt.php" onclick="con()">Contact Form</a></li>
+                        <li><a href="Contactus/Kontakt.php" onclick="con()">Crimson's Support</a></li>
+                        <li><a href="Contactus/Kontakt.php" onclick="con()">Contact Form</a></li>
                     </ul>
                 </div>
                 <div class="listap">

@@ -9,11 +9,10 @@ if (isset($_SESSION["user2"])) {
         $price = mysqli_real_escape_string($conn, $_POST["price"]);
         $file_name = $_FILES['image']['name'];
         $tempname = $_FILES['image']['tmp_name'];
-        $folder ='prodimg/'.$file_name;
-        $result = mysqli_query($conn,$sql);
+        $folder ='detimg/'.$file_name;
+        $sql = "INSERT INTO details (author,name, image, description, price) VALUES ('$author','$name','$file_name','$description','$price')";
+        $result = mysqli_query($conn, $sql);
         if (move_uploaded_file($tempname, $folder)) {
-            $sql = "INSERT INTO details (author,name, image, description, price) VALUES ('$author','$name','$file_name','$description','$price')";
-            $result = mysqli_query($conn, $sql);
             if($result){
                 header("Location: detcrud.php");
                 session_start();
@@ -34,12 +33,10 @@ if (isset($_SESSION["user2"])) {
         $id = mysqli_real_escape_string($conn, $_POST["id"]);
         $file_name = $_FILES['image']['name'];
         $tempname = $_FILES['image']['tmp_name'];
-        $folder ='prodimg/'.$file_name;
-        $result = mysqli_query($conn,$sql);
+        $folder ='detimg/'.$file_name;
+        $sqlUpdate = "UPDATE details SET author = '$author', name = '$name', image = '$file_name', description = '$description', price = '$price' WHERE id = $id";
         if (move_uploaded_file($tempname, $folder)) {
-            $sql = "UPDATE details SET author = '$author', name = '$name', image = '$file_name', description = '$description', price = '$price' WHERE id = $id";
-            $result = mysqli_query($conn, $sql);
-            if($result){
+            if(mysqli_query($conn, $sqlUpdate)){
                 header("Location: detcrud.php");
                 session_start();
                 $_SESSION["update"] = "Product updated successfully";

@@ -35,23 +35,28 @@ if (!isset($_SESSION["user"])) {
     <div class="headi">
         <h1>One More Step (:</h1>
     </div>
-
-    <?php
+        <?php
         include("../../connect.php");
-        $result = mysqli_query($conn, "SELECT * FROM products");
-        while ($row = mysqli_fetch_array($result)) {
-    ?>
-        <div class="Thikat">
-            <div class="skins">
-                <div class="rubrika">
-                    <img src="prodimg/<?php echo $row['image']?>" alt="" class="img"><?php echo $row['name'];?>
+        $sqlSelect = "SELECT * FROM details";
+        $result = mysqli_query($conn, $sqlSelect);
+        while ($data = mysqli_fetch_array($result)) {
+        ?>
+        <div class="content">
+            <section class="about">
+                <div class="about-img">
+                    <img src="detimg/<?php echo $data["image"];?>">
                 </div>
-            </div>
+                <div class="about-content">
+                <h2><?php echo $data["name"]?></h2>
+                <p><?php echo $data["description"];?></p>
+                <p><?php echo $data["price"];?></p>
+                <a href="" class="buy-now" onclick="checkouti()">Buy Now</a>
+                </div>
+            </section>
         </div>
-    <?php
+        <?php
         }
-    ?>
-
+        ?>
     <footer>
         <div class="d1">
             <div class="titull">
@@ -68,7 +73,7 @@ if (!isset($_SESSION["user"])) {
                     <ul>
                         <li><a href="../Faq\Faq.php">FAQ</a></li>
                         <li><a href="../Contactus/Kontakt.php">Crimson's Support</a></li>
-                        <li><a href="Kontakt.php">Contact Form</a></li>
+                        <li><a href="../Contactus/Kontakt.php">Contact Form</a></li>
                     </ul>
                 </div>
                 <div class="listap">

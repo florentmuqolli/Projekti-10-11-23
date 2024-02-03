@@ -10,7 +10,7 @@ if (isset($_SESSION["user2"])) {
         $folder ='prodimg/'.$file_name;
         $sql = "INSERT INTO products (author,name,image) VALUES ('$author','$name','$file_name')";
         $result = mysqli_query($conn,$sql);
-        if (move_uploaded_file($tempname, $folder)) {
+        if (move_uploaded_file($tempname, $folder)){
             if($result){
                 header("Location: prodcrud.php");
                 session_start();
@@ -22,6 +22,7 @@ if (isset($_SESSION["user2"])) {
         }
     }
 }
+
 if (isset($_SESSION["user2"])) {
     $author = $_SESSION["user2"];
     if(isset($_POST["update"])){
@@ -30,10 +31,8 @@ if (isset($_SESSION["user2"])) {
         $id = mysqli_real_escape_string($conn, $_POST["id"]);
         $tempname = $_FILES['image']['tmp_name'];
         $folder ='prodimg/'.$file_name;
-        $sql = "UPDATE products SET author = '$author', name = '$name', image = '$file_name' WHERE id = $id";
-        $result = mysqli_query($conn,$sql);
-        if (move_uploaded_file($tempname, $folder)) {
-            if($result){
+        $sqlUpdate = "UPDATE products SET author = '$author', name = '$name', image = '$file_name' WHERE id = $id";
+        if (mysqli_query($conn, $sqlUpdate)) {
                 header("Location: prodcrud.php");
                 session_start();
                 $_SESSION["update"] = "Product updated successfully";
@@ -43,5 +42,4 @@ if (isset($_SESSION["user2"])) {
             }
         }
     }
-}
 ?>  

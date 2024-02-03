@@ -39,36 +39,27 @@ if (!isset($_SESSION["user"])) {
             with over six years of experience. You are much more likely to have 
             fun and gain from opening cases on Hellcase than the CS:GO (CS2) in-game cases.</p>
     </div>
-
-    <div class="permbajtja">
-        <section class="about">
-            <div class="about-perm">
-                    <?php
-                    include("../../connect.php");
-                    $sqlSelect = "SELECT * FROM aboutus";
-                    $result = mysqli_query($conn, $sqlSelect);
-                    while ($data = mysqli_fetch_array($result)) {
-                    ?>
-                    <div class="about-img">
-                        <img src="../../../img/event_banner_csgo_left.webp" alt="event_banner_csgo_left">
-                    </div>
-                    <div class="row">
-                        <h2><?php echo $data["title"];?></h2>
-                    </div>
-                    <div class="row">
-                    <p><?php echo $data["summary"];?></p>
-                    </div>
-                    <div class="row">
-                        <a href="Abovtvsi.php?id=<?php echo $data["id"]?>" class="read-more">Read More</a>
-                    </div>
-                    <?php
-                    }
-                    ?>
+            <?php
+            include("../../connect.php");
+            $sqlSelect = "SELECT * FROM aboutus";
+            $result = mysqli_query($conn, $sqlSelect);
+            while ($data = mysqli_fetch_array($result)) {
+            ?>
+            <div class="permbajtja">
+                <section class="about">
+                <div class="about-img">
+                    <img src="../../../img/event_banner_csgo_left.webp" alt="event_banner_csgo_left">
                 </div>
-
-        </section>
-    </div>
-
+                <div class="about-perm">
+                    <h2><?php echo $data["title"];?></h2>
+                    <p><?php echo $data["summary"];?></p>
+                    <a href="Abovtvsi.php?id=<?php echo $data["id"]?>" class="read-more">Read More</a>
+                </div>
+                </section>
+            </div>
+            <?php
+            }
+            ?>
     <footer>
         <div class="d1">
             <div class="titull">
@@ -84,8 +75,8 @@ if (!isset($_SESSION["user"])) {
                     <h4>Need Help?</h4>
                     <ul>
                         <li><a href="../Faq\Faq.php">FAQ</a></li>
-                        <li><a href="Kontakt.php" >Crimson's Support</a></li>
-                        <li><a href="Kontakt.php" >Contact Form</a></li>
+                        <li><a href="../Contactus/Kontakt.php" >Crimson's Support</a></li>
+                        <li><a href="../Contactus/Kontakt.php" >Contact Form</a></li>
                     </ul>
                 </div>
                 <div class="listap">

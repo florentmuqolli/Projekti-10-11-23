@@ -160,7 +160,6 @@ body
 }
 .permbajtja
 {
-    width: 90%;
     margin: 0 auto;
     padding: 10px 20px;
 }
@@ -174,40 +173,39 @@ body
 .about-img
 {
     flex: 1;
-    margin-right: 40px;
-    margin-top: 15px;
-    display: none;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    overflow: hidden;
 }
 .about-img img
 {
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
     display: block;
     transition: 0.5s ease;
 }
 .about-img:hover img
 {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 .about-perm
 {
     flex: 1;
-    width: 50%;
 }
 .about-perm h2
 {
     font-size: 23px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+
 }
 .about-perm p
 {
     font-size: 18px;
+    margin-right: 100px;
     line-height: 1.5;
+    width: 70%;
 }
 
-.content {
-    display: none;
-}
 .about-perm .read-more
 {
     display: inline-block;

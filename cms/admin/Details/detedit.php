@@ -42,7 +42,7 @@ if (!isset($_SESSION["user2"])) {
         </div>
         </div>
         <div class="create-form">
-            <form action="detprocess.php" method="post">
+            <form action="detprocess.php" method="post" enctype="multipart/form-data">
 
                 <?php
 
