@@ -40,10 +40,10 @@ if (!isset($_SESSION["user"])) {
             fun and gain from opening cases on Hellcase than the CS:GO (CS2) in-game cases.</p>
     </div>
                     <?php
+                    $id = $_GET["id"];
                      include("../../connect.php");
-                     $sqlSelect = "SELECT * FROM aboutus";
+                     $sqlSelect = "SELECT * FROM aboutus  where id = $id";
                      $result = mysqli_query($conn, $sqlSelect);
-                     
                      while ($data = mysqli_fetch_array($result)) {
                     ?>
                     <div class="permbajtja">
@@ -54,7 +54,7 @@ if (!isset($_SESSION["user"])) {
                             <div class="about-perm">
                                 <h2><?php echo $data["title"];?></h2>
                                 <p><?php echo $data["content"];?></p>
-                                <a href="Aboutusi.php?id=<?php echo $data["id"]?>" class="read-more">Go Back</a>
+                                <a href="Aboutusi.php" class="read-more">Go Back</a>
                             </div>
                         </section>
                     </div>

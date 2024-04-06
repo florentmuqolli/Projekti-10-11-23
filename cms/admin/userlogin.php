@@ -56,7 +56,7 @@ if (isset($_SESSION["user"])) {
             }
         }
         ?>
-        <form action="userlogin.php" method="post">
+        <form action="userlogin.php" method="post" id="registrationForm">
             <div class="form-group">
                 <input type="email" name="email" class="form-ctrl" id="email" placeholder="Email:">
                 <div id="emailgabim"></div>
@@ -66,7 +66,7 @@ if (isset($_SESSION["user"])) {
                 <div id="passigabim"></div>
             </div>
             <div class="form-btn">
-                <input type="submit" value="Login" class="btn btn-primary" name="login" onclick="kyciratu()">
+                <input type="submit" value="Login" class="btn btn-primary" name="login">
             </div>
         </form>
         <div class="reghere"><p>Not registered yet? <a href="register.php">Register Here</a></p></div>
