@@ -33,7 +33,7 @@ if (!isset($_SESSION["user2"])) {
                 <a href="prodcreate.php" class="dbrda2"><strong>Add New Product</strong></a>
             </div>
             <div class="menu">
-                <a href="../skeletura-main.php" class="dbrda2"><strong>Check Products</strong></a>
+                <a href="skeletura-main.php" class="dbrda2"><strong>Check Products</strong></a>
             </div>
             <div class="menu">
                 <a href="../adminlogout.php" class="logout"><strong>Log out</strong></a>
